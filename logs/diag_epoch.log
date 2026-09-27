@@ -97,7 +97,7 @@
     ep 60 loss=0.7196 val=0.1781 test=0.1847 gain_vs_floor=+0.0288
   floor=0.1559 | best-val(ep58) test=0.1796 | last-epoch test=0.1847 | min test=0.1577 @ep6 | epochs below floor: 0/30
 
-written /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/logs/diag_epoch.json
+written logs/diag_epoch.json
 
 === summary ===
 | model | floor | ep0 | best-val test | last test | min test | #ep<floor |

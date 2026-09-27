@@ -1,4 +1,4 @@
-_source: /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/summary/summary.json_
+_source: results/summary/summary.json_
 
 ### 主结果(测试 MRR,十种子均值 ± 标准差)
 

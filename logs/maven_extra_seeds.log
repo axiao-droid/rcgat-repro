@@ -79,4 +79,4 @@ known artifacts: 1155 in 416 groups; scanning top 80 groups
   tools.jackson.core: 2 artifacts listed, 2 seeded (21s)
   com.google.j2objc: 1 artifacts listed, 1 seeded (21s)
   org.eclipse.jetty.http2: 14 artifacts listed, 14 seeded (21s)
-wrote /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/data/seeds/maven_extra.txt (1200 seeds)
+wrote data/seeds/maven_extra.txt (1200 seeds)

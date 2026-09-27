@@ -3,7 +3,7 @@
 # every stage is resumable, and the DONE marker at the end is what the polling
 # loop looks for (a `kill -0` wait on a reaped-then-zombie child never returns).
 set -u
-cd /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro
+cd "$(dirname "$0")/.."
 export OMP_NUM_THREADS=1
 rm -f logs/DONE
 log=logs/pipeline2.log

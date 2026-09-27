@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper as below."
+title: "When Do Structural Mechanisms Help Dependency Link Prediction? A Content-Floor-Controlled Study on npm and Maven"
+authors:
+  - family-names: Jiang
+    given-names: Runxiao
+    # orcid: "0000-0000-0000-0000"   # TODO: fill real ORCID before archiving
+  - family-names: Xie
+    given-names: Jialiang
+    # orcid: "0000-0000-0000-0000"   # TODO: fill real ORCID before archiving
+journal: "Empirical Software Engineering"
+year: 2026
+url: "https://github.com/axiao-droid/rcgat-repro"
+repository-code: "https://github.com/axiao-droid/rcgat-repro"
+license: MIT
+# doi: "10.1007/s10664-0xx-xxxx-x"   # TODO: fill after acceptance / Zenodo mint

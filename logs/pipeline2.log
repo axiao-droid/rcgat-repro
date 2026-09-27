@@ -223,7 +223,7 @@
 [final] maven gatv2_dir seed=129 cfg=c3_h64_d0.5 val=0.3176 test=0.0881 h10=0.1034 epoch=1 (30.6s)
 [final] maven gatv2_dir seed=130 cfg=c3_h64_d0.5 val=0.3087 test=0.1088 h10=0.2759 epoch=4 (31.9s)
 [final] maven gatv2_dir seed=128 cfg=c3_h64_d0.5 val=0.3051 test=0.0895 h10=0.1724 epoch=48 (64.4s)
-written: /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/summary/summary.json|.md|.csv
+written: results/summary/summary.json|.md|.csv
 
 === audit npm ===
   [PASS] A1 node/edge counts match stats -- nodes=4959 edges=13602
@@ -619,9 +619,9 @@ written: /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run
       re-selected per cell: {'gat_dir': 'c4_h128_d0.5', 'ragat_sym': 'c3_h64_d0.5', 'gat_time': 'c2_h64_d0.2', 'ragat_time': 'c1_h128_d0.2'}; recorded {'gat_dir': 'c4_h128_d0.5', 'ragat_sym': 'c3_h64_d0.5', 'gat_time': 'c2_h64_d0.2', 'ragat_time': 'c1_h128_d0.2'}
   [PASS] G maven: the frozen configs equal the re-selected ones
 
-audit written to /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/audit.json; 0 failing checks
-written: /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/tables/table_main_results.tex, table_paired.tex, table_dataset_stats.tex
-_source: /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/summary/summary.json_
+audit written to results/audit.json; 0 failing checks
+written: results/tables/table_main_results.tex, table_paired.tex, table_dataset_stats.tex
+_source: results/summary/summary.json_
 
 ### 主结果(测试 MRR,十种子均值 ± 标准差)
 

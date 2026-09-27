@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Reinstall the CPU-only torch stack.  download.pytorch.org was measured at
-# ~0.07 MB/s from this pod; mirrors.aliyun.com serves the same wheel at
+# ~0.07 MB/s from the test host; mirrors.aliyun.com serves the same wheel at
 # ~21 MB/s, so the wheel is pulled directly and the pure-python dependencies
 # come from the Tsinghua PyPI mirror.
 set -u

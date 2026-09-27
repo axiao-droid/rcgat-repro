@@ -2,25 +2,30 @@
 
 这份说明与稿件里的 **Data Availability / Code Availability** 两段是同一条口径。投稿前请读一遍。
 
-## 1. 结论：发这一份（约 13 MB / 2,650 个文件）
+## 1. 结论：发这一份（2,646 个文件 / 约 5.5 MB 内容，占盘约 13 MB）
 
 | 目录 / 文件 | 文件数 | 体积 | 发？ | 说明 |
 |---|---|---|---|---|
-| `src/` | 18 | 329 KB | ✅ | 抓取、建图、门槛、四个 cell、训练、汇总、审计 |
-| `tools/` | 29 | 233 KB | ✅ | 诊断与产物脚本（含改稿包用的表/图生成器） |
-| `results/` | 254 | 1.4 MB | ✅ | 每条 run 的 json（主结果、门槛、配对对比的来源） |
-| `results_ckpt_last/` | 31 | 125 KB | ✅ | `CHECKPOINT_RULE=last` 的原始 runs（`tab:checkpoint` 的来源） |
-| `results_alt_fixedwindow/` | 242 | 1.1 MB | ✅ | 固定窗口切分的稳健性 runs |
-| `logs/` | 47 | 541 KB | ✅ | 建图日志、诊断、`floor_pool_readings*.json`、`checkpoint_rules.json` |
+| `src/` | 11 | 156 KB | ✅ | 抓取、建图、门槛、四个 cell、训练、汇总、审计（10 个 `.py` + `fetch.log`） |
+| `tools/` | 23 | 125 KB | ✅ | 诊断与产物脚本（含改稿包用的表/图生成器） |
+| `results/` | 254 | 963 KB | ✅ | 每条 run 的 json（主结果、门槛、配对对比的来源） |
+| `results_ckpt_last/` | 31 | 72 KB | ✅ | `CHECKPOINT_RULE=last` 的原始 runs（`tab:checkpoint` 的来源） |
+| `results_alt_fixedwindow/` | 242 | 654 KB | ✅ | 固定窗口切分的稳健性 runs |
+| `logs/` | 47 | 438 KB | ✅ | 建图日志、诊断、`floor_pool_readings*.json`、`checkpoint_rules.json` |
 | `data/graphs/` | 5 | 1.8 MB | ✅ | **冻结图快照**（npm/maven 的 `*_graph.json.gz` + `*_stats.json`） |
 | `data/seeds/` | 1 | 45 KB | ✅ | Maven 的额外种子记录 |
-| `data/raw_maven/` | 2,022 | 8.0 MB | ✅ | Maven Central 原始元数据快照（见 §3 的口径说明） |
+| `data/raw_maven/` | 2,022 | 1.1 MB | ✅ | Maven Central 原始元数据快照（见 §3 的口径说明；小文件多，占盘约 8 MB） |
 | `assets/` | 1 | 85 KB | ✅ | 机制图原图（改标签前的版本，供对照） |
-| `MANIFEST.json`、`requirements.txt`、`run_all.sh`、`README.md`、`PUBLISH.md` | 5 | — | ✅ | 配置、依赖、一键复现、主文档、本文档 |
+| `.gitignore`、`.gitattributes`、`LICENSE`、`CITATION.cff`、`MANIFEST.json`、`requirements.txt`、`run_all.sh`、`README.md`、`PUBLISH.md` | 9 | 62 KB | ✅ | 配置、依赖、授权、引用信息、一键复现、主文档、本文档 |
 | **`data/raw_npm/`** | 4,959 | **2.7 GB** | ❌ | 见 §2 |
 | **`data/bundles/`** | 22 | 98 MB | ❌ | 见 §2 |
 
-总计约 **13 MB**，`raw_npm` 一个目录就占全仓体积的 96%（2.7 GB / 2.8 GB）。
+合计 **2,646 个文件 / 约 5.5 MB 内容**（`du` 口径约 13 MB，因为 `raw_maven` 有 2,022 个小文件）；
+`raw_npm` 一个目录就占全仓体积的 96%（2.7 GB / 2.8 GB）。
+
+> `CITATION.cff` 与 `.gitattributes` 是 2026-09-27 补的：前者给 GitHub/Zenodo 提供正确的引用信息，
+> 后者让冻结产物保持字节稳定（原样存储全部文件，只把 `summary.csv` 规范成 LF —— `csv.writer`
+> 在各平台都写 CRLF，不统一的话在 Linux 上重跑 `summarize.py` 会无意义地显示该文件被改动）。
 
 ## 2. 为什么排除这两个
 

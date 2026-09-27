@@ -1,0 +1,7 @@
+# Keep frozen artifacts byte-stable across platforms.
+# Store every file as-is (no line-ending conversion / no text normalisation),
+# EXCEPT summary.csv, which csv.writer emits with CRLF on every platform.
+# Without unifying it to LF, re-running summarize.py on Linux would show the
+# file as spuriously modified. See PUBLISH.md (2026-09-27 note).
+* -text
+summary.csv text eol=lf

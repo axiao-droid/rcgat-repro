@@ -421,4 +421,4 @@
       re-selected per cell: {'gat_dir': 'c4_h128_d0.5', 'ragat_sym': 'c3_h64_d0.5', 'gat_time': 'c2_h64_d0.2', 'ragat_time': 'c1_h128_d0.2'}; recorded {'gat_dir': 'c4_h128_d0.5', 'ragat_sym': 'c3_h64_d0.5', 'gat_time': 'c2_h64_d0.2', 'ragat_time': 'c1_h128_d0.2'}
   [PASS] G maven: the frozen configs equal the re-selected ones
 
-audit written to /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/audit.json; 0 failing checks
+audit written to results/audit.json; 0 failing checks

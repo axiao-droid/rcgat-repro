@@ -1,5 +1,5 @@
 === [1/3] download wheel Sat Sep 26 06:01:12 UTC 2026 ===
--rw-r--r-- 1 appuser appuser 184378187 Sep 26 06:00 /tmp/torch-2.9.1+cpu-cp312-cp312-manylinux_2_28_x86_64.whl
+-rw-r--r-- 1 user user 184378187 Sep 26 06:00 /tmp/torch-2.9.1+cpu-cp312-cp312-manylinux_2_28_x86_64.whl
 === [2/3] install torch Sat Sep 26 06:01:12 UTC 2026 ===
 Defaulting to user installation because normal site-packages is not writeable
 Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
@@ -21,9 +21,9 @@ Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.9.1+cpu)
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 325.2 MB/s eta 0:00:00
 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/site-packages (from jinja2->torch==2.9.1+cpu) (3.0.3)
 Installing collected packages: mpmath, sympy, setuptools, fsspec, torch
-  WARNING: The script isympy is installed in '/home/appuser/.local/bin' which is not on PATH.
+  WARNING: The script isympy is installed in '~/.local/bin' which is not on PATH.
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-  WARNING: The scripts torchfrtrace and torchrun are installed in '/home/appuser/.local/bin' which is not on PATH.
+  WARNING: The scripts torchfrtrace and torchrun are installed in '~/.local/bin' which is not on PATH.
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 Successfully installed fsspec-2026.9.0 mpmath-1.3.0 setuptools-84.0.0 sympy-1.14.0 torch-2.9.1+cpu
 
@@ -36,7 +36,7 @@ Collecting torch_geometric==2.8.0.post1
   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/14/5c/edf74a71249ad19aa0390fb97ff021e2a5b04ce23252730014e1feac957e/torch_geometric-2.8.0.post1-py3-none-any.whl (1.3 MB)
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 16.3 MB/s eta 0:00:00
 Requirement already satisfied: aiohttp in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (3.13.3)
-Requirement already satisfied: fsspec in /home/appuser/.local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (2026.9.0)
+Requirement already satisfied: fsspec in ~/.local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (2026.9.0)
 Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (3.1.6)
 Requirement already satisfied: numpy in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (2.4.6)
 Requirement already satisfied: psutil>=5.8.0 in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (7.2.2)
@@ -60,7 +60,7 @@ Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/s
 Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/site-packages (from requests->torch_geometric==2.8.0.post1) (2026.2.25)
 Requirement already satisfied: typing-extensions>=4.2 in /usr/local/lib/python3.12/site-packages (from aiosignal>=1.4.0->aiohttp->torch_geometric==2.8.0.post1) (4.15.0)
 Installing collected packages: xxhash, tqdm, torch_geometric
-  WARNING: The script tqdm is installed in '/home/appuser/.local/bin' which is not on PATH.
+  WARNING: The script tqdm is installed in '~/.local/bin' which is not on PATH.
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 Successfully installed torch_geometric-2.8.0.post1 tqdm-4.70.1 xxhash-4.0.1
 

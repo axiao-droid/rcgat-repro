@@ -28,4 +28,4 @@ floor A: 0.1566 ± 0.0022   floor B: 0.1731 ± 0.0033
 | ragat_time | 0.1652 | 0.1731 | -0.0079 | 7/10 |
 
 The mixed row is the diagnostic point: it is the only combination tried here that reproduces the manuscript's sign (cells below a content floor) on most seeds.
-written /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/logs/floor_pool_readings.json
+written logs/floor_pool_readings.json

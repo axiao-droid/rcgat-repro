@@ -8,7 +8,7 @@
   reading A: candidates/pool rule=window-excluded  floor=0.1559 (181 src / 494 pos)  model=0.1796  diff=+0.0237  above floor
   reading B: candidates/pool rule=all-but-source  floor=0.1692 (205 src / 693 pos)  model=0.1826  diff=+0.0134  above floor
 
-written /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/logs/diag_alt_candidates.json
+written logs/diag_alt_candidates.json
 
 === summary (test MRR) ===
 | model | floor A (window-excluded) | model A | ΔA | floor B (all-but-source) | model B | ΔB |
