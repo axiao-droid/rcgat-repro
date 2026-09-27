@@ -30,7 +30,11 @@ keywords:
   - reproducibility
   - npm
   - Maven
-# doi: "10.5281/zenodo.XXXXXXX"   # TODO: the Zenodo DOI of this software release.  This is *not* the paper DOI -- the paper DOI belongs under preferred-citation.
+doi: "10.5281/zenodo.22985669"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22985668"
+    description: "Concept DOI (resolves to the latest version of this software)"
 preferred-citation:
   type: article
   title: "When Do Structural Mechanisms Help Dependency Link Prediction? A Content-Floor-Controlled Study on npm and Maven"
