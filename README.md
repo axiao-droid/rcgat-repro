@@ -203,9 +203,12 @@ Maven: 1 484 − 104 − 1 = 1 379    （论文写 1 376；本包 1 079，因节
 | `tools/make_revision_tables.py` | 生成改稿包用的四张表（主表 / 配对 / 协议敏感性 / 检查点策略），表格结构与稿件一致，可直接替换 | `results/revision_tables/*.tex`；§8 |
 | `tools/make_revision_figures.py` | 用重建结果重画三张结果图（主结果、配对对比、逐种子门控差），旧图与旧数字绑定、必须一起换 | `results/revision_figures/*.pdf`；§8 |
 | `tools/make_revision_figure_datasets.py` | 重画数据集图 `fig_datasets.pdf`（改稿后只画 npm/Maven：出/入度 CCDF + 节点到达曲线，含两图的节点日期口径差异） | `results/revision_figures/fig_datasets.pdf`；§8 |
-| `tools/fix_fig_mechanism_labels.py` | 在**作者原图**（`assets/fig_mechanism.original.pdf`，即投稿树里的那一版）上局部改字：把门控框里的 `g_d = 1 + tanh(MLP(ρ(u)))` 与 `MLP zero-init` 改成单层线性写法（`w^T ρ(u) + b`，14 参数/gate），架构示意不动；以 Nimbus Roman 子集重排，字体全部内嵌 | `results/revision_figures/fig_mechanism.pdf`；§8 |
+| `tools/fix_fig_mechanism_labels.py` | **（历史，已被下面的重绘取代；保留用于复现当时的产物）** 在**作者原图**（`assets/fig_mechanism.original.pdf`，即投稿树里的那一版）上局部改字：把门控框里的 `g_d = 1 + tanh(MLP(ρ(u)))` 与 `MLP zero-init` 改成单层线性写法（`w^T ρ(u) + b`，14 参数/gate），架构示意不动；以 Nimbus Roman 子集重排，字体全部内嵌 | `results/revision_figures/fig_mechanism.pdf`；§8 |
+| `tools/fix_fig_mechanism_arrows.py` | **（历史，已被下面的重绘取代）** 在**改字版机制图**上修两处绘制缺陷：(a) 把 `×g_out` 标签整体平移 (+1.10, −25.66) pt 到 out-view 节点正上方——原位置正好被门控箭头的箭头尖压住下标 `out`，平移规则与 `×g_in` 完全一致（左缘 = 节点 x0 − 0.63，底 = 节点顶 − 3.44）；(b) 三处连接箭头原来只剩一个箭头尖（间隙 5.56 / 6.90 / 3.93 pt 装不下 4.4 pt 长的头加杆），重新按「底边贴源框、尖点内切进目标框描边」摆放，并给 embedding→cosine 补 1.8 pt 可见杆。只用 4 个小矩形做 redaction（`REMOVE_IF_COVERED`，不碰相邻的 ⊗ 与框），输出整数坐标加固定 trailer `/ID`，两次运行字节一致 | `results/revision_figures/fig_mechanism.pdf`；§8 |
+| `tools/make_fig_mechanism.py` | 机制图**重绘**（取代上面改字 + 修箭头两步）：按最终印刷尺寸作图，PDF 页幅 415 × 232 pt（sn-jnl 单栏正文宽），所以脚本里写的 6.1–7.2 pt **就是**印刷字号——原图 762 pt 宽被缩到 0.545 倍，9.5 pt 实际只印出 ≈5.2 pt，这才是“挤、糊、压”的根因。Nimbus Sans（Helvetica 同族）三个子集全部内嵌；`freeze_pdf_id()` 冻结 PyMuPDF 的随机 trailer `/ID`，连续三次构建字节一致 | `results/revision_figures/fig_mechanism.pdf` + `.svg` + `.png`；§8 |
+| `tools/check_fig_occlusion.py` | 机制图**遮挡审计**（可验证，不靠肉眼）：按基线取全部文字墨迹框与全部线段两两求交，报文字互压 / 线段穿字 / 文字越框三类问题与最小净距。实测 111 词 / 208 线段 / 14 容器：`text_text_overlaps 0`、`line_ink_hits 0`、`words_crossing_a_border 0`、最小净距 **1.05 pt**，`RESULT: PASS` | 终端报告；§8 |
 | `tools/scan_stale_numbers.py` | 扫描稿件树里**已被重跑退休**的数字与论断（旧门槛 0.1565/0.3377、旧门控增益 0.0297/0.0311、旧模型规模 4,962/1,484、旧测试规模 234/686、旧"引用网络作控制"表述…），逐条给出"原值 → 新值"和命中行；退出码非 0 便于当发布门 | 改稿前原稿命中 109 处 / 19 个文件；装完改稿包后 **0 处**；§8 |
-| `tools/check_revision_package.py` | 自检改稿包：把包 `apply.sh` 装进一份临时稿件副本，再检查 `\input` 是否解析、`\ref` 是否有 `\label`、`\label` 是否重复、`\begin/\end`、括号与 `$` 是否配平、是否仍引用已退休的 `tab:citation` | 20 个 .tex / 49 个 label / 43 个引用，全通过（唯一 warning 是 `fig_mechanism.pdf` 不在测试夹具里）；§8 |
+| `tools/check_revision_package.py` | 自检改稿包：把包 `apply.sh` 装进一份临时稿件副本，再检查 `\input` 是否解析、`\ref` 是否有 `\label`、`\label` 是否重复、`\begin/\end`、括号与 `$` 是否配平、是否仍引用已退休的 `tab:citation` | 本次实测 20 个 .tex / 52 个 label / 62 个引用，`all structural checks passed`、**0 warning**（早期文档里那条 `fig_mechanism.pdf` 未解析的 warning 已不复现：包自带全部 5 张图）；§8 |
 
 `ranking.evaluate_ranking` 原来是逐节点 Python 循环（每个来源对 4 600 个候选做一次列表推导 + 字典
 建排名），npm 上一次评测 5.5 s，占单个训练任务 wall time 的约 75%（7.6 s/epoch，一次 tuning 配置
@@ -415,7 +418,8 @@ tables/table_dataset_stats.tex          # tab:datasets（本次快照重算）
 tables/table_dataset_overview.tex       # tab:data_overview（上块重算，下块标注"未重跑"）
 tables/table_configs.tex                # 网格表（只改 caption：调参种子 11、按图与 cell 选择）
 figures/fig_{main_results,gate_contrast,gate_perseed,datasets}.pdf
-figures/fig_mechanism.pdf               # 作者原图改字版（MLP -> linear layer）
+figures/fig_mechanism.pdf               # 机制图：重绘版（make_fig_mechanism.py 生成，真矢量 + 真文字，零遮挡）
+figures/fig_mechanism.svg               # 同一份坐标导出的可编辑 SVG（114 个真 <text>）
 original/                               # 改稿前的原始文件 + 未改字的 fig_mechanism.original.pdf
 CHANGELOG-numbers.md                    # 入口文档：逐句变更 + 需作者确认的 S-28、S-32..S-34
 apply.sh                                # 自动判定布局、自动 .bak、支持 --dry-run
@@ -427,9 +431,15 @@ apply.sh                                # 自动判定布局、自动 .bak、支
 python tools/make_revision_tables.py --out results/revision_tables   # 四张结果表
 python tools/make_revision_figures.py --out results                  # 三张结果图
 python tools/make_revision_figure_datasets.py                        # 数据集图
-python tools/fix_fig_mechanism_labels.py --src <原图> --out <新图>   # 机制图标签改写
+python tools/make_fig_mechanism.py --out results/revision_figures --stem fig_mechanism
+                                                                     # 机制图重绘（PDF + 可编辑 SVG + 预览 PNG）
+python tools/check_fig_occlusion.py results/revision_figures/fig_mechanism.pdf
+                                                                     # 遮挡审计，期望 RESULT: PASS
+# 历史工具（改字版 + 修箭头版，已被重绘取代，仅用于复现当时产物）：
+#   python tools/fix_fig_mechanism_labels.py --src assets/fig_mechanism.original.pdf --out <新图>
+#   python tools/fix_fig_mechanism_arrows.py --src <改字版> --out <新图>
 python tools/gate_within_config.py                                   # 同配置门控复核（逐 cell 调参的混淆）
-python tools/check_revision_package.py                               # 改稿包结构自检（20 文件 / 52 label / 61 ref，全通过）
+python tools/check_revision_package.py                               # 改稿包结构自检（实测 20 文件 / 52 label / 62 ref，0 warning）
 python tools/scan_stale_numbers.py /path/to/manuscript               # 旧数字残留扫描（装包后应为 0）
 python src/audit.py                                                  # 414/414 PASS
 ```
@@ -450,7 +460,7 @@ python src/audit.py                                                  # 414/414 P
   `src/audit.py` 的 check D3 本来就是**重建后再复算**门槛（不读缓存），
   所以缺失不影响任何审计；`run_all.sh` 已强制单线程 BLAS 保证 SVD bitwise 稳定。
 
-排除这两个目录后，可发布子集体积约 **13 MB / 2,650 个文件**（`data/raw_maven/` 8 MB 建议保留：
+排除这两个目录后，可发布子集体积约 **13.5 MB / 2,651 个文件**（`data/raw_maven/` 8 MB 建议保留：
 论文对 Maven 快照有披露，发出快照才能让该披露被逐一核对）。
 
 一键打包（在本仓库的上一级目录执行）：
@@ -460,3 +470,8 @@ tar czf rcgat-repro-publishable.tar.gz \
   --exclude='repro/data/raw_npm' --exclude='repro/data/bundles' \
   --exclude='__pycache__' --exclude='*.pyc' repro
 ```
+
+打包结果是**逐字节可复现的**（GNU tar + gzip 在本环境下两次运行 sha256 相同；换 tar/gzip 版本
+不保证一致）。发布的那一份文件名带日期（`rcgat-repro-publishable-2026-09-27.tar.gz`），
+文件名、字节数与 sha256 记在 `AUTHOR-ACTIONS.md` §15 与 `CHANGELOG-numbers.md` §16，
+不与包内容互相引用，避免自指。

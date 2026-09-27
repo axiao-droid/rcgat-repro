@@ -12,7 +12,8 @@ torch_geometric>=2.6
 #
 # --- used only by the figure scripts in tools/ ----------------------------
 matplotlib>=3.8         # tools/make_revision_figures.py, tools/make_revision_figure_datasets.py
-PyMuPDF>=1.24           # tools/fix_fig_mechanism_labels.py  (imported as `fitz`)
+PyMuPDF>=1.24           # tools/make_fig_mechanism.py, tools/check_fig_occlusion.py,
+                        # tools/fix_fig_mechanism_{labels,arrows}.py  (as `fitz`)
 #
 # --- not imported by the pipeline, kept for interactive use ---------------
 pandas>=2.0
@@ -21,4 +22,6 @@ networkx>=3.0
 # Note: matplotlib and PyMuPDF above are NOT needed to reproduce any number in
 # the paper -- only to regenerate the figures. They are listed here so that a
 # fresh `pip install -r requirements.txt` can also run tools/make_revision_*.py
-# and tools/fix_fig_mechanism_labels.py.
+# and tools/{make_fig_mechanism,check_fig_occlusion,fix_fig_mechanism_labels,fix_fig_mechanism_arrows}.py.
+# The mechanism figure is set in Nimbus Sans: `apt-get install fonts-urw-base35`
+# (or point URW_FONT_DIR at that folder) if it is missing.
