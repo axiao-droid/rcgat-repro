@@ -1,16 +1,42 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the associated paper as below."
-title: "When Do Structural Mechanisms Help Dependency Link Prediction? A Content-Floor-Controlled Study on npm and Maven"
+message: "If you use this software, please cite the paper below."
+title: "rcgat-repro: reproduction package for direction-aware attention gating in dependency link prediction on npm and Maven"
+type: software
+abstract: >-
+  Reproduction package for a study of direction-aware attention gating in
+  directed dependency link prediction on npm and Maven.  It rebuilds both
+  directed package-dependency graphs, calibrates an explicit TF-IDF content
+  floor, trains a direction-aware gated GAT together with its ungated baseline
+  and three structural baselines over ten seeds per graph, and reports paired
+  intervals under a pre-registered judgment rule.  The headline result is a null
+  result for the gate, plus a protocol diagnosis (candidate-pool definition,
+  content floor, checkpoint policy) of the apparent positive effect reported in
+  an earlier round.
 authors:
   - family-names: Jiang
     given-names: Runxiao
-    # orcid: "0000-0000-0000-0000"   # TODO: fill real ORCID before archiving
-  - family-names: Xie
-    given-names: Jialiang
-    # orcid: "0000-0000-0000-0000"   # TODO: fill real ORCID before archiving
-journal: "Empirical Software Engineering"
-year: 2026
-url: "https://github.com/axiao-droid/rcgat-repro"
-repository-code: "https://github.com/axiao-droid/rcgat-repro"
+    affiliation: "School of Science, Jimei University, 185 Yinjiang Road, Xiamen 361021, Fujian, China"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: replace with the real ORCID.  Must be the full https://orcid.org/... URL: the CFF 1.2.0 schema rejects a bare digit string.
 license: MIT
-# doi: "10.1007/s10664-0xx-xxxx-x"   # TODO: fill after acceptance / Zenodo mint
+version: "1.0.0"
+date-released: "2026-09-27"
+repository-code: "https://github.com/axiao-droid/rcgat-repro"
+url: "https://github.com/axiao-droid/rcgat-repro"
+keywords:
+  - dependency networks
+  - link prediction
+  - graph attention network
+  - content floor
+  - reproducibility
+  - npm
+  - Maven
+# doi: "10.5281/zenodo.XXXXXXX"   # TODO: the Zenodo DOI of this software release.  This is *not* the paper DOI -- the paper DOI belongs under preferred-citation.
+preferred-citation:
+  type: article
+  title: "When Do Structural Mechanisms Help Dependency Link Prediction? A Content-Floor-Controlled Study on npm and Maven"
+  authors:
+    - family-names: Jiang
+      given-names: Runxiao
+  journal: "Empirical Software Engineering"
+  year: 2026
+  # doi: "10.1007/s10664-0xx-xxxx-x"   # TODO: fill in the article DOI once the paper is accepted.
