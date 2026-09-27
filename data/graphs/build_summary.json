@@ -1,0 +1,40 @@
+{
+  "npm": {
+    "nodes": 4959,
+    "edges": 13602,
+    "avg_out": 2.7428917120387175,
+    "avg_in": 2.7428917120387175,
+    "density": 0.0005532254360707376,
+    "reciprocity": 0.000882223202470225,
+    "max_out": 167,
+    "max_in": 254,
+    "date_min": "2010-12-19",
+    "date_max": "2026-09-17",
+    "nodes_with_out": 3081,
+    "src_count": 4959,
+    "isolated_nodes": 64,
+    "min_edges_rule": 0,
+    "sha256_gz": "fd6773075e5a89734f9f86030e92a56c8a9c83d5cb86c65b9be52af0fb6e510e",
+    "gz_bytes": 1748235,
+    "raw_json_bytes": 6350859
+  },
+  "maven": {
+    "nodes": 1664,
+    "edges": 5651,
+    "avg_out": 3.3960336538461537,
+    "avg_in": 3.3960336538461537,
+    "density": 0.0020421128405569175,
+    "reciprocity": 0.0,
+    "max_out": 122,
+    "max_in": 214,
+    "date_min": "2021-04-24",
+    "date_max": "2026-09-25",
+    "nodes_with_out": 1218,
+    "src_count": 1664,
+    "isolated_nodes": 218,
+    "min_edges_rule": 0,
+    "sha256_gz": "fc479ad09fb64a9e3385fb2f26ba271fd40715d3b259f8a04fdeb13d252390e6",
+    "gz_bytes": 68482,
+    "raw_json_bytes": 391246
+  }
+}

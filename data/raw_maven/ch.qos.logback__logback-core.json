@@ -1,0 +1,1 @@
+{"ga": "ch.qos.logback:logback-core", "group": "ch.qos.logback", "artifact": "logback-core", "latest": "1.6.4", "first_date": "2006-08-23", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 174, "name": "Logback Core Module", "description": "logback-core module", "deps": {}}

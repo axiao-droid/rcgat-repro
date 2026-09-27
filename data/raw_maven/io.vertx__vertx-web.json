@@ -1,0 +1,1 @@
+{"ga": "io.vertx:vertx-web", "group": "io.vertx", "artifact": "vertx-web", "latest": "5.2.0", "first_date": "2015-06-01", "latest_date": "2026-09-18", "latest_is_prerelease": false, "n_versions": 178, "name": "vertx-web", "description": "", "deps": {"io.vertx:vertx-web-common": "", "io.vertx:vertx-auth-common": "", "io.vertx:vertx-bridge-common": ""}}

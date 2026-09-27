@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-split-layout-flow", "group": "com.vaadin", "artifact": "vaadin-split-layout-flow", "latest": "25.2.9", "first_date": "2018-06-22", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 577, "name": "Vaadin Split Layout", "description": "Vaadin Split Layout", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

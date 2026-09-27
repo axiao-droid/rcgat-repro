@@ -1,0 +1,1 @@
+{"ga": "com.sun.jersey:jersey-core", "group": "com.sun.jersey", "artifact": "jersey-core", "latest": "1.19.4", "first_date": "2011-08-26", "latest_date": "2017-05-24", "latest_is_prerelease": false, "n_versions": 39, "name": "jersey-core", "description": "", "deps": {"javax.ws.rs:jsr311-api": ""}}

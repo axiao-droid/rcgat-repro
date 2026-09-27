@@ -1,0 +1,1 @@
+{"ga": "com.google.re2j:re2j", "group": "com.google.re2j", "artifact": "re2j", "latest": "1.8", "first_date": "2015-02-18", "latest_date": "2025-01-09", "latest_is_prerelease": false, "n_versions": 9, "name": "RE2/J", "description": "Linear time regular expressions for Java", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "com.esotericsoftware:reflectasm", "group": "com.esotericsoftware", "artifact": "reflectasm", "latest": "1.11.9", "first_date": "2014-07-21", "latest_date": "2019-03-18", "latest_is_prerelease": false, "n_versions": 10, "name": "ReflectASM", "description": "High performance Java reflection using code generation", "deps": {}}

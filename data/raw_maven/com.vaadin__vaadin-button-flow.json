@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-button-flow", "group": "com.vaadin", "artifact": "vaadin-button-flow", "latest": "25.2.9", "first_date": "2018-06-22", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 579, "name": "Vaadin Button", "description": "Vaadin Button", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

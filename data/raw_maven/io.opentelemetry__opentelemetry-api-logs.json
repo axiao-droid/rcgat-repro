@@ -1,0 +1,1 @@
+{"ga": "io.opentelemetry:opentelemetry-api-logs", "group": "io.opentelemetry", "artifact": "opentelemetry-api-logs", "latest": "1.26.0-alpha", "first_date": "2022-10-07", "latest_date": "2023-05-05", "latest_is_prerelease": true, "n_versions": 10, "name": "OpenTelemetry Java", "description": "OpenTelemetry Logs API", "deps": {"io.opentelemetry:opentelemetry-api": "1.26.0"}}

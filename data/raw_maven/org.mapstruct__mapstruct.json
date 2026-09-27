@@ -1,0 +1,1 @@
+{"ga": "org.mapstruct:mapstruct", "group": "org.mapstruct", "artifact": "mapstruct", "latest": "1.6.3", "first_date": "2013-06-02", "latest_date": "2026-06-27", "latest_is_prerelease": false, "n_versions": 49, "name": "MapStruct Core", "description": "An annotation processor for generating type-safe bean mappers", "deps": {}}

@@ -1,0 +1,31 @@
+seed 121: floor A=0.0932 (29/63)  floor B=0.1409 (106/327)  cands 1547 / 1663
+seed 122: floor A=0.0929 (29/63)  floor B=0.1416 (106/327)  cands 1547 / 1663
+seed 123: floor A=0.0989 (29/63)  floor B=0.1480 (106/327)  cands 1547 / 1663
+seed 124: floor A=0.0866 (29/63)  floor B=0.1411 (106/327)  cands 1547 / 1663
+seed 125: floor A=0.0900 (29/63)  floor B=0.1459 (106/327)  cands 1547 / 1663
+seed 126: floor A=0.0926 (29/63)  floor B=0.1386 (106/327)  cands 1547 / 1663
+seed 127: floor A=0.0997 (29/63)  floor B=0.1432 (106/327)  cands 1547 / 1663
+seed 128: floor A=0.0898 (29/63)  floor B=0.1463 (106/327)  cands 1547 / 1663
+seed 129: floor A=0.0887 (29/63)  floor B=0.1412 (106/327)  cands 1547 / 1663
+seed 130: floor A=0.0900 (29/63)  floor B=0.1459 (106/327)  cands 1547 / 1663
+
+floor A: 0.0922 ± 0.0042   floor B: 0.1433 ± 0.0031
+
+=== matched reading (models and floor both under A) ===
+| model | mean model A | mean floor A | mean Δ | seeds below floor |
+|---|---|---|---|---|
+| gat_dir | 0.1038 | 0.0922 | +0.0116 | 1/10 |
+| ragat_sym | 0.1024 | 0.0922 | +0.0102 | 2/10 |
+| gat_time | 0.1038 | 0.0922 | +0.0115 | 1/10 |
+| ragat_time | 0.1030 | 0.0922 | +0.0108 | 1/10 |
+
+=== mixed reading (models under A, floor credited under B) ===
+| model | mean model A | mean floor B | mean Δ | seeds below floor |
+|---|---|---|---|---|
+| gat_dir | 0.1038 | 0.1433 | -0.0394 | 10/10 |
+| ragat_sym | 0.1024 | 0.1433 | -0.0409 | 10/10 |
+| gat_time | 0.1038 | 0.1433 | -0.0395 | 10/10 |
+| ragat_time | 0.1030 | 0.1433 | -0.0403 | 10/10 |
+
+The mixed row is the diagnostic point: it is the only combination tried here that reproduces the manuscript's sign (cells below a content floor) on most seeds.
+written logs/floor_pool_readings_maven.json

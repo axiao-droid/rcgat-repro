@@ -1,0 +1,1 @@
+{"ga": "org.awaitility:awaitility", "group": "org.awaitility", "artifact": "awaitility", "latest": "4.3.0", "first_date": "2016-06-17", "latest_date": "2025-02-21", "latest_is_prerelease": false, "n_versions": 23, "name": "Awaitility", "description": "A Java DSL for synchronizing asynchronous operations", "deps": {"org.hamcrest:hamcrest": ""}}

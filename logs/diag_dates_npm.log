@@ -1,0 +1,6 @@
+
+=== npm ===  published: nodes=4962 edges=13596 sources=234 positives=686 cand=4614
+  [created/latest-deps       ] {"nodes": 4959, "edges": 13606, "n_test": 347, "cand": 4611, "max_out": 167, "max_in": 254, "dmin": "2010-12-19", "dmax": "2026-09-17", "src_any_out": 205, "src_nontest_target": 3027, "pairs_t2t": 689, "pairs_t2n": 12913}
+  [modified/latest-deps      ] {"nodes": 4959, "edges": 13606, "n_test": 347, "cand": 4611, "max_out": 167, "max_in": 254, "dmin": "2022-04-04", "dmax": "2026-09-25", "src_any_out": 265, "src_nontest_target": 3015, "pairs_t2t": 1047, "pairs_t2n": 12555}
+  [latest/latest-deps        ] {"nodes": 4959, "edges": 13606, "n_test": 347, "cand": 4611, "max_out": 167, "max_in": 254, "dmin": "2012-01-02", "dmax": "2026-09-25", "src_any_out": 280, "src_nontest_target": 3010, "pairs_t2t": 1045, "pairs_t2n": 12557}
+  [created/all-versions-deps ] {"nodes": 4959, "edges": 30870, "n_test": 347, "cand": 4611, "max_out": 286, "max_in": 319, "dmin": "2010-12-19", "dmax": "2026-09-17", "src_any_out": 218, "src_nontest_target": 3495, "pairs_t2t": 740, "pairs_t2n": 22985}

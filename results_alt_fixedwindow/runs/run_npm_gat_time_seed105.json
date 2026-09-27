@@ -1,0 +1,94 @@
+{
+  "dataset": "npm",
+  "model": "gat_time",
+  "registry_model": "gat_time",
+  "seed": 105,
+  "grid_id": "c3_h64_d0.5",
+  "config": {
+    "id": "c3_h64_d0.5",
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.001,
+    "heads": 4
+  },
+  "floor": {
+    "mrr": 0.1576229302950971,
+    "hits@10": 0.26519337016574585,
+    "hits@100": 0.6077348066298343,
+    "sources": 181,
+    "positives": 494,
+    "candidates_mean": 4611.0
+  },
+  "floor_val": {
+    "mrr": 0.16380293747471258,
+    "hits@10": 0.35447761194029853,
+    "hits@100": 0.664179104477612,
+    "sources": 268,
+    "positives": 940,
+    "candidates_mean": 4611.0
+  },
+  "graph_built_at": "2026-09-25T14:19:02+00:00",
+  "fit_window_metadata": {
+    "dataset": "npm",
+    "seed": 105,
+    "n_nodes": 4959,
+    "n_edges": 13602,
+    "fit_nodes": 4207,
+    "val_nodes": 405,
+    "test_nodes": 347,
+    "fit_edges": 11901,
+    "val_edges": 1008,
+    "test_edges": 693,
+    "cutoff": "2025-05-12",
+    "split_rule": "node_date_quantile_fixed_fraction_per_seed",
+    "f_test": 0.07,
+    "f_val": 0.08,
+    "jitter": 0.05
+  },
+  "feature_metadata": {
+    "type": "tfidf_svd_content_floor",
+    "fit_scope": "fit_window_only",
+    "dim": 300,
+    "tfidf_max_features": 20000,
+    "tfidf_token_pattern": "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*",
+    "tfidf_stopwords": "english",
+    "tfidf_min_df": 1,
+    "svd_n_iter": 10,
+    "svd_random_state": 42,
+    "tfidf_sublinear": true,
+    "l2_normalised": true,
+    "floor_reference": {
+      "npm": 0.1565,
+      "maven": 0.3377
+    }
+  },
+  "edge_time_edges": {
+    "fit": 11901,
+    "val": 1008,
+    "test": 693
+  },
+  "wall_seconds": 240.3,
+  "phase": "final",
+  "best_epoch": 94,
+  "init_val_mrr": 0.16380293747471258,
+  "select_from_init": false,
+  "epochs_run": 100,
+  "param_count": 123009,
+  "train_seconds": 238.1,
+  "val": {
+    "mrr": 0.1858435564475509,
+    "hits@10": 0.35447761194029853,
+    "hits@100": 0.6828358208955224,
+    "sources": 268,
+    "positives": 940,
+    "candidates_mean": 4611.0
+  },
+  "test": {
+    "mrr": 0.17043592985395375,
+    "hits@10": 0.292817679558011,
+    "hits@100": 0.6022099447513812,
+    "sources": 181,
+    "positives": 494,
+    "candidates_mean": 4611.0
+  }
+}

@@ -1,0 +1,1 @@
+{"ga": "net.razorvine:pickle", "group": "net.razorvine", "artifact": "pickle", "latest": "1.5", "first_date": "2020-01-19", "latest_date": "2023-11-19", "latest_is_prerelease": false, "n_versions": 6, "name": "pickle", "description": "A feature complete pickle protocol implementation (Python's builtin serialization mechanism)", "deps": {}}

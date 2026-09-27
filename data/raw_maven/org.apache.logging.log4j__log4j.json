@@ -1,0 +1,1 @@
+{"ga": "org.apache.logging.log4j:log4j", "group": "org.apache.logging.log4j", "artifact": "log4j", "latest": "2.25.5", "first_date": "2012-07-29", "latest_date": "2026-07-01", "latest_is_prerelease": false, "n_versions": 78, "name": "Apache Log4j Parent", "description": "Apache Log4j Parent", "deps": {}}

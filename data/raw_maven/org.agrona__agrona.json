@@ -1,0 +1,1 @@
+{"ga": "org.agrona:agrona", "group": "org.agrona", "artifact": "agrona", "latest": "2.6.1", "first_date": "2017-01-23", "latest_date": "2026-09-17", "latest_is_prerelease": false, "n_versions": 104, "name": "agrona", "description": "High performance primitives and utility library.", "deps": {}}

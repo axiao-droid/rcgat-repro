@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:com.vaadin.hilla.gradle.plugin", "group": "com.vaadin", "artifact": "com.vaadin.hilla.gradle.plugin", "latest": "25.2.10", "first_date": "2024-06-11", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 172, "name": "Gradle Plugin portal for Hilla Engine", "description": "", "deps": {"com.vaadin:hilla-gradle-plugin": "25.2.10"}}

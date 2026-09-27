@@ -1,0 +1,1 @@
+{"ga": "com.google.auto.service:auto-service-annotations", "group": "com.google.auto.service", "artifact": "auto-service-annotations", "latest": "1.1.1", "first_date": "2019-03-25", "latest_date": "2023-06-12", "latest_is_prerelease": false, "n_versions": 8, "name": "AutoService", "description": "Provider-configuration files for ServiceLoader.", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.snakeyaml:snakeyaml-engine", "group": "org.snakeyaml", "artifact": "snakeyaml-engine", "latest": "3.1.1", "first_date": "2018-09-08", "latest_date": "2026-08-07", "latest_is_prerelease": false, "n_versions": 17, "name": "SnakeYAML Engine", "description": "Core YAML 1.2 parser and emitter for Java", "deps": {}}

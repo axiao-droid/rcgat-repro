@@ -1,0 +1,1 @@
+{"ga": "org.scala-lang:scala-actors", "group": "org.scala-lang", "artifact": "scala-actors", "latest": "2.11.12", "first_date": "2008-11-24", "latest_date": "2017-11-03", "latest_is_prerelease": false, "n_versions": 59, "name": "Scala Actors library", "description": "Deprecated Actors Library for Scala", "deps": {"org.scala-lang:scala-library": "2.11.12"}}

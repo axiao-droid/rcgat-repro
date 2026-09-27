@@ -1,0 +1,1 @@
+{"ga": "org.apache.maven:maven-api", "group": "org.apache.maven", "artifact": "maven-api", "latest": "4.0.0-rc-7", "first_date": "2022-10-15", "latest_date": "2026-09-21", "latest_is_prerelease": true, "n_versions": 20, "name": "Maven 4 API", "description": "A new immutable API for Maven 4 to better manage what plugins and extensions can influence.", "deps": {}}

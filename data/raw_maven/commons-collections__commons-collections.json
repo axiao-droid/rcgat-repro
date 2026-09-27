@@ -1,0 +1,1 @@
+{"ga": "commons-collections:commons-collections", "group": "commons-collections", "artifact": "commons-collections", "latest": "3.2.2", "first_date": "2005-09-20", "latest_date": "2015-11-12", "latest_is_prerelease": false, "n_versions": 17, "name": "Apache Commons Collections", "description": "Types that extend and augment the Java Collections Framework.", "deps": {}}

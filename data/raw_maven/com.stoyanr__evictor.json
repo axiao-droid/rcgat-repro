@@ -1,0 +1,1 @@
+{"ga": "com.stoyanr:evictor", "group": "com.stoyanr", "artifact": "evictor", "latest": "1.0.0", "first_date": "2016-02-27", "latest_date": "2016-02-27", "latest_is_prerelease": false, "n_versions": 1, "name": "Evictor", "description": "A concurrent map with timed element eviction", "deps": {}}

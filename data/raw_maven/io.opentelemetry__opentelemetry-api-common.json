@@ -1,0 +1,1 @@
+{"ga": "io.opentelemetry:opentelemetry-api-common", "group": "io.opentelemetry", "artifact": "opentelemetry-api-common", "latest": "0.13.1", "first_date": "2020-12-17", "latest_date": "2020-12-17", "latest_is_prerelease": false, "n_versions": 2, "name": "OpenTelemetry Java", "description": "OpenTelemetry API", "deps": {}}

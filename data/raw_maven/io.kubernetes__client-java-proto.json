@@ -1,0 +1,1 @@
+{"ga": "io.kubernetes:client-java-proto", "group": "io.kubernetes", "artifact": "client-java-proto", "latest": "27.0.0", "first_date": "2017-09-25", "latest_date": "2026-07-01", "latest_is_prerelease": false, "n_versions": 80, "name": "client-java-proto", "description": "", "deps": {"com.google.protobuf:protobuf-java": ""}}

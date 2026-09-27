@@ -1,0 +1,4 @@
+grid=c1_h128_d0.2  trainer val: ep1=0.1563  ep20=0.1608  ep40=0.1627  ep100=0.1695
+trainer  val=0.1695  test=0.1599  floor=0.1559  best_epoch=100  epochs_run=100
+compared 51 epochs  max|Δval| = 0  trainer ep100=0.169476  diag=0.169476
+IDENTICAL

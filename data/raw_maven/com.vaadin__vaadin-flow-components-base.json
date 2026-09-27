@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-flow-components-base", "group": "com.vaadin", "artifact": "vaadin-flow-components-base", "latest": "25.2.9", "first_date": "2022-06-07", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 397, "name": "Vaadin Flow Components Base", "description": "", "deps": {"com.vaadin:flow-data": "25.2.10"}}

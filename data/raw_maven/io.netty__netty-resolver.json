@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-resolver", "group": "io.netty", "artifact": "netty-resolver", "latest": "4.2.18.Final", "first_date": "2015-03-03", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 181, "name": "Netty/Resolver", "description": "", "deps": {"org.mockito:mockito-core": ""}}

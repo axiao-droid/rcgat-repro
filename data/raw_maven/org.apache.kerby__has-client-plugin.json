@@ -1,0 +1,1 @@
+{"ga": "org.apache.kerby:has-client-plugin", "group": "org.apache.kerby", "artifact": "has-client-plugin", "latest": "2.0.3", "first_date": "2019-01-08", "latest_date": "2023-02-09", "latest_is_prerelease": false, "n_versions": 4, "name": "HAS Client Plugin", "description": "", "deps": {"org.apache.kerby:has-client": "${project.version}", "org.ini4j:ini4j": "${ini4j.version}"}}

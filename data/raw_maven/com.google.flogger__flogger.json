@@ -1,0 +1,1 @@
+{"ga": "com.google.flogger:flogger", "group": "com.google.flogger", "artifact": "flogger", "latest": "0.9", "first_date": "2018-04-20", "latest_date": "2025-05-16", "latest_is_prerelease": false, "n_versions": 15, "name": "Flogger", "description": "A Fluent Logging API for Java", "deps": {"org.jspecify:jspecify": "1.0.0"}}

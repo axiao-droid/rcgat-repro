@@ -1,0 +1,1 @@
+{"ga": "org.apache.flink:flink-annotations", "group": "org.apache.flink", "artifact": "flink-annotations", "latest": "2.3.0", "first_date": "2016-03-03", "latest_date": "2026-06-14", "latest_is_prerelease": false, "n_versions": 119, "name": "Flink : Annotations", "description": "", "deps": {"org.slf4j:slf4j-api": "1.7.36", "com.google.code.findbugs:jsr305": "1.3.9"}}

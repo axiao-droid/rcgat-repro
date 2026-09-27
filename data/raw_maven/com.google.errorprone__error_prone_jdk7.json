@@ -1,0 +1,1 @@
+{"ga": "com.google.errorprone:error_prone_jdk7", "group": "com.google.errorprone", "artifact": "error_prone_jdk7", "latest": "1.1.2", "first_date": "2014-05-23", "latest_date": "2014-05-23", "latest_is_prerelease": false, "n_versions": 1, "name": "", "description": "", "deps": {"com.google.errorprone:error_prone_jdkcompat": "${project.version}"}}

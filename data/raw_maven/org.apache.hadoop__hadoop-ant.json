@@ -1,0 +1,1 @@
+{"ga": "org.apache.hadoop:hadoop-ant", "group": "org.apache.hadoop", "artifact": "hadoop-ant", "latest": "2.10.2", "first_date": "2014-11-13", "latest_date": "2022-05-25", "latest_is_prerelease": false, "n_versions": 26, "name": "Apache Hadoop Ant Tasks", "description": "Apache Hadoop Ant Tasks", "deps": {}}

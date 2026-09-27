@@ -1,0 +1,1 @@
+{"ga": "at.yawk.lz4:lz4-java", "group": "at.yawk.lz4", "artifact": "lz4-java", "latest": "1.11.3", "first_date": "2025-11-26", "latest_date": "2026-09-12", "latest_is_prerelease": false, "n_versions": 11, "name": "LZ4 Java Compression", "description": "Java bindings and pure Java implementations of LZ4 and XXHash", "deps": {}}

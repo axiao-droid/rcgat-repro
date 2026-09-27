@@ -1,0 +1,1 @@
+{"ga": "org.jetbrains:annotations", "group": "org.jetbrains", "artifact": "annotations", "latest": "26.1.0", "first_date": "2013-12-17", "latest_date": "2026-02-18", "latest_is_prerelease": false, "n_versions": 24, "name": "JetBrains Java Annotations", "description": "A set of annotations used for code inspection support and code documentation.", "deps": {}}

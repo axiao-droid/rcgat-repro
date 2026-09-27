@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:hprof-heap", "group": "org.gridkit.jvmtool", "artifact": "hprof-heap", "latest": "0.2", "first_date": "2014-08-24", "latest_date": "2021-01-27", "latest_is_prerelease": false, "n_versions": 36, "name": "${project.groupId}::${project.artifactId}", "description": "HPROF heap dump parser", "deps": {"org.gridkit.gzrand:gzrand": "0.2"}}

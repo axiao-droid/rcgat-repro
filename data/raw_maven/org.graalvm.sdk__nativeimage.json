@@ -1,0 +1,1 @@
+{"ga": "org.graalvm.sdk:nativeimage", "group": "org.graalvm.sdk", "artifact": "nativeimage", "latest": "25.4.4.1.1", "first_date": "2023-09-18", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 35, "name": "Nativeimage", "description": "A framework that allows to customize native image generation.", "deps": {"org.graalvm.sdk:word": "25.4.4.1.1"}}

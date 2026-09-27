@@ -1,0 +1,1 @@
+{"ga": "com.google.code.findbugs:bcel-findbugs", "group": "com.google.code.findbugs", "artifact": "bcel-findbugs", "latest": "6.0", "first_date": "2014-07-10", "latest_date": "2014-07-10", "latest_is_prerelease": false, "n_versions": 1, "name": "FindBugs-bcel", "description": "Modified BCEL for Findbugs", "deps": {}}

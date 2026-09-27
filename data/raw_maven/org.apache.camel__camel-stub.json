@@ -1,0 +1,1 @@
+{"ga": "org.apache.camel:camel-stub", "group": "org.apache.camel", "artifact": "camel-stub", "latest": "4.22.1", "first_date": "2019-02-17", "latest_date": "2026-09-13", "latest_is_prerelease": false, "n_versions": 158, "name": "Camel :: Stub", "description": "Camel Stub component", "deps": {"org.apache.camel:camel-seda": "4.22.1"}}

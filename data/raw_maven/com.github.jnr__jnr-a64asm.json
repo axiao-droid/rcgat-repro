@@ -1,0 +1,1 @@
+{"ga": "com.github.jnr:jnr-a64asm", "group": "com.github.jnr", "artifact": "jnr-a64asm", "latest": "1.0.0", "first_date": "2018-09-06", "latest_date": "2018-09-06", "latest_is_prerelease": false, "n_versions": 1, "name": "jnr-a64asm", "description": "A pure-java A64 assembler", "deps": {}}

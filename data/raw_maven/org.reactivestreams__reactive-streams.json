@@ -1,0 +1,1 @@
+{"ga": "org.reactivestreams:reactive-streams", "group": "org.reactivestreams", "artifact": "reactive-streams", "latest": "1.0.4", "first_date": "2014-06-28", "latest_date": "2022-05-22", "latest_is_prerelease": false, "n_versions": 21, "name": "reactive-streams", "description": "A Protocol for Asynchronous Non-Blocking Data Sequence", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.jboss.jdeparser:jdeparser", "group": "org.jboss.jdeparser", "artifact": "jdeparser", "latest": "2.1.0", "first_date": "2012-10-31", "latest_date": "2026-01-15", "latest_is_prerelease": false, "n_versions": 11, "name": "JDeparser", "description": "A simple Java source generation library", "deps": {}}

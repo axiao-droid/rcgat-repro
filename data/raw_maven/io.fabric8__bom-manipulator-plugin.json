@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:bom-manipulator-plugin", "group": "io.fabric8", "artifact": "bom-manipulator-plugin", "latest": "7.5.2", "first_date": "2026-01-15", "latest_date": "2026-01-22", "latest_is_prerelease": false, "n_versions": 2, "name": "Fabric8 :: BOM Manipulator Plugin", "description": "Maven plugin to copy build plugins from release profile to BOMs", "deps": {}}

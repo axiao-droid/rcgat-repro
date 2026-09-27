@@ -1,0 +1,1 @@
+{"ga": "org.antlr:antlr4-runtime-test-annotations", "group": "org.antlr", "artifact": "antlr4-runtime-test-annotations", "latest": "4.9.3", "first_date": "2016-12-15", "latest_date": "2021-11-06", "latest_is_prerelease": false, "n_versions": 10, "name": "ANTLR 4 Runtime Test Annotations", "description": "The ANTLR 4 Runtime", "deps": {}}

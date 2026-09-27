@@ -1,0 +1,1 @@
+{"ga": "javax.xml.bind:jaxb-api", "group": "javax.xml.bind", "artifact": "jaxb-api", "latest": "2.3.1", "first_date": "2006-09-16", "latest_date": "2018-09-12", "latest_is_prerelease": false, "n_versions": 36, "name": "", "description": "", "deps": {"javax.activation:javax.activation-api": ""}}

@@ -1,0 +1,18 @@
+[npm seed=101 60ep] gat_dir
+  reading A: candidates/pool rule=window-excluded  floor=0.1559 (181 src / 494 pos)  model=0.1679  diff=+0.0120  above floor
+  reading B: candidates/pool rule=all-but-source  floor=0.1692 (205 src / 693 pos)  model=0.1758  diff=+0.0066  above floor
+[npm seed=101 60ep] ragat_sym
+  reading A: candidates/pool rule=window-excluded  floor=0.1559 (181 src / 494 pos)  model=0.1571  diff=+0.0012  above floor
+  reading B: candidates/pool rule=all-but-source  floor=0.1692 (205 src / 693 pos)  model=0.1722  diff=+0.0030  above floor
+[npm seed=101 60ep] gat_time
+  reading A: candidates/pool rule=window-excluded  floor=0.1559 (181 src / 494 pos)  model=0.1796  diff=+0.0237  above floor
+  reading B: candidates/pool rule=all-but-source  floor=0.1692 (205 src / 693 pos)  model=0.1826  diff=+0.0134  above floor
+
+written /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/logs/diag_alt_candidates.json
+
+=== summary (test MRR) ===
+| model | floor A (window-excluded) | model A | ΔA | floor B (all-but-source) | model B | ΔB |
+|---|---|---|---|---|---|---|
+| gat_dir | 0.1559 (181/494) | 0.1679 | +0.0120 | 0.1692 (205/693) | 0.1758 | +0.0066 |
+| ragat_sym | 0.1559 (181/494) | 0.1571 | +0.0012 | 0.1692 (205/693) | 0.1722 | +0.0030 |
+| gat_time | 0.1559 (181/494) | 0.1796 | +0.0237 | 0.1692 (205/693) | 0.1826 | +0.0134 |

@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:jcl-over-slf4j", "group": "org.slf4j", "artifact": "jcl-over-slf4j", "latest": "2.0.20", "first_date": "2008-06-09", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 96, "name": "JCL 1.2 implemented over SLF4J", "description": "JCL 1.2 implemented over SLF4J", "deps": {"org.slf4j:slf4j-api": ""}}

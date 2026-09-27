@@ -1,0 +1,1 @@
+{"ga": "javax.servlet:javax.servlet-api", "group": "javax.servlet", "artifact": "javax.servlet-api", "latest": "4.0.1", "first_date": "2011-07-12", "latest_date": "2018-04-20", "latest_is_prerelease": false, "n_versions": 20, "name": "Java Servlet API", "description": "", "deps": {}}

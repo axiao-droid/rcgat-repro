@@ -1,0 +1,1 @@
+{"ga": "org.apache.camel:camel-health", "group": "org.apache.camel", "artifact": "camel-health", "latest": "4.22.1", "first_date": "2020-06-14", "latest_date": "2026-09-13", "latest_is_prerelease": false, "n_versions": 146, "name": "Camel :: Health", "description": "Camel Health Support", "deps": {"org.apache.camel:camel-core-engine": "4.22.1", "org.slf4j:slf4j-api": "2.0.18"}}

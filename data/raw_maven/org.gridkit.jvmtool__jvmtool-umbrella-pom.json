@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:jvmtool-umbrella-pom", "group": "org.gridkit.jvmtool", "artifact": "jvmtool-umbrella-pom", "latest": "0.23", "first_date": "2014-06-10", "latest_date": "2024-01-24", "latest_is_prerelease": false, "n_versions": 43, "name": "${project.groupId}::${project.artifactId}", "description": "JVM tools, parent project", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "io.micronaut:bom", "group": "io.micronaut", "artifact": "bom", "latest": "1.0.0.RC1", "first_date": "2018-08-10", "latest_date": "2018-12-19", "latest_is_prerelease": true, "n_versions": 6, "name": "Micronaut", "description": "Natively Cloud Native", "deps": {}}

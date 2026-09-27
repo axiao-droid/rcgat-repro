@@ -1,0 +1,1 @@
+{"ga": "com.j256.ormlite:ormlite-core", "group": "com.j256.ormlite", "artifact": "ormlite-core", "latest": "6.1", "first_date": "2010-09-14", "latest_date": "2021-12-20", "latest_is_prerelease": false, "n_versions": 63, "name": "ORMLite Core", "description": "Lightweight Object Relational Model (ORM) for persisting objects to SQL databases.", "deps": {}}

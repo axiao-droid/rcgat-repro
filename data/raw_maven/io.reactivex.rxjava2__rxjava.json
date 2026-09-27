@@ -1,0 +1,1 @@
+{"ga": "io.reactivex.rxjava2:rxjava", "group": "io.reactivex.rxjava2", "artifact": "rxjava", "latest": "2.2.21", "first_date": "2016-08-25", "latest_date": "2021-02-13", "latest_is_prerelease": false, "n_versions": 57, "name": "RxJava", "description": "Reactive Extensions for Java", "deps": {"org.reactivestreams:reactive-streams": "1.0.3"}}

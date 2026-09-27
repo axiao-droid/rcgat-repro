@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:com.vaadin.gradle.plugin", "group": "com.vaadin", "artifact": "com.vaadin.gradle.plugin", "latest": "25.2.9", "first_date": "2021-11-30", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 423, "name": "vaadin gradle plugin portal", "description": "", "deps": {"com.vaadin:vaadin-gradle-plugin": "25.2.9"}}

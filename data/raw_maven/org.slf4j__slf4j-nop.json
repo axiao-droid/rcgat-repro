@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:slf4j-nop", "group": "org.slf4j", "artifact": "slf4j-nop", "latest": "2.0.20", "first_date": "2005-10-20", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 118, "name": "SLF4J NOP Provider", "description": "SLF4J NOP Provider", "deps": {"org.slf4j:slf4j-api": ""}}

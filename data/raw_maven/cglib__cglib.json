@@ -1,0 +1,1 @@
+{"ga": "cglib:cglib", "group": "cglib", "artifact": "cglib", "latest": "3.3.0", "first_date": "2005-09-20", "latest_date": "2019-08-12", "latest_is_prerelease": false, "n_versions": 28, "name": "", "description": "", "deps": {"org.ow2.asm:asm": "", "junit:junit": ""}}

@@ -1,0 +1,1 @@
+{"ga": "io.quarkus:quarkus-fs-util", "group": "io.quarkus", "artifact": "quarkus-fs-util", "latest": "1.4.2", "first_date": "2021-12-03", "latest_date": "2026-06-15", "latest_is_prerelease": false, "n_versions": 16, "name": "Quarkus - FS Util", "description": "Quarkus Filesystem Utils", "deps": {}}

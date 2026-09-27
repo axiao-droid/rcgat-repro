@@ -1,0 +1,1 @@
+{"ga": "io.vertx:lang-jython", "group": "io.vertx", "artifact": "lang-jython", "latest": "2.1.1", "first_date": "2013-05-16", "latest_date": "2015-12-30", "latest_is_prerelease": false, "n_versions": 9, "name": "mod-lang-jython", "description": "Vert.x module that provides Python support with Jython", "deps": {}}

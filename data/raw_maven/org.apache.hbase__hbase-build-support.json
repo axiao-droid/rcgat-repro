@@ -1,0 +1,1 @@
+{"ga": "org.apache.hbase:hbase-build-support", "group": "org.apache.hbase", "artifact": "hbase-build-support", "latest": "2.0.6", "first_date": "2018-01-13", "latest_date": "2019-08-14", "latest_is_prerelease": false, "n_versions": 14, "name": "Apache HBase - Build Support", "description": "Parent module for build-support artifacts", "deps": {}}

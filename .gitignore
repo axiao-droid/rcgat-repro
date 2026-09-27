@@ -1,0 +1,38 @@
+# ---- large raw data: NEVER commit ----------------------------------------
+# npm raw registry metadata: 4,959 files / 2.7 GB, regenerable in ~30 minutes
+# with `python3 -u src/fetch_npm.py` (Huawei Cloud mirror). See PUBLISH.md.
+data/raw_npm/
+
+# TF-IDF + truncated-SVD feature cache (22 files / 98 MB), rebuilt on demand by
+# src/content_floor.py::build_bundle(). src/audit.py re-builds it rather than
+# reading it, so it is never required. See PUBLISH.md.
+data/bundles/
+
+# ---- kept on purpose (small, and part of the frozen evidence) ------------
+# data/graphs/          1.8 MB   frozen graph snapshots
+# data/seeds/            45 KB   split records
+# data/raw_maven/       8.0 MB   Maven snapshot (the paper discloses it, so it
+#                                is shipped so that the disclosure is checkable)
+# results/              1.4 MB   per-run JSON, the source of every table
+# results_ckpt_last/   125 KB   CHECKPOINT_RULE=last runs (tab:checkpoint)
+# results_alt_fixedwindow/ 1.1 MB  fixed-window robustness runs
+# logs/                 541 KB   build logs + protocol diagnostics
+
+# ---- python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- editor / OS ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# ---- accidental large artefacts -----------------------------------------
+*.tar.gz
+*.zip
+*.pt

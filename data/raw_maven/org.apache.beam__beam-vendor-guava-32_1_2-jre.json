@@ -1,0 +1,1 @@
+{"ga": "org.apache.beam:beam-vendor-guava-32_1_2-jre", "group": "org.apache.beam", "artifact": "beam-vendor-guava-32_1_2-jre", "latest": "0.1", "first_date": "2023-08-03", "latest_date": "2023-08-03", "latest_is_prerelease": false, "n_versions": 1, "name": "Apache Beam :: Vendored Dependencies :: Guava 32.1.2-jre", "description": "", "deps": {}}

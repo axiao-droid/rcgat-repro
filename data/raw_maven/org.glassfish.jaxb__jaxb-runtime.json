@@ -1,0 +1,1 @@
+{"ga": "org.glassfish.jaxb:jaxb-runtime", "group": "org.glassfish.jaxb", "artifact": "jaxb-runtime", "latest": "4.0.9", "first_date": "2014-03-11", "latest_date": "2026-05-28", "latest_is_prerelease": false, "n_versions": 45, "name": "JAXB Runtime", "description": "JAXB (JSR 222) Reference Implementation", "deps": {}}

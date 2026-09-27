@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-java", "group": "io.cucumber", "artifact": "cucumber-java", "latest": "8.0.1", "first_date": "2017-08-29", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 154, "name": "Cucumber-JVM: Java", "description": "", "deps": {"io.cucumber:cucumber-core": "", "org.apiguardian:apiguardian-api": "${apiguardian-api.version}"}}

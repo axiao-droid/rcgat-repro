@@ -1,0 +1,1 @@
+{"ga": "org.mariadb.jdbc:mariadb-java-client", "group": "org.mariadb.jdbc", "artifact": "mariadb-java-client", "latest": "3.5.10", "first_date": "2014-04-04", "latest_date": "2026-07-29", "latest_is_prerelease": false, "n_versions": 135, "name": "mariadb-java-client", "description": "JDBC driver for MariaDB and MySQL", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.apache.spark:spark-bagel_2.10", "group": "org.apache.spark", "artifact": "spark-bagel_2.10", "latest": "1.6.3", "first_date": "2014-01-24", "latest_date": "2016-11-02", "latest_is_prerelease": false, "n_versions": 22, "name": "Spark Project Bagel", "description": "", "deps": {"org.apache.spark:spark-core_2.10": "1.6.3"}}

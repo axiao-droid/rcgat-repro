@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-memcache", "group": "io.netty", "artifact": "netty-codec-memcache", "latest": "4.2.18.Final", "first_date": "2013-12-22", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 185, "name": "Netty/Codec/Memcache", "description": "", "deps": {"org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

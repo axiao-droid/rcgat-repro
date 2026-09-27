@@ -1,0 +1,1 @@
+{"ga": "org.jboss.weld:lang-model-tck", "group": "org.jboss.weld", "artifact": "lang-model-tck", "latest": "7.0.0.Final", "first_date": "2022-01-23", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 36, "name": "CDI Lite Language Model TCK", "description": "", "deps": {"org.jboss.weld:weld-lite-extension-translator": ""}}

@@ -1,0 +1,1 @@
+{"ga": "org.rxtx:rxtx", "group": "org.rxtx", "artifact": "rxtx", "latest": "2.1.7", "first_date": "2007-04-26", "latest_date": "2007-04-26", "latest_is_prerelease": false, "n_versions": 1, "name": "RXTX serial and parallel I/O libraries", "description": "RXTX is a native lib providing serial and parallel communication for the Java Development Toolkit (JDK).", "deps": {}}

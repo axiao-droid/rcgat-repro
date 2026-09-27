@@ -1,0 +1,1 @@
+{"ga": "com.google.code.gson:gson", "group": "com.google.code.gson", "artifact": "gson", "latest": "2.14.0", "first_date": "2008-08-10", "latest_date": "2026-04-23", "latest_is_prerelease": false, "n_versions": 44, "name": "Gson", "description": "", "deps": {"com.google.errorprone:error_prone_annotations": "2.48.0"}}

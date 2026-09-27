@@ -1,0 +1,1 @@
+{"ga": "org.apache.spark:spark-tags_2.13", "group": "org.apache.spark", "artifact": "spark-tags_2.13", "latest": "4.1.3", "first_date": "2021-10-06", "latest_date": "2026-07-12", "latest_is_prerelease": false, "n_versions": 46, "name": "Spark Project Tags", "description": "", "deps": {"org.scala-lang:scala-library": "2.13.17"}}

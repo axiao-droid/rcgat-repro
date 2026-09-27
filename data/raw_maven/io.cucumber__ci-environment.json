@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:ci-environment", "group": "io.cucumber", "artifact": "ci-environment", "latest": "15.0.0", "first_date": "2021-12-08", "latest_date": "2026-08-05", "latest_is_prerelease": false, "n_versions": 19, "name": "Cucumber CiEnvironment", "description": "Detect CI Environment from environment variables", "deps": {"org.jspecify:jspecify": "[1.0.0,2.0.0)"}}

@@ -1,0 +1,1 @@
+{"ga": "com.fasterxml:classmate", "group": "com.fasterxml", "artifact": "classmate", "latest": "1.7.3", "first_date": "2010-11-16", "latest_date": "2026-01-02", "latest_is_prerelease": false, "n_versions": 22, "name": "ClassMate", "description": "Library for introspecting types with full generic information including resolving of field and method types.", "deps": {}}

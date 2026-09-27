@@ -1,0 +1,1 @@
+{"ga": "org.springframework:spring-beans", "group": "org.springframework", "artifact": "spring-beans", "latest": "7.0.9", "first_date": "2005-11-26", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 333, "name": "Spring Beans", "description": "Spring Beans", "deps": {"org.springframework:spring-core": "7.0.9"}}

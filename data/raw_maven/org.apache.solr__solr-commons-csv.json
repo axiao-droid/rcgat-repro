@@ -1,0 +1,1 @@
+{"ga": "org.apache.solr:solr-commons-csv", "group": "org.apache.solr", "artifact": "solr-commons-csv", "latest": "3.5.0", "first_date": "2008-09-17", "latest_date": "2011-11-25", "latest_is_prerelease": false, "n_versions": 8, "name": "Solr Specific Commons CSV", "description": "Solr Specific Commons CSV v1.0-SNAPSHOT-r966014", "deps": {}}

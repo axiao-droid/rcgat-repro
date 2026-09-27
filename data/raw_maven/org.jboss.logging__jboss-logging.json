@@ -1,0 +1,1 @@
+{"ga": "org.jboss.logging:jboss-logging", "group": "org.jboss.logging", "artifact": "jboss-logging", "latest": "3.6.3.Final", "first_date": "2010-02-16", "latest_date": "2026-03-17", "latest_is_prerelease": false, "n_versions": 38, "name": "JBoss Logging 3", "description": "The JBoss Logging Framework", "deps": {}}

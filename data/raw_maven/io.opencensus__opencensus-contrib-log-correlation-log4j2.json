@@ -1,0 +1,1 @@
+{"ga": "io.opencensus:opencensus-contrib-log-correlation-log4j2", "group": "io.opencensus", "artifact": "opencensus-contrib-log-correlation-log4j2", "latest": "0.31.1", "first_date": "2018-09-14", "latest_date": "2022-04-29", "latest_is_prerelease": false, "n_versions": 25, "name": "OpenCensus", "description": "null", "deps": {"io.opencensus:opencensus-api": "0.31.1"}}

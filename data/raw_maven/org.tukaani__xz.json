@@ -1,0 +1,1 @@
+{"ga": "org.tukaani:xz", "group": "org.tukaani", "artifact": "xz", "latest": "1.12", "first_date": "2011-10-22", "latest_date": "2026-03-01", "latest_is_prerelease": false, "n_versions": 13, "name": "XZ for Java", "description": "XZ data compression", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "io.smallrye.common:smallrye-common-bom", "group": "io.smallrye.common", "artifact": "smallrye-common-bom", "latest": "2.21.1", "first_date": "2020-08-06", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 57, "name": "SmallRye Common: BOM", "description": "Centralized dependencyManagement for the SmallRye Common Project", "deps": {}}

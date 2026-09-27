@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:compatibility-kit", "group": "io.cucumber", "artifact": "compatibility-kit", "latest": "31.0.0", "first_date": "2025-09-28", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 19, "name": "Compatibility Kit", "description": "Test data used to validate a Cucumber implementation", "deps": {"org.jspecify:jspecify": "[1.0.0,2.0.0)"}}

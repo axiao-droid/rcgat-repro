@@ -1,0 +1,1 @@
+{"ga": "org.apache.hbase:hbase-checkstyle", "group": "org.apache.hbase", "artifact": "hbase-checkstyle", "latest": "3.0.0", "first_date": "2014-11-15", "latest_date": "2026-07-17", "latest_is_prerelease": false, "n_versions": 213, "name": "Apache HBase - Checkstyle", "description": "Module to hold Checkstyle properties for HBase.", "deps": {}}

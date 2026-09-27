@@ -1,0 +1,1 @@
+{"ga": "org.apache.httpcomponents:httpcomponents-parent", "group": "org.apache.httpcomponents", "artifact": "httpcomponents-parent", "latest": "14", "first_date": "2017-09-20", "latest_date": "2024-09-26", "latest_is_prerelease": false, "n_versions": 6, "name": "Apache HttpComponents Parent", "description": "Apache components to build HTTP enabled services", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "com.google.inject.extensions:guice-servlet", "group": "com.google.inject.extensions", "artifact": "guice-servlet", "latest": "7.0.0", "first_date": "2009-08-01", "latest_date": "2023-05-12", "latest_is_prerelease": false, "n_versions": 22, "name": "Google Guice - Extensions - Servlet", "description": "", "deps": {}}

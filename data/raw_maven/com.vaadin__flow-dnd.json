@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:flow-dnd", "group": "com.vaadin", "artifact": "flow-dnd", "latest": "25.2.10", "first_date": "2019-06-18", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 631, "name": "Generic HTML 5 Drag and Drop support for Flow", "description": "${project.name}", "deps": {"com.vaadin:flow-server": "25.2.10"}}

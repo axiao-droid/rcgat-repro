@@ -1,0 +1,1 @@
+{"ga": "org.apache.flink:flink-agents-dist-flink-1.20", "group": "org.apache.flink", "artifact": "flink-agents-dist-flink-1.20", "latest": "0.3.1", "first_date": "2026-02-01", "latest_date": "2026-07-20", "latest_is_prerelease": false, "n_versions": 4, "name": "Flink Agents : Dist : Flink 1.20", "description": "", "deps": {}}

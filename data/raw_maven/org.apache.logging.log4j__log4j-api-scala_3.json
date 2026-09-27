@@ -1,0 +1,1 @@
+{"ga": "org.apache.logging.log4j:log4j-api-scala_3", "group": "org.apache.logging.log4j", "artifact": "log4j-api-scala_3", "latest": "13.1.0", "first_date": "2023-10-10", "latest_date": "2024-02-01", "latest_is_prerelease": false, "n_versions": 2, "name": "", "description": "", "deps": {"org.apache.logging.log4j:log4j-api": ""}}

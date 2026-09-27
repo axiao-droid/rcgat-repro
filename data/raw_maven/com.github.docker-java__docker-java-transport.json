@@ -1,0 +1,1 @@
+{"ga": "com.github.docker-java:docker-java-transport", "group": "com.github.docker-java", "artifact": "docker-java-transport", "latest": "3.7.1", "first_date": "2020-06-09", "latest_date": "2026-03-18", "latest_is_prerelease": false, "n_versions": 30, "name": "docker-java-transport", "description": "Java API Client for Docker", "deps": {}}

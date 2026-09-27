@@ -1,0 +1,1 @@
+{"ga": "org.testng:testng", "group": "org.testng", "artifact": "testng", "latest": "7.12.0", "first_date": "2006-01-23", "latest_date": "2026-01-22", "latest_is_prerelease": false, "n_versions": 90, "name": "testng", "description": "Testing framework for Java", "deps": {"org.slf4j:slf4j-api": "2.0.16", "org.jcommander:jcommander": "1.83", "org.webjars:jquery": "3.7.1"}}

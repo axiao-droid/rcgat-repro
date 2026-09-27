@@ -1,0 +1,1 @@
+{"ga": "org.jruby.jcodings:jcodings", "group": "org.jruby.jcodings", "artifact": "jcodings", "latest": "1.0.64", "first_date": "2008-11-02", "latest_date": "2026-02-19", "latest_is_prerelease": false, "n_versions": 59, "name": "JCodings", "description": "Byte based encoding support library for java", "deps": {}}

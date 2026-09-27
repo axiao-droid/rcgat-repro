@@ -1,0 +1,1 @@
+{"ga": "org.eclipse.jetty:jetty-io", "group": "org.eclipse.jetty", "artifact": "jetty-io", "latest": "12.1.13", "first_date": "2009-04-03", "latest_date": "2026-09-04", "latest_is_prerelease": false, "n_versions": 441, "name": "Core :: IO", "description": "Jetty I/O Artifact", "deps": {"org.eclipse.jetty:jetty-util": "", "org.slf4j:slf4j-api": ""}}

@@ -1,0 +1,1 @@
+{"ga": "org.apache.beam:beam-it", "group": "org.apache.beam", "artifact": "beam-it", "latest": "2.76.0", "first_date": "2023-10-02", "latest_date": "2026-08-21", "latest_is_prerelease": false, "n_versions": 28, "name": "", "description": "", "deps": {"org.checkerframework:checker-qual": "3.42.0"}}

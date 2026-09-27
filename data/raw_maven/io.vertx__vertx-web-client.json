@@ -1,0 +1,1 @@
+{"ga": "io.vertx:vertx-web-client", "group": "io.vertx", "artifact": "vertx-web-client", "latest": "5.2.0", "first_date": "2017-02-05", "latest_date": "2026-09-18", "latest_is_prerelease": false, "n_versions": 168, "name": "vertx-web-client", "description": "", "deps": {"io.vertx:vertx-uri-template": "", "io.vertx:vertx-web-common": "", "io.vertx:vertx-auth-common": ""}}

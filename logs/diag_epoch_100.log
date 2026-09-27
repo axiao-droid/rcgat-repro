@@ -1,0 +1,59 @@
+[npm seed=101] gat_dir
+    ep  2 loss=1.1458 val=0.1631 test=0.1607 gain_vs_floor=+0.0048
+    ep  4 loss=1.3174 val=0.1636 test=0.1612 gain_vs_floor=+0.0053
+    ep  6 loss=1.1536 val=0.1583 test=0.1545 gain_vs_floor=-0.0014
+    ep  8 loss=1.0019 val=0.1628 test=0.1603 gain_vs_floor=+0.0044
+    ep 10 loss=1.0575 val=0.1634 test=0.1613 gain_vs_floor=+0.0054
+    ep 12 loss=1.0301 val=0.1576 test=0.1611 gain_vs_floor=+0.0052
+    ep 14 loss=0.9841 val=0.1615 test=0.1606 gain_vs_floor=+0.0047
+    ep 16 loss=1.0140 val=0.1618 test=0.1605 gain_vs_floor=+0.0046
+    ep 18 loss=0.9597 val=0.1615 test=0.1609 gain_vs_floor=+0.0050
+    ep 20 loss=0.9856 val=0.1608 test=0.1619 gain_vs_floor=+0.0060
+    ep 22 loss=0.9541 val=0.1619 test=0.1606 gain_vs_floor=+0.0047
+    ep 24 loss=0.9590 val=0.1621 test=0.1609 gain_vs_floor=+0.0050
+    ep 26 loss=0.9596 val=0.1615 test=0.1608 gain_vs_floor=+0.0049
+    ep 28 loss=0.9414 val=0.1612 test=0.1612 gain_vs_floor=+0.0053
+    ep 30 loss=0.9466 val=0.1620 test=0.1609 gain_vs_floor=+0.0050
+    ep 32 loss=0.9375 val=0.1619 test=0.1612 gain_vs_floor=+0.0053
+    ep 34 loss=0.9390 val=0.1619 test=0.1612 gain_vs_floor=+0.0053
+    ep 36 loss=0.9268 val=0.1628 test=0.1624 gain_vs_floor=+0.0065
+    ep 38 loss=0.9309 val=0.1625 test=0.1624 gain_vs_floor=+0.0065
+    ep 40 loss=0.9180 val=0.1627 test=0.1619 gain_vs_floor=+0.0060
+    ep 42 loss=0.9227 val=0.1627 test=0.1621 gain_vs_floor=+0.0062
+    ep 44 loss=0.9135 val=0.1642 test=0.1631 gain_vs_floor=+0.0072
+    ep 46 loss=0.9079 val=0.1663 test=0.1637 gain_vs_floor=+0.0078
+    ep 48 loss=0.8997 val=0.1662 test=0.1665 gain_vs_floor=+0.0106
+    ep 50 loss=0.8950 val=0.1662 test=0.1680 gain_vs_floor=+0.0121
+    ep 52 loss=0.8882 val=0.1651 test=0.1681 gain_vs_floor=+0.0122
+    ep 54 loss=0.8805 val=0.1669 test=0.1683 gain_vs_floor=+0.0124
+    ep 56 loss=0.8718 val=0.1670 test=0.1679 gain_vs_floor=+0.0120
+    ep 58 loss=0.8583 val=0.1642 test=0.1683 gain_vs_floor=+0.0124
+    ep 60 loss=0.8487 val=0.1648 test=0.1641 gain_vs_floor=+0.0082
+    ep 62 loss=0.8377 val=0.1651 test=0.1640 gain_vs_floor=+0.0081
+    ep 64 loss=0.8239 val=0.1652 test=0.1639 gain_vs_floor=+0.0080
+    ep 66 loss=0.8117 val=0.1650 test=0.1632 gain_vs_floor=+0.0073
+    ep 68 loss=0.7971 val=0.1656 test=0.1621 gain_vs_floor=+0.0062
+    ep 70 loss=0.7856 val=0.1655 test=0.1619 gain_vs_floor=+0.0060
+    ep 72 loss=0.7974 val=0.1641 test=0.1598 gain_vs_floor=+0.0039
+    ep 74 loss=0.8063 val=0.1652 test=0.1608 gain_vs_floor=+0.0049
+    ep 76 loss=0.7805 val=0.1675 test=0.1612 gain_vs_floor=+0.0053
+    ep 78 loss=0.7516 val=0.1667 test=0.1618 gain_vs_floor=+0.0059
+    ep 80 loss=0.7392 val=0.1675 test=0.1604 gain_vs_floor=+0.0045
+    ep 82 loss=0.7411 val=0.1668 test=0.1601 gain_vs_floor=+0.0042
+    ep 84 loss=0.7401 val=0.1687 test=0.1598 gain_vs_floor=+0.0039
+    ep 86 loss=0.7391 val=0.1692 test=0.1600 gain_vs_floor=+0.0041
+    ep 88 loss=0.7246 val=0.1691 test=0.1573 gain_vs_floor=+0.0014
+    ep 90 loss=0.7240 val=0.1689 test=0.1609 gain_vs_floor=+0.0050
+    ep 92 loss=0.7213 val=0.1687 test=0.1582 gain_vs_floor=+0.0023
+    ep 94 loss=0.7189 val=0.1694 test=0.1572 gain_vs_floor=+0.0013
+    ep 96 loss=0.7171 val=0.1684 test=0.1591 gain_vs_floor=+0.0032
+    ep 98 loss=0.7096 val=0.1694 test=0.1595 gain_vs_floor=+0.0036
+    ep100 loss=0.7083 val=0.1695 test=0.1599 gain_vs_floor=+0.0040
+  floor=0.1559 | best-val(ep100) test=0.1599 | last-epoch test=0.1599 | min test=0.1545 @ep6 | epochs below floor: 1/50
+
+written /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/logs/diag_epoch.json
+
+=== summary ===
+| model | floor | ep0 | best-val test | last test | min test | #ep<floor |
+|---|---|---|---|---|---|---|
+| gat_dir | 0.1559 | 0.1559 | 0.1599 (ep100) | 0.1599 | 0.1545 (ep6) | 1 |

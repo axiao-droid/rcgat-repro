@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:slf4j-jdk14", "group": "org.slf4j", "artifact": "slf4j-jdk14", "latest": "2.0.20", "first_date": "2005-10-20", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 118, "name": "SLF4J JDK14 Provider", "description": "SLF4J JDK14 Provider", "deps": {"org.slf4j:slf4j-api": ""}}

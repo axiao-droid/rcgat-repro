@@ -1,0 +1,1 @@
+{"ga": "org.pitest:pitest", "group": "org.pitest", "artifact": "pitest", "latest": "1.30.0", "first_date": "2011-07-06", "latest_date": "2026-08-27", "latest_is_prerelease": false, "n_versions": 159, "name": "pitest", "description": "Mutation testing system for Java.", "deps": {"org.ow2.asm:asm": "${asm.version}", "org.ow2.asm:asm-commons": "${asm.version}"}}

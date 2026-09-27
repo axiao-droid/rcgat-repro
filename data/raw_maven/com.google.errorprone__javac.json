@@ -1,0 +1,1 @@
+{"ga": "com.google.errorprone:javac", "group": "com.google.errorprone", "artifact": "javac", "latest": "9+181-r4173-1", "first_date": "2014-08-27", "latest_date": "2018-01-04", "latest_is_prerelease": false, "n_versions": 15, "name": "Error Prone javac", "description": "A repackaged copy of javac", "deps": {}}

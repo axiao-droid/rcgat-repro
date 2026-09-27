@@ -1,0 +1,1 @@
+{"ga": "ch.qos.logback:logback-parent", "group": "ch.qos.logback", "artifact": "logback-parent", "latest": "1.6.4", "first_date": "2006-11-30", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 171, "name": "Logback-Parent", "description": "logback project pom.xml file", "deps": {}}

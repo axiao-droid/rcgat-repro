@@ -1,0 +1,1 @@
+{"ga": "jakarta.transaction:jakarta.transaction-api", "group": "jakarta.transaction", "artifact": "jakarta.transaction-api", "latest": "2.0.1", "first_date": "2018-12-18", "latest_date": "2022-03-31", "latest_is_prerelease": false, "n_versions": 9, "name": "${extension.name} API", "description": "Jakarta Transactions", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "ch.qos.logback:logback-access", "group": "ch.qos.logback", "artifact": "logback-access", "latest": "1.6.4", "first_date": "2006-08-25", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 168, "name": "Logback Access Module Relocated", "description": "logback-access module relocated to its own repository", "deps": {}}

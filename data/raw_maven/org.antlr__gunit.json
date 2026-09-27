@@ -1,0 +1,1 @@
+{"ga": "org.antlr:gunit", "group": "org.antlr", "artifact": "gunit", "latest": "3.5.3", "first_date": "2008-01-18", "latest_date": "2022-04-10", "latest_is_prerelease": false, "n_versions": 16, "name": "ANTLR 3 gUnit", "description": "gUnit grammar testing tool for ANTLR 3", "deps": {"junit:junit": "", "org.antlr:antlr": "${project.version}", "org.antlr:stringtemplate": ""}}

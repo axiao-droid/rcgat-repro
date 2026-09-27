@@ -1,0 +1,1 @@
+{"ga": "com.github.javaparser:javaparser-core", "group": "com.github.javaparser", "artifact": "javaparser-core", "latest": "3.28.2", "first_date": "2015-01-13", "latest_date": "2026-05-31", "latest_is_prerelease": false, "n_versions": 202, "name": "${project.groupId}:${project.artifactId}", "description": "The core parser functionality. This may be all you need.", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "com.github.jnr:jnr-constants", "group": "com.github.jnr", "artifact": "jnr-constants", "latest": "0.11.2", "first_date": "2011-08-06", "latest_date": "2026-09-15", "latest_is_prerelease": false, "n_versions": 33, "name": "jnr-constants", "description": "A set of platform constants (e.g. errno values)", "deps": {}}

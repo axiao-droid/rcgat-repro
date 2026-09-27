@@ -1,0 +1,1 @@
+{"ga": "org.apache.camel:camel-log", "group": "org.apache.camel", "artifact": "camel-log", "latest": "4.22.1", "first_date": "2019-02-17", "latest_date": "2026-09-13", "latest_is_prerelease": false, "n_versions": 158, "name": "Camel :: Log", "description": "Camel Log component", "deps": {"org.apache.camel:camel-support": "4.22.1"}}

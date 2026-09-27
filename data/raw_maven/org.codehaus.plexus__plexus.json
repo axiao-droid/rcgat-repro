@@ -1,0 +1,1 @@
+{"ga": "org.codehaus.plexus:plexus", "group": "org.codehaus.plexus", "artifact": "plexus", "latest": "27", "first_date": "2005-11-08", "latest_date": "2026-08-18", "latest_is_prerelease": false, "n_versions": 56, "name": "Plexus", "description": "Parent POM for the Codehaus Plexus projects, providing shared build, reporting and release configuration.", "deps": {}}

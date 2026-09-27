@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-gherkin-messages", "group": "io.cucumber", "artifact": "cucumber-gherkin-messages", "latest": "8.0.1", "first_date": "2019-12-19", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 113, "name": "Cucumber-JVM: Gherkin Messages", "description": "", "deps": {"io.cucumber:gherkin": "", "io.cucumber:cucumber-gherkin": ""}}

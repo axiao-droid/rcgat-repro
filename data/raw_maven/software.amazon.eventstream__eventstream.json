@@ -1,0 +1,1 @@
+{"ga": "software.amazon.eventstream:eventstream", "group": "software.amazon.eventstream", "artifact": "eventstream", "latest": "1.0.1", "first_date": "2019-04-22", "latest_date": "2019-05-02", "latest_is_prerelease": false, "n_versions": 2, "name": "AWS Event Stream", "description": "The AWS Event Stream decoder library.", "deps": {}}

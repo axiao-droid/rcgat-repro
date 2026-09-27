@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-socks", "group": "io.netty", "artifact": "netty-codec-socks", "latest": "4.2.18.Final", "first_date": "2012-12-03", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 256, "name": "Netty/Codec/Socks", "description": "", "deps": {"org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

@@ -1,0 +1,1 @@
+{"ga": "com.itextpdf:itextpdf", "group": "com.itextpdf", "artifact": "itextpdf", "latest": "5.5.13.6", "first_date": "2011-04-29", "latest_date": "2026-07-22", "latest_is_prerelease": false, "n_versions": 37, "name": "iText Core", "description": "A Free Java-PDF library", "deps": {}}

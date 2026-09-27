@@ -1,0 +1,1 @@
+{"ga": "org.apache.camel:camel-mock", "group": "org.apache.camel", "artifact": "camel-mock", "latest": "4.22.1", "first_date": "2019-06-03", "latest_date": "2026-09-13", "latest_is_prerelease": false, "n_versions": 156, "name": "Camel :: Mock", "description": "Camel Mock component", "deps": {"org.apache.camel:camel-support": "4.22.1"}}

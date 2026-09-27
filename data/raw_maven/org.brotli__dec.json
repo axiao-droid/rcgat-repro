@@ -1,0 +1,1 @@
+{"ga": "org.brotli:dec", "group": "org.brotli", "artifact": "dec", "latest": "0.1.2", "first_date": "2017-02-20", "latest_date": "2017-05-07", "latest_is_prerelease": false, "n_versions": 3, "name": "${project.groupId}:${project.artifactId}", "description": "", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.jboss.weld:weld-api-parent", "group": "org.jboss.weld", "artifact": "weld-api-parent", "latest": "7.0.Final", "first_date": "2009-10-12", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 135, "name": "Weld APIs Parent", "description": "APIs for Weld, the compatible implementation for Jakarta Contexts and Dependency Injection", "deps": {}}

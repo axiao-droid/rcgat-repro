@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-custom-field-flow", "group": "com.vaadin", "artifact": "vaadin-custom-field-flow", "latest": "25.2.9", "first_date": "2019-02-05", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 574, "name": "Vaadin Custom Field", "description": "Vaadin Custom Field", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

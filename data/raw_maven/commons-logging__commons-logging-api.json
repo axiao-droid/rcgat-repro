@@ -1,0 +1,1 @@
+{"ga": "commons-logging:commons-logging-api", "group": "commons-logging", "artifact": "commons-logging-api", "latest": "1.1", "first_date": "2005-09-20", "latest_date": "2006-05-13", "latest_is_prerelease": false, "n_versions": 3, "name": "Logging", "description": "Commons Logging is a thin adapter allowing configurable bridging to other, well known logging systems.", "deps": {}}

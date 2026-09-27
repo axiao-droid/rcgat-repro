@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:kubernetes-model-flowcontrol", "group": "io.fabric8", "artifact": "kubernetes-model-flowcontrol", "latest": "8.0.0", "first_date": "2021-05-19", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 75, "name": "Fabric8 :: Kubernetes Model :: FlowControl", "description": "", "deps": {"io.fabric8:kubernetes-model-core": ""}}

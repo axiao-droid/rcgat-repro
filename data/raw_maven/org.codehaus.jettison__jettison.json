@@ -1,0 +1,1 @@
+{"ga": "org.codehaus.jettison:jettison", "group": "org.codehaus.jettison", "artifact": "jettison", "latest": "1.5.7", "first_date": "2006-11-09", "latest_date": "2026-07-24", "latest_is_prerelease": false, "n_versions": 27, "name": "Jettison", "description": "A StAX implementation for JSON.", "deps": {}}

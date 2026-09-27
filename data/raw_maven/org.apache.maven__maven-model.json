@@ -1,0 +1,1 @@
+{"ga": "org.apache.maven:maven-model", "group": "org.apache.maven", "artifact": "maven-model", "latest": "3.9.16", "first_date": "2006-05-07", "latest_date": "2026-09-21", "latest_is_prerelease": false, "n_versions": 105, "name": "Maven Model", "description": "Model for Maven POM (Project Object Model)", "deps": {"org.codehaus.plexus:plexus-utils": ""}}

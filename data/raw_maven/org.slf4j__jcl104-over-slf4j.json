@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:jcl104-over-slf4j", "group": "org.slf4j", "artifact": "jcl104-over-slf4j", "latest": "1.5.11", "first_date": "2005-10-20", "latest_date": "2010-02-25", "latest_is_prerelease": false, "n_versions": 32, "name": "DEPRECATED - JCL 1.0.4 implemented over SLF4J", "description": "DEPRECATED - JCL implemented over SLF4J", "deps": {}}

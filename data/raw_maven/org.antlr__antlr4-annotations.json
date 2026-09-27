@@ -1,0 +1,1 @@
+{"ga": "org.antlr:antlr4-annotations", "group": "org.antlr", "artifact": "antlr4-annotations", "latest": "4.3", "first_date": "2014-02-04", "latest_date": "2014-06-19", "latest_is_prerelease": false, "n_versions": 4, "name": "ANTLR 4 Runtime Annotations", "description": "A set of annotations used within the ANTLR 4 Runtime", "deps": {}}

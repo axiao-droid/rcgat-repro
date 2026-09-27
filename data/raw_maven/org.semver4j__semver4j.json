@@ -1,0 +1,1 @@
+{"ga": "org.semver4j:semver4j", "group": "org.semver4j", "artifact": "semver4j", "latest": "6.0.0", "first_date": "2022-07-15", "latest_date": "2025-06-28", "latest_is_prerelease": false, "n_versions": 29, "name": "semver4j", "description": "Semantic versioning for Java apps.", "deps": {"org.jspecify:jspecify": "1.0.0"}}

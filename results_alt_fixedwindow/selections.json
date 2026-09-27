@@ -1,0 +1,131 @@
+{
+  "mode": "per_model",
+  "npm": {
+    "shared_grid_id": "c4_h128_d0.5",
+    "shared_mean_cell_val_mrr": 0.182445100413081,
+    "config": {
+      "id": "c4_h128_d0.5",
+      "hidden": 128,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "heads": 4
+    },
+    "per_model_best": {
+      "gat_dir": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.18535264687119402,
+        "tuning_test_mrr": 0.17581222640024408,
+        "param_count": 409601
+      },
+      "ragat_sym": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.18051402307252482,
+        "tuning_test_mrr": 0.1627681885471442,
+        "param_count": 409657
+      },
+      "gat_time": {
+        "grid_id": "c3_h64_d0.5",
+        "tuning_val_mrr": 0.18389340570379345,
+        "tuning_test_mrr": 0.17568301412783496,
+        "param_count": 123009
+      },
+      "ragat_time": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.18776718736143863,
+        "tuning_test_mrr": 0.16434470041783578,
+        "param_count": 409913
+      },
+      "gcn_dir": {
+        "grid_id": "c1_h128_d0.2",
+        "tuning_val_mrr": 0.22857058065331315,
+        "tuning_test_mrr": 0.2172588361792922,
+        "param_count": 208897
+      },
+      "sage_dir": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.19739918485265834,
+        "tuning_test_mrr": 0.21499556604367795,
+        "param_count": 274433
+      },
+      "gatv2_dir": {
+        "grid_id": "c3_h64_d0.5",
+        "tuning_val_mrr": 0.17875192533961023,
+        "tuning_test_mrr": 0.1715469362844329,
+        "param_count": 189441
+      }
+    },
+    "used": {
+      "gat_dir": "c4_h128_d0.5",
+      "ragat_sym": "c4_h128_d0.5",
+      "gat_time": "c3_h64_d0.5",
+      "ragat_time": "c4_h128_d0.5",
+      "gcn_dir": "c1_h128_d0.2",
+      "sage_dir": "c4_h128_d0.5",
+      "gatv2_dir": "c3_h64_d0.5"
+    }
+  },
+  "maven": {
+    "shared_grid_id": "c2_h64_d0.2",
+    "shared_mean_cell_val_mrr": 0.30620040841729057,
+    "config": {
+      "id": "c2_h64_d0.2",
+      "hidden": 64,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "heads": 4
+    },
+    "per_model_best": {
+      "gat_dir": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.3123031774017431,
+        "tuning_test_mrr": 0.11525104345496756,
+        "param_count": 409601
+      },
+      "ragat_sym": {
+        "grid_id": "c3_h64_d0.5",
+        "tuning_val_mrr": 0.31273021974725373,
+        "tuning_test_mrr": 0.09591393580085125,
+        "param_count": 122937
+      },
+      "gat_time": {
+        "grid_id": "c2_h64_d0.2",
+        "tuning_val_mrr": 0.31530331924913235,
+        "tuning_test_mrr": 0.09748519531303577,
+        "param_count": 123009
+      },
+      "ragat_time": {
+        "grid_id": "c1_h128_d0.2",
+        "tuning_val_mrr": 0.30663551781283455,
+        "tuning_test_mrr": 0.11643733000989796,
+        "param_count": 409913
+      },
+      "gcn_dir": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.3057100836026526,
+        "tuning_test_mrr": 0.11214780361862915,
+        "param_count": 208897
+      },
+      "sage_dir": {
+        "grid_id": "c1_h128_d0.2",
+        "tuning_val_mrr": 0.30737818773224335,
+        "tuning_test_mrr": 0.1382797557575654,
+        "param_count": 274433
+      },
+      "gatv2_dir": {
+        "grid_id": "c1_h128_d0.2",
+        "tuning_val_mrr": 0.3007004973679423,
+        "tuning_test_mrr": 0.10223641415987997,
+        "param_count": 673793
+      }
+    },
+    "used": {
+      "gat_dir": "c4_h128_d0.5",
+      "ragat_sym": "c3_h64_d0.5",
+      "gat_time": "c2_h64_d0.2",
+      "ragat_time": "c1_h128_d0.2",
+      "gcn_dir": "c4_h128_d0.5",
+      "sage_dir": "c1_h128_d0.2",
+      "gatv2_dir": "c1_h128_d0.2"
+    }
+  }
+}

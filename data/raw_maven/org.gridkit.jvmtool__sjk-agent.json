@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:sjk-agent", "group": "org.gridkit.jvmtool", "artifact": "sjk-agent", "latest": "0.23", "first_date": "2020-06-28", "latest_date": "2024-01-24", "latest_is_prerelease": false, "n_versions": 8, "name": "${project.groupId}::${project.artifactId}", "description": "JVM agent libary", "deps": {}}

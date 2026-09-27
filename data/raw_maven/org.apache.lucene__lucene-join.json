@@ -1,0 +1,1 @@
+{"ga": "org.apache.lucene:lucene-join", "group": "org.apache.lucene", "artifact": "lucene-join", "latest": "10.5.1", "first_date": "2011-09-09", "latest_date": "2026-08-12", "latest_is_prerelease": false, "n_versions": 136, "name": "Apache Lucene (module: join)", "description": "Apache Lucene (module: join)", "deps": {"org.apache.lucene:lucene-core": "10.5.1"}}

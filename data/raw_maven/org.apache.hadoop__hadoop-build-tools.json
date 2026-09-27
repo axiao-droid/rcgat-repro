@@ -1,0 +1,1 @@
+{"ga": "org.apache.hadoop:hadoop-build-tools", "group": "org.apache.hadoop", "artifact": "hadoop-build-tools", "latest": "3.5.0", "first_date": "2016-08-18", "latest_date": "2026-03-24", "latest_is_prerelease": false, "n_versions": 49, "name": "Apache Hadoop Build Tools", "description": "Apache Hadoop Build Tools Project", "deps": {}}

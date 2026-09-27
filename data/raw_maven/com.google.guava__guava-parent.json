@@ -1,0 +1,1 @@
+{"ga": "com.google.guava:guava-parent", "group": "com.google.guava", "artifact": "guava-parent", "latest": "33.7.1-jre", "first_date": "2010-04-26", "latest_date": "2026-08-18", "latest_is_prerelease": false, "n_versions": 154, "name": "Guava Maven Parent", "description": "Parent for guava artifacts", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "com.google.http-client:google-http-client-bom", "group": "com.google.http-client", "artifact": "google-http-client-bom", "latest": "2.2.0", "first_date": "2018-11-09", "latest_date": "2026-07-20", "latest_is_prerelease": false, "n_versions": 63, "name": "Google HTTP Client Library for Java BOM", "description": "BOM for Google HTTP Client Library for Java", "deps": {}}

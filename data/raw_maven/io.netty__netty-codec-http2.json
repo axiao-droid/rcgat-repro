@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-http2", "group": "io.netty", "artifact": "netty-codec-http2", "latest": "4.2.18.Final", "first_date": "2015-03-03", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 181, "name": "Netty/Codec/HTTP2", "description": "", "deps": {"org.mockito:mockito-core": "", "org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

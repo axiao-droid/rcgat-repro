@@ -1,0 +1,1 @@
+{"ga": "io.smallrye.common:smallrye-common-classloader", "group": "io.smallrye.common", "artifact": "smallrye-common-classloader", "latest": "2.21.1", "first_date": "2020-07-30", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 58, "name": "SmallRye Common: Classloader", "description": "", "deps": {"org.junit.jupiter:junit-jupiter": ""}}

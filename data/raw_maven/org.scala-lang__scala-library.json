@@ -1,0 +1,1 @@
+{"ga": "org.scala-lang:scala-library", "group": "org.scala-lang", "artifact": "scala-library", "latest": "3.9.0", "first_date": "2008-11-24", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 250, "name": "scala-library-bootstrapped", "description": "scala-library-bootstrapped", "deps": {}}

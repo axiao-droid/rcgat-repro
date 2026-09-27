@@ -1,0 +1,1 @@
+{"ga": "org.jboss.weld:weld-spi", "group": "org.jboss.weld", "artifact": "weld-spi", "latest": "7.0.Final", "first_date": "2009-10-12", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 134, "name": "Weld SPIs for container integration", "description": "", "deps": {"jakarta.cdi:jakarta.cdi-el-api": "", "org.jboss.weld:weld-api": "${project.version}"}}

@@ -1,0 +1,1 @@
+{"ga": "org.antlr:antlr4-tool-testsuite", "group": "org.antlr", "artifact": "antlr4-tool-testsuite", "latest": "4.13.2", "first_date": "2015-07-15", "latest_date": "2024-08-03", "latest_is_prerelease": false, "n_versions": 23, "name": "ANTLR 4 Tool Tests", "description": "A collection of tests for ANTLR 4 Runtime libraries.", "deps": {}}

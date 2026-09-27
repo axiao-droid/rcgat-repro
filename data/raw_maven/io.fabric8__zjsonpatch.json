@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:zjsonpatch", "group": "io.fabric8", "artifact": "zjsonpatch", "latest": "8.0.0", "first_date": "2016-06-03", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 21, "name": "Fabric8 :: zjsonpatch", "description": "", "deps": {"tools.jackson.core:jackson-databind": ""}}

@@ -1,0 +1,1 @@
+{"ga": "ch.qos.reload4j:reload4j", "group": "ch.qos.reload4j", "artifact": "reload4j", "latest": "1.2.26", "first_date": "2022-01-12", "latest_date": "2024-12-15", "latest_is_prerelease": false, "n_versions": 14, "name": "reload4j", "description": "Reload4j revives EOLed log4j 1.x", "deps": {}}

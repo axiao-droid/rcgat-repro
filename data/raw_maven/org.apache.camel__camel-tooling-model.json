@@ -1,0 +1,1 @@
+{"ga": "org.apache.camel:camel-tooling-model", "group": "org.apache.camel", "artifact": "camel-tooling-model", "latest": "4.22.1", "first_date": "2020-02-20", "latest_date": "2026-09-13", "latest_is_prerelease": false, "n_versions": 149, "name": "Camel :: Tooling :: Model", "description": "Tooling Model", "deps": {"org.apache.camel:camel-util-json": "4.22.1"}}

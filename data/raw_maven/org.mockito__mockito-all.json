@@ -1,0 +1,1 @@
+{"ga": "org.mockito:mockito-all", "group": "org.mockito", "artifact": "mockito-all", "latest": "1.10.19", "first_date": "2008-03-06", "latest_date": "2015-01-02", "latest_is_prerelease": false, "n_versions": 30, "name": "Mockito", "description": "Mock objects library for java", "deps": {}}

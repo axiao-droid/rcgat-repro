@@ -1,0 +1,1 @@
+{"ga": "com.google.code.findbugs:jsr305", "group": "com.google.code.findbugs", "artifact": "jsr305", "latest": "3.0.2", "first_date": "2013-10-03", "latest_date": "2017-03-31", "latest_is_prerelease": false, "n_versions": 5, "name": "FindBugs-jsr305", "description": "JSR305 Annotations for Findbugs", "deps": {}}

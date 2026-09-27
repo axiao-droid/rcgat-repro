@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:sjk-stacktrace", "group": "org.gridkit.jvmtool", "artifact": "sjk-stacktrace", "latest": "0.23", "first_date": "2015-02-16", "latest_date": "2024-01-24", "latest_is_prerelease": false, "n_versions": 37, "name": "${project.groupId}::${project.artifactId}", "description": "Thread dumps: capture and encoding", "deps": {"org.gridkit.jvmtool:sjk-json": ""}}

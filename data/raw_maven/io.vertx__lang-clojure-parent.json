@@ -1,0 +1,1 @@
+{"ga": "io.vertx:lang-clojure-parent", "group": "io.vertx", "artifact": "lang-clojure-parent", "latest": "1.0.5", "first_date": "2013-08-12", "latest_date": "2015-03-31", "latest_is_prerelease": false, "n_versions": 16, "name": "Clojure Vert.x support parent", "description": "", "deps": {}}

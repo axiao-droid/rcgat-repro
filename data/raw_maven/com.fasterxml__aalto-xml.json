@@ -1,0 +1,1 @@
+{"ga": "com.fasterxml:aalto-xml", "group": "com.fasterxml", "artifact": "aalto-xml", "latest": "1.4.0", "first_date": "2010-10-09", "latest_date": "2026-05-19", "latest_is_prerelease": false, "n_versions": 18, "name": "aalto-xml", "description": "Ultra-high performance non-blocking XML processor (Stax/Stax2, SAX/SAX2)", "deps": {"org.codehaus.woodstox:stax2-api": "4.3.0"}}

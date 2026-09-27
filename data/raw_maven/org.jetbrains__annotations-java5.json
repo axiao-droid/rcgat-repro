@@ -1,0 +1,1 @@
+{"ga": "org.jetbrains:annotations-java5", "group": "org.jetbrains", "artifact": "annotations-java5", "latest": "24.1.0", "first_date": "2015-10-15", "latest_date": "2023-11-15", "latest_is_prerelease": false, "n_versions": 17, "name": "JetBrains Java Annotations", "description": "A set of annotations used for code inspection support and code documentation.", "deps": {}}

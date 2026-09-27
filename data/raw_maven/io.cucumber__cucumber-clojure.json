@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-clojure", "group": "io.cucumber", "artifact": "cucumber-clojure", "latest": "1.2.6", "first_date": "2017-08-29", "latest_date": "2019-11-09", "latest_is_prerelease": false, "n_versions": 3, "name": "Cucumber-JVM: Clojure", "description": "", "deps": {"io.cucumber:cucumber-core": ""}}

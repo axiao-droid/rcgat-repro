@@ -1,0 +1,1 @@
+{"ga": "net.sf.jopt-simple:jopt-simple", "group": "net.sf.jopt-simple", "artifact": "jopt-simple", "latest": "5.0.4", "first_date": "2008-03-27", "latest_date": "2018-09-11", "latest_is_prerelease": false, "n_versions": 45, "name": "JOpt Simple", "description": "A Java library for parsing command line options", "deps": {}}

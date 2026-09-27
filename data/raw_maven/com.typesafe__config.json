@@ -1,0 +1,1 @@
+{"ga": "com.typesafe:config", "group": "com.typesafe", "artifact": "config", "latest": "1.4.9", "first_date": "2012-04-13", "latest_date": "2026-06-03", "latest_is_prerelease": false, "n_versions": 32, "name": "config", "description": "configuration library for JVM languages using HOCON files", "deps": {}}

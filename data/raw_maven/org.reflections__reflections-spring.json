@@ -1,0 +1,1 @@
+{"ga": "org.reflections:reflections-spring", "group": "org.reflections", "artifact": "reflections-spring", "latest": "0.9.9-RC1", "first_date": "2013-03-23", "latest_date": "2013-03-23", "latest_is_prerelease": true, "n_versions": 1, "name": "Reflections Spring plugin", "description": "", "deps": {"org.reflections:reflections": "${project.version}"}}

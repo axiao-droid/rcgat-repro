@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-core", "group": "com.vaadin", "artifact": "vaadin-core", "latest": "25.1.13", "first_date": "2018-06-25", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 700, "name": "Vaadin Platform (vaadin-core)", "description": "Vaadin Platform (vaadin-core)", "deps": {"com.vaadin:vaadin-core-internal": "25.1.13"}}

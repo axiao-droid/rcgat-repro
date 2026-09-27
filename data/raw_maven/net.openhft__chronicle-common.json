@@ -1,0 +1,1 @@
+{"ga": "net.openhft:chronicle-common", "group": "net.openhft", "artifact": "chronicle-common", "latest": "1.0.0", "first_date": "2014-11-27", "latest_date": "2014-11-27", "latest_is_prerelease": false, "n_versions": 1, "name": "OpenHFT/Chronicle-Common", "description": "Chronicle-Common", "deps": {"com.intellij:annotations": ""}}

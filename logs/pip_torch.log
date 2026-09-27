@@ -1,0 +1,70 @@
+=== [1/3] download wheel Sat Sep 26 06:01:12 UTC 2026 ===
+-rw-r--r-- 1 appuser appuser 184378187 Sep 26 06:00 /tmp/torch-2.9.1+cpu-cp312-cp312-manylinux_2_28_x86_64.whl
+=== [2/3] install torch Sat Sep 26 06:01:12 UTC 2026 ===
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Processing /tmp/torch-2.9.1+cpu-cp312-cp312-manylinux_2_28_x86_64.whl
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/site-packages (from torch==2.9.1+cpu) (3.25.2)
+Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.12/site-packages (from torch==2.9.1+cpu) (4.15.0)
+Collecting setuptools (from torch==2.9.1+cpu)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/95/9c/c510029fc6ef33a6275cd2c5d3cecd6613dfd6aa401d57c54f1c18852ccf/setuptools-84.0.0-py3-none-any.whl (818 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 818.2/818.2 kB 19.1 MB/s eta 0:00:00
+Collecting sympy>=1.13.3 (from torch==2.9.1+cpu)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl (6.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 68.4 MB/s eta 0:00:00
+Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/site-packages (from torch==2.9.1+cpu) (3.6.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/site-packages (from torch==2.9.1+cpu) (3.1.6)
+Collecting fsspec>=0.8.5 (from torch==2.9.1+cpu)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.9.1+cpu)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 325.2 MB/s eta 0:00:00
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/site-packages (from jinja2->torch==2.9.1+cpu) (3.0.3)
+Installing collected packages: mpmath, sympy, setuptools, fsspec, torch
+  WARNING: The script isympy is installed in '/home/appuser/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts torchfrtrace and torchrun are installed in '/home/appuser/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed fsspec-2026.9.0 mpmath-1.3.0 setuptools-84.0.0 sympy-1.14.0 torch-2.9.1+cpu
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+=== [3/3] install torch_geometric Sat Sep 26 06:01:32 UTC 2026 ===
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting torch_geometric==2.8.0.post1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/14/5c/edf74a71249ad19aa0390fb97ff021e2a5b04ce23252730014e1feac957e/torch_geometric-2.8.0.post1-py3-none-any.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 16.3 MB/s eta 0:00:00
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (3.13.3)
+Requirement already satisfied: fsspec in /home/appuser/.local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (2026.9.0)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (3.1.6)
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (2.4.6)
+Requirement already satisfied: psutil>=5.8.0 in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (7.2.2)
+Requirement already satisfied: pyparsing in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (3.3.2)
+Requirement already satisfied: requests in /usr/local/lib/python3.12/site-packages (from torch_geometric==2.8.0.post1) (2.32.5)
+Collecting tqdm (from torch_geometric==2.8.0.post1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+Collecting xxhash (from torch_geometric==2.8.0.post1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/83/97/31bd8b8279e6935a0719f6910ced15e9d5a2cd554b253f6027ce1b5a1c2c/xxhash-4.0.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (261 kB)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.12/site-packages (from aiohttp->torch_geometric==2.8.0.post1) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.12/site-packages (from aiohttp->torch_geometric==2.8.0.post1) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/site-packages (from aiohttp->torch_geometric==2.8.0.post1) (25.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.12/site-packages (from aiohttp->torch_geometric==2.8.0.post1) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.12/site-packages (from aiohttp->torch_geometric==2.8.0.post1) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.12/site-packages (from aiohttp->torch_geometric==2.8.0.post1) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.12/site-packages (from aiohttp->torch_geometric==2.8.0.post1) (1.23.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/site-packages (from jinja2->torch_geometric==2.8.0.post1) (3.0.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/site-packages (from requests->torch_geometric==2.8.0.post1) (3.4.5)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/site-packages (from requests->torch_geometric==2.8.0.post1) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/site-packages (from requests->torch_geometric==2.8.0.post1) (2.6.3)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/site-packages (from requests->torch_geometric==2.8.0.post1) (2026.2.25)
+Requirement already satisfied: typing-extensions>=4.2 in /usr/local/lib/python3.12/site-packages (from aiosignal>=1.4.0->aiohttp->torch_geometric==2.8.0.post1) (4.15.0)
+Installing collected packages: xxhash, tqdm, torch_geometric
+  WARNING: The script tqdm is installed in '/home/appuser/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed torch_geometric-2.8.0.post1 tqdm-4.70.1 xxhash-4.0.1
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+=== verify Sat Sep 26 06:01:35 UTC 2026 ===
+torch 2.9.1+cpu pyg 2.8.0.post1 sklearn 1.8.0

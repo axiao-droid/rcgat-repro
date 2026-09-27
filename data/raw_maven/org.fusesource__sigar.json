@@ -1,0 +1,1 @@
+{"ga": "org.fusesource:sigar", "group": "org.fusesource", "artifact": "sigar", "latest": "1.6.4", "first_date": "2011-03-22", "latest_date": "2011-03-22", "latest_is_prerelease": false, "n_versions": 1, "name": "", "description": "", "deps": {"log4j:log4j": "1.2.15"}}

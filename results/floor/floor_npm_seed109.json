@@ -1,0 +1,61 @@
+{
+  "dataset": "npm",
+  "seed": 109,
+  "floor": {
+    "val": {
+      "mrr": 0.16147966390099192,
+      "hits@10": 0.3657587548638132,
+      "hits@100": 0.6731517509727627,
+      "sources": 257,
+      "positives": 906,
+      "candidates_mean": 4611.0
+    },
+    "test": {
+      "mrr": 0.1566514432632389,
+      "hits@10": 0.2596685082872928,
+      "hits@100": 0.6077348066298343,
+      "sources": 181,
+      "positives": 494,
+      "candidates_mean": 4611.0
+    },
+    "feature": "cosine on L2-normalised TF-IDF+SVD300 fitted on fit window"
+  },
+  "fit_window_metadata": {
+    "dataset": "npm",
+    "seed": 109,
+    "n_nodes": 4959,
+    "n_edges": 13602,
+    "fit_nodes": 4223,
+    "val_nodes": 389,
+    "test_nodes": 347,
+    "fit_edges": 11949,
+    "val_edges": 960,
+    "test_edges": 693,
+    "cutoff": "2025-05-12",
+    "split_rule": "node_date_quantile_fixed_fraction_per_seed",
+    "f_test": 0.07,
+    "f_val": 0.08,
+    "jitter": 0.05,
+    "jitter_test": 0.0,
+    "val_half_band": 20,
+    "split_rule_version": 2
+  },
+  "feature_metadata": {
+    "type": "tfidf_svd_content_floor",
+    "fit_scope": "fit_window_only",
+    "dim": 300,
+    "tfidf_max_features": 20000,
+    "tfidf_token_pattern": "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*",
+    "tfidf_stopwords": "english",
+    "tfidf_min_df": 1,
+    "svd_n_iter": 10,
+    "svd_random_state": 42,
+    "tfidf_sublinear": true,
+    "l2_normalised": true,
+    "floor_reference": {
+      "npm": 0.1565,
+      "maven": 0.3377
+    }
+  },
+  "seconds": 6.1
+}

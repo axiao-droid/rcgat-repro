@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:messages-ndjson", "group": "io.cucumber", "artifact": "messages-ndjson", "latest": "0.3.7", "first_date": "2026-01-12", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 14, "name": "Messages NDJSON", "description": "Serialize and deserialize Cucumber Messages to and from JSON", "deps": {"io.cucumber:messages": "[18.0.0,32.0.0)"}}

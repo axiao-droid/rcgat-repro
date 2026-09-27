@@ -1,0 +1,1 @@
+{"ga": "org.apache.shiro:shiro-cdi", "group": "org.apache.shiro", "artifact": "shiro-cdi", "latest": "3.0.1", "first_date": "2023-02-28", "latest_date": "2026-08-23", "latest_is_prerelease": false, "n_versions": 17, "name": "Apache Shiro :: Support :: CDI", "description": "Apache Shiro - CDI Integration", "deps": {"org.apache.shiro:shiro-core": "3.0.1"}}

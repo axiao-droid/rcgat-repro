@@ -1,0 +1,1 @@
+{"ga": "com.helger:profiler", "group": "com.helger", "artifact": "profiler", "latest": "1.1.1", "first_date": "2019-07-20", "latest_date": "2019-07-21", "latest_is_prerelease": false, "n_versions": 2, "name": "${project.groupId}:${project.artifactId}", "description": "A pure-java implementation of the twitter/util project's `CpuProfile` and related classes.", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "com.github.jnr:jnr-parent", "group": "com.github.jnr", "artifact": "jnr-parent", "latest": "0.0.1", "first_date": "2026-06-21", "latest_date": "2026-06-21", "latest_is_prerelease": false, "n_versions": 1, "name": "Parent POM for JNR projects", "description": "jnr-parent encapsulates common build configurations for all jnr-* projects.", "deps": {}}

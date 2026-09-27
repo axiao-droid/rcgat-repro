@@ -1,0 +1,1 @@
+{"ga": "org.jboss.classfilewriter:jboss-classfilewriter", "group": "org.jboss.classfilewriter", "artifact": "jboss-classfilewriter", "latest": "1.3.1.Final", "first_date": "2011-01-26", "latest_date": "2024-02-29", "latest_is_prerelease": false, "n_versions": 25, "name": "classfilewriter", "description": "A bytecode writer that creates .class files at runtime", "deps": {}}

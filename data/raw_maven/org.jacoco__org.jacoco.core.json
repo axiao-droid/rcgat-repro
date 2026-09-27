@@ -1,0 +1,1 @@
+{"ga": "org.jacoco:org.jacoco.core", "group": "org.jacoco", "artifact": "org.jacoco.core", "latest": "0.8.15", "first_date": "2011-07-06", "latest_date": "2026-06-04", "latest_is_prerelease": false, "n_versions": 40, "name": "JaCoCo :: Core", "description": "JaCoCo Core", "deps": {"org.ow2.asm:asm": "", "org.ow2.asm:asm-commons": "", "org.ow2.asm:asm-tree": ""}}

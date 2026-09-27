@@ -1,0 +1,1 @@
+{"ga": "io.vertx:lang-groovy", "group": "io.vertx", "artifact": "lang-groovy", "latest": "2.1.1-final", "first_date": "2013-05-16", "latest_date": "2014-11-16", "latest_is_prerelease": false, "n_versions": 11, "name": "mod-lang-groovy", "description": "Vert.x module that provides Groovy support", "deps": {"org.codehaus.groovy:groovy-all": "2.3.3"}}

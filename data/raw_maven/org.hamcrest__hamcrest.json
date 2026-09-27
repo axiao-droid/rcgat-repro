@@ -1,0 +1,1 @@
+{"ga": "org.hamcrest:hamcrest", "group": "org.hamcrest", "artifact": "hamcrest", "latest": "3.0", "first_date": "2018-11-25", "latest_date": "2024-08-01", "latest_is_prerelease": false, "n_versions": 9, "name": "Hamcrest", "description": "Core API and libraries of hamcrest matcher framework.", "deps": {}}

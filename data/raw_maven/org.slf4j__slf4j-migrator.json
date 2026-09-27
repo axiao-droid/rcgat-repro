@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:slf4j-migrator", "group": "org.slf4j", "artifact": "slf4j-migrator", "latest": "2.0.20", "first_date": "2008-02-26", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 93, "name": "SLF4J Migrator", "description": "SLF4J Migrator", "deps": {}}

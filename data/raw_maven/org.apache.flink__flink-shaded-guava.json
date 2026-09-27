@@ -1,0 +1,1 @@
+{"ga": "org.apache.flink:flink-shaded-guava", "group": "org.apache.flink", "artifact": "flink-shaded-guava", "latest": "33.7.1-jre-22.0", "first_date": "2017-07-24", "latest_date": "2026-08-24", "latest_is_prerelease": false, "n_versions": 24, "name": "flink-shaded-guava-33", "description": "", "deps": {}}

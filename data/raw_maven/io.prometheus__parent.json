@@ -1,0 +1,1 @@
+{"ga": "io.prometheus:parent", "group": "io.prometheus", "artifact": "parent", "latest": "0.16.0", "first_date": "2013-07-23", "latest_date": "2022-06-15", "latest_is_prerelease": false, "n_versions": 44, "name": "Prometheus Java Suite", "description": "The Prometheus Java Suite: Client Metrics, Exposition, and Examples", "deps": {}}

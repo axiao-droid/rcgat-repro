@@ -1,0 +1,1 @@
+{"ga": "com.github.jnr:release", "group": "com.github.jnr", "artifact": "release", "latest": "1.4", "first_date": "2026-06-26", "latest_date": "2026-09-15", "latest_is_prerelease": false, "n_versions": 5, "name": "release", "description": "Aggregate project for releasing JNR projects as a group", "deps": {}}

@@ -1,0 +1,9 @@
+[select] npm: mode=per_model chosen=c2_h64_d0.2 (mean cell val MRR over grid 0.1887)
+[select] maven: mode=per_model chosen=c2_h64_d0.2 (mean cell val MRR over grid 0.3066)
+[final] 140 jobs, workers=4
+[final] npm gat_dir seed=101 cfg=c1_h128_d0.2 val=0.1704 test=0.1722 h10=0.2762 epoch=50 (285.1s)
+[final] npm gat_dir seed=103 cfg=c1_h128_d0.2 val=0.1875 test=0.1705 h10=0.2983 epoch=88 (312.6s)
+[final] npm gat_dir seed=104 cfg=c1_h128_d0.2 val=0.1862 test=0.1750 h10=0.2873 epoch=94 (317.2s)
+[final] npm gat_dir seed=102 cfg=c1_h128_d0.2 val=0.1808 test=0.1650 h10=0.2928 epoch=82 (322.8s)
+[final] npm gat_dir seed=105 cfg=c1_h128_d0.2 val=0.1699 test=0.1606 h10=0.2873 epoch=1 (131.9s)
+[final] npm gat_dir seed=106 cfg=c1_h128_d0.2 val=0.1748 test=0.1734 h10=0.2818 epoch=98 (309.7s)

@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:sjk-json", "group": "org.gridkit.jvmtool", "artifact": "sjk-json", "latest": "0.23", "first_date": "2019-07-02", "latest_date": "2024-01-24", "latest_is_prerelease": false, "n_versions": 12, "name": "${project.groupId}::${project.artifactId}", "description": "Minimal JSON support", "deps": {}}

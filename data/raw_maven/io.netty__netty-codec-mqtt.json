@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-mqtt", "group": "io.netty", "artifact": "netty-codec-mqtt", "latest": "4.2.18.Final", "first_date": "2014-07-04", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 184, "name": "Netty/Codec/MQTT", "description": "", "deps": {"org.mockito:mockito-core": "", "org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

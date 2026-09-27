@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:appsec-kit-v8", "group": "com.vaadin", "artifact": "appsec-kit-v8", "latest": "1.0.7", "first_date": "2023-07-11", "latest_date": "2025-01-16", "latest_is_prerelease": false, "n_versions": 8, "name": "AppSec Kit Vaadin 8", "description": "", "deps": {"com.vaadin:appsec-kit-backend": "1.0.7", "com.vaadin:license-checker": "1.12.3"}}

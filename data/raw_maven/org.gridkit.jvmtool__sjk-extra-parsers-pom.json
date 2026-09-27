@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:sjk-extra-parsers-pom", "group": "org.gridkit.jvmtool", "artifact": "sjk-extra-parsers-pom", "latest": "0.4", "first_date": "2017-07-24", "latest_date": "2018-06-09", "latest_is_prerelease": false, "n_versions": 3, "name": "${project.groupId}::${project.artifactId}", "description": "Integration with JDK profilers", "deps": {}}

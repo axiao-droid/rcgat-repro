@@ -1,0 +1,1 @@
+{"ga": "io.vertx:lang-ceylon", "group": "io.vertx", "artifact": "lang-ceylon", "latest": "1.0.1", "first_date": "2014-09-30", "latest_date": "2014-10-13", "latest_is_prerelease": false, "n_versions": 3, "name": "mod-lang-ceylon", "description": "", "deps": {"org.pegdown:pegdown": "1.4.2", "io.vertx:vertx-core": "2.1.2", "io.vertx:vertx-platform": "2.1.2"}}

@@ -1,0 +1,1 @@
+{"ga": "com.alibaba:druid", "group": "com.alibaba", "artifact": "druid", "latest": "1.2.28", "first_date": "2012-02-07", "latest_date": "2026-03-10", "latest_is_prerelease": false, "n_versions": 125, "name": "druid", "description": "A JDBC datasource implementation.", "deps": {}}

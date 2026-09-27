@@ -1,0 +1,1 @@
+{"ga": "com.jayway.jsonpath:json-path", "group": "com.jayway.jsonpath", "artifact": "json-path", "latest": "3.0.0", "first_date": "2011-02-07", "latest_date": "2026-02-22", "latest_is_prerelease": false, "n_versions": 25, "name": "json-path", "description": "A library to query and verify JSON", "deps": {"net.minidev:json-smart": "2.6.0", "org.slf4j:slf4j-api": "2.0.17"}}

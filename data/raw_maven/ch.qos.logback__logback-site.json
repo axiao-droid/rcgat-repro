@@ -1,0 +1,1 @@
+{"ga": "ch.qos.logback:logback-site", "group": "ch.qos.logback", "artifact": "logback-site", "latest": "1.2.13", "first_date": "2006-11-09", "latest_date": "2023-12-01", "latest_is_prerelease": false, "n_versions": 83, "name": "Logback Site", "description": "logback-site module", "deps": {}}

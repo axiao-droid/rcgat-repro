@@ -1,0 +1,1 @@
+{"ga": "org.xmlunit:xmlunit-core", "group": "org.xmlunit", "artifact": "xmlunit-core", "latest": "2.14.0", "first_date": "2015-11-21", "latest_date": "2026-09-18", "latest_is_prerelease": false, "n_versions": 34, "name": "org.xmlunit:xmlunit-core", "description": "XMLUnit for Java", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.objenesis:objenesis", "group": "org.objenesis", "artifact": "objenesis", "latest": "3.6", "first_date": "2007-05-17", "latest_date": "2026-08-02", "latest_is_prerelease": false, "n_versions": 21, "name": "Objenesis", "description": "A library for instantiating Java objects", "deps": {}}

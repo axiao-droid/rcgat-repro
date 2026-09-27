@@ -1,0 +1,1 @@
+{"ga": "org.ow2.asm:asm-deprecated", "group": "org.ow2.asm", "artifact": "asm-deprecated", "latest": "7.1", "first_date": "2019-03-03", "latest_date": "2019-03-03", "latest_is_prerelease": false, "n_versions": 1, "name": "asm-deprecated", "description": "ASM deprecated classes", "deps": {"org.ow2.asm:asm": "7.0", "org.ow2.asm:asm-commons": "7.0"}}

@@ -1,0 +1,30 @@
+\begin{table}[t]
+\caption{Test MRR, hits@10, and hits@100 (mean over ten seeds $\pm$ sample standard
+deviation) of the four model cells, the content floor, and the three external baselines.
+Hyperparameters were selected per cell on validation MRR with a single tuning seed and
+frozen for the ten final seeds. $\Delta$ floor is the mean test MRR minus the content floor.}
+\label{tab:main}
+\begin{tabular}{llcccccc}
+\toprule
+Graph & Cell & MRR & Hits@10 & Hits@100 & $\Delta$ floor & Config & Params \\
+\midrule
+npm & Content floor & 0.1566 & -- & -- & -- & -- & -- \\
+npm & gcn\_dir (external GCN) & 0.2118 $\pm$ 0.0207 & 0.3448 & 0.7773 & $+0.0553$ & c1 & 208{,}897 \\
+npm & sage\_dir (external GraphSAGE) & 0.1696 $\pm$ 0.0029 & 0.2801 & 0.6552 & $+0.0130$ & c1 & 274{,}433 \\
+npm & gatv2\_dir (external GATv2) & 0.1634 $\pm$ 0.0047 & 0.2685 & 0.6061 & $+0.0068$ & c4 & 673{,}793 \\
+npm & \textbf{gat\_dir (directed GAT)} & \textbf{0.1644 $\pm$ 0.0050} & 0.2724 & 0.6149 & $+0.0078$ & c1 & 409{,}601 \\
+npm & \textbf{rcgat\_sym (gate)} & \textbf{0.1623 $\pm$ 0.0033} & 0.2696 & 0.6182 & $+0.0057$ & c1 & 409{,}657 \\
+npm & \textbf{gat\_time (time branch)} & \textbf{0.1811 $\pm$ 0.0158} & 0.3099 & 0.6425 & $+0.0245$ & c4 & 409{,}857 \\
+npm & \textbf{rcgat\_time (gate $+$ time)} & \textbf{0.1652 $\pm$ 0.0145} & 0.2950 & 0.6320 & $+0.0087$ & c4 & 409{,}913 \\
+\midrule
+Maven & Content floor & 0.0922 & -- & -- & -- & -- & -- \\
+Maven & gcn\_dir (external GCN) & 0.1625 $\pm$ 0.0541 & 0.2931 & 0.6724 & $+0.0703$ & c4 & 208{,}897 \\
+Maven & sage\_dir (external GraphSAGE) & 0.1463 $\pm$ 0.0444 & 0.3621 & 0.6517 & $+0.0541$ & c1 & 274{,}433 \\
+Maven & gatv2\_dir (external GATv2) & 0.1052 $\pm$ 0.0116 & 0.2138 & 0.6069 & $+0.0130$ & c3 & 189{,}441 \\
+Maven & \textbf{gat\_dir (directed GAT)} & \textbf{0.1038 $\pm$ 0.0120} & 0.1897 & 0.5931 & $+0.0116$ & c4 & 409{,}601 \\
+Maven & \textbf{rcgat\_sym (gate)} & \textbf{0.1024 $\pm$ 0.0074} & 0.1724 & 0.5931 & $+0.0102$ & c3 & 122{,}937 \\
+Maven & \textbf{gat\_time (time branch)} & \textbf{0.1038 $\pm$ 0.0069} & 0.2310 & 0.6276 & $+0.0115$ & c2 & 123{,}009 \\
+Maven & \textbf{rcgat\_time (gate $+$ time)} & \textbf{0.1030 $\pm$ 0.0060} & 0.2207 & 0.6138 & $+0.0108$ & c1 & 409{,}913 \\
+\bottomrule
+\end{tabular}
+\end{table}

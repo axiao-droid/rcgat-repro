@@ -1,0 +1,1 @@
+{"ga": "com.google.protobuf:protobuf-bom", "group": "com.google.protobuf", "artifact": "protobuf-bom", "latest": "4.36.2", "first_date": "2019-01-30", "latest_date": "2026-09-17", "latest_is_prerelease": false, "n_versions": 193, "name": "Protocol Buffers [BOM]", "description": "A compatible set of open source libraries for working with protocol buffers.", "deps": {}}

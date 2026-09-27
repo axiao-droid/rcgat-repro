@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:sjk-jfr", "group": "org.gridkit.jvmtool", "artifact": "sjk-jfr", "latest": "0.3", "first_date": "2017-06-04", "latest_date": "2017-08-06", "latest_is_prerelease": false, "n_versions": 3, "name": "${project.groupId}::${project.artifactId}", "description": "Java Flight Recorder Integration for SJK", "deps": {"org.gridkit.jvmtool:sjk-stacktrace": "0.6"}}

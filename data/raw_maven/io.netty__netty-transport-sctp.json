@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-transport-sctp", "group": "io.netty", "artifact": "netty-transport-sctp", "latest": "4.2.18.Final", "first_date": "2013-02-14", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 255, "name": "Netty/Transport/SCTP", "description": "", "deps": {"org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

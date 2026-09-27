@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-groovy", "group": "io.cucumber", "artifact": "cucumber-groovy", "latest": "6.10.4", "first_date": "2017-08-29", "latest_date": "2021-06-14", "latest_is_prerelease": false, "n_versions": 21, "name": "Cucumber Groovy", "description": "", "deps": {"io.cucumber:cucumber-core": "", "com.google.auto.service:auto-service": "1.0-rc6"}}

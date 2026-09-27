@@ -1,0 +1,1 @@
+{"ga": "org.fusesource.jansi:jansi", "group": "org.fusesource.jansi", "artifact": "jansi", "latest": "2.4.3", "first_date": "2010-03-08", "latest_date": "2026-03-27", "latest_is_prerelease": false, "n_versions": 32, "name": "Jansi", "description": "Jansi is a java library for generating and interpreting ANSI escape sequences.", "deps": {}}

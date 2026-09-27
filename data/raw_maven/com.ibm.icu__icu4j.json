@@ -1,0 +1,1 @@
+{"ga": "com.ibm.icu:icu4j", "group": "com.ibm.icu", "artifact": "icu4j", "latest": "78.3", "first_date": "2005-11-03", "latest_date": "2026-03-17", "latest_is_prerelease": false, "n_versions": 67, "name": "ICU4J", "description": "International Components for Unicode for Java (ICU4J) is a mature, widely used Java library providing Unicode and Globalization support", "deps": {}}

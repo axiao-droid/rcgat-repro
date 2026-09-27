@@ -1,0 +1,1 @@
+{"ga": "com.github.jnr:jnr-enxio", "group": "com.github.jnr", "artifact": "jnr-enxio", "latest": "0.33.3", "first_date": "2012-09-23", "latest_date": "2026-09-15", "latest_is_prerelease": false, "n_versions": 54, "name": "jnr-enxio", "description": "Native I/O access for java", "deps": {"com.github.jnr:jnr-constants": "0.11.2", "com.github.jnr:jnr-ffi": "2.3.3"}}

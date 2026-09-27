@@ -1,0 +1,1 @@
+{"ga": "javax.validation:validation-api", "group": "javax.validation", "artifact": "validation-api", "latest": "2.0.1.Final", "first_date": "2009-02-11", "latest_date": "2017-12-19", "latest_is_prerelease": false, "n_versions": 26, "name": "Bean Validation API", "description": "Bean Validation API", "deps": {}}

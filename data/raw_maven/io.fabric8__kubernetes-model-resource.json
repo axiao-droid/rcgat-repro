@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:kubernetes-model-resource", "group": "io.fabric8", "artifact": "kubernetes-model-resource", "latest": "8.0.0", "first_date": "2023-03-10", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 42, "name": "Fabric8 :: Kubernetes Model :: Resource", "description": "", "deps": {"io.fabric8:kubernetes-model-core": ""}}

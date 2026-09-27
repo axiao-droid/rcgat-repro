@@ -1,0 +1,1 @@
+{"ga": "io.prometheus:prometheus-metrics-bom", "group": "io.prometheus", "artifact": "prometheus-metrics-bom", "latest": "1.9.0", "first_date": "2024-03-22", "latest_date": "2026-09-16", "latest_is_prerelease": false, "n_versions": 25, "name": "Prometheus Metrics BOM", "description": "Bill of Materials for the Prometheus Metrics library", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "io.vertx:lang-rhino", "group": "io.vertx", "artifact": "lang-rhino", "latest": "2.1.1", "first_date": "2013-05-16", "latest_date": "2015-12-30", "latest_is_prerelease": false, "n_versions": 12, "name": "Project - lang-rhino", "description": "", "deps": {"org.mozilla:rhino": "${rhino.version}"}}

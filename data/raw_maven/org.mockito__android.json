@@ -1,0 +1,1 @@
+{"ga": "org.mockito:android", "group": "org.mockito", "artifact": "android", "latest": "2.20.0", "first_date": "2018-07-24", "latest_date": "2018-07-24", "latest_is_prerelease": false, "n_versions": 1, "name": "mockito-android", "description": "Mockito for Android", "deps": {"org.mockito:mockito-core": "2.20.0", "net.bytebuddy:byte-buddy-android": "1.8.13"}}

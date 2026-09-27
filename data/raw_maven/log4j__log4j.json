@@ -1,0 +1,1 @@
+{"ga": "log4j:log4j", "group": "log4j", "artifact": "log4j", "latest": "1.2.17", "first_date": "2005-09-20", "latest_date": "2012-05-26", "latest_is_prerelease": false, "n_versions": 14, "name": "Apache Log4j", "description": "Apache Log4j 1.2", "deps": {}}

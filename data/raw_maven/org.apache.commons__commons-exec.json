@@ -1,0 +1,1 @@
+{"ga": "org.apache.commons:commons-exec", "group": "org.apache.commons", "artifact": "commons-exec", "latest": "1.6.0", "first_date": "2009-03-25", "latest_date": "2025-11-27", "latest_is_prerelease": false, "n_versions": 8, "name": "Apache Commons Exec", "description": "Apache Commons Exec is a library that reliably executes external processes from within the JVM.", "deps": {}}

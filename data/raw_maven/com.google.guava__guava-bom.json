@@ -1,0 +1,1 @@
+{"ga": "com.google.guava:guava-bom", "group": "com.google.guava", "artifact": "guava-bom", "latest": "33.7.1-jre", "first_date": "2019-03-08", "latest_date": "2026-08-18", "latest_is_prerelease": false, "n_versions": 72, "name": "Guava BOM", "description": "BOM for Guava artifacts", "deps": {}}

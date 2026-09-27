@@ -1,0 +1,4 @@
+graph nodes=4959 edges=13602 raw texts available=4959
+published npm floor = 0.1565
+  v12_min_df1_nostop_tok   floor=0.1573  per-seed=[0.1563, 0.1567, 0.1613, 0.1567, 0.1562, 0.1573, 0.1561, 0.1565, 0.1575, 0.1579] sources=181 positives=494 dims=300 vocab<=20000 (49s)
+  v2_sklearn_tok           floor=0.1637  per-seed=[0.1613, 0.1642, 0.1615, 0.1642, 0.1638, 0.1661, 0.1647, 0.1648, 0.165, 0.1613] sources=181 positives=494 dims=300 vocab<=20000 (128s)

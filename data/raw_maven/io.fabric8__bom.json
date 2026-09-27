@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:bom", "group": "io.fabric8", "artifact": "bom", "latest": "2.2.22", "first_date": "2014-04-09", "latest_date": "2015-08-13", "latest_is_prerelease": false, "n_versions": 84, "name": "Fabric8 :: Bill of material", "description": "A list of the artifacts that are released.", "deps": {}}

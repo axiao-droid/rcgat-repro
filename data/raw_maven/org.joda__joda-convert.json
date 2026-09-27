@@ -1,0 +1,1 @@
+{"ga": "org.joda:joda-convert", "group": "org.joda", "artifact": "joda-convert", "latest": "3.0.1", "first_date": "2010-09-05", "latest_date": "2024-10-06", "latest_is_prerelease": false, "n_versions": 31, "name": "Joda-Convert", "description": "Library to convert Objects to and from String, compatible with Java 21+", "deps": {}}

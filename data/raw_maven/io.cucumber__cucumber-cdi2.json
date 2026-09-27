@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-cdi2", "group": "io.cucumber", "artifact": "cucumber-cdi2", "latest": "7.34.9", "first_date": "2019-06-15", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 127, "name": "Cucumber-JVM: CDI 2", "description": "", "deps": {"io.cucumber:cucumber-core": "", "org.apiguardian:apiguardian-api": "${apiguardian-api.version}"}}

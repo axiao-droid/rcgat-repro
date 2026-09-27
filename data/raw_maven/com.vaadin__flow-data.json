@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:flow-data", "group": "com.vaadin", "artifact": "flow-data", "latest": "25.2.10", "first_date": "2018-06-21", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 672, "name": "Flow Data", "description": "${project.name}", "deps": {"com.vaadin:flow-server": "25.2.10"}}

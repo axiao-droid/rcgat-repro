@@ -1,0 +1,1 @@
+{"ga": "io.dropwizard:dropwizard-util", "group": "io.dropwizard", "artifact": "dropwizard-util", "latest": "5.0.2", "first_date": "2014-01-31", "latest_date": "2026-05-31", "latest_is_prerelease": false, "n_versions": 237, "name": "Dropwizard Utility Classes", "description": "", "deps": {"com.fasterxml.jackson.core:jackson-annotations": "", "org.jspecify:jspecify": ""}}

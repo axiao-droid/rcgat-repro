@@ -1,0 +1,1 @@
+{"ga": "org.eclipse.jetty.websocket:websocket-api", "group": "org.eclipse.jetty.websocket", "artifact": "websocket-api", "latest": "9.4.58.v20250814", "first_date": "2012-11-20", "latest_date": "2025-08-14", "latest_is_prerelease": false, "n_versions": 190, "name": "Jetty :: Websocket :: API", "description": "", "deps": {}}

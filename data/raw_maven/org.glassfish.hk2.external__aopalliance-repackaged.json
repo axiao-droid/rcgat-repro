@@ -1,0 +1,1 @@
+{"ga": "org.glassfish.hk2.external:aopalliance-repackaged", "group": "org.glassfish.hk2.external", "artifact": "aopalliance-repackaged", "latest": "4.0.2", "first_date": "2013-12-04", "latest_date": "2026-08-17", "latest_is_prerelease": false, "n_versions": 130, "name": "aopalliance version ${aopalliance.version} repackaged as a module", "description": "", "deps": {}}

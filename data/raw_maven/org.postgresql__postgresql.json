@@ -1,0 +1,1 @@
+{"ga": "org.postgresql:postgresql", "group": "org.postgresql", "artifact": "postgresql", "latest": "42.7.13", "first_date": "2013-04-05", "latest_date": "2026-07-06", "latest_is_prerelease": false, "n_versions": 202, "name": "PostgreSQL JDBC Driver", "description": "PostgreSQL JDBC Driver Postgresql", "deps": {"org.checkerframework:checker-qual": "3.55.1"}}

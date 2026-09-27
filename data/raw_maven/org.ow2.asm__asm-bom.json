@@ -1,0 +1,1 @@
+{"ga": "org.ow2.asm:asm-bom", "group": "org.ow2.asm", "artifact": "asm-bom", "latest": "9.10.1", "first_date": "2022-04-04", "latest_date": "2026-05-23", "latest_is_prerelease": false, "n_versions": 11, "name": "asm-bom", "description": "ASM, a very small and fast Java bytecode manipulation framework", "deps": {}}

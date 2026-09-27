@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-xml", "group": "io.netty", "artifact": "netty-codec-xml", "latest": "4.2.18.Final", "first_date": "2015-03-03", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 181, "name": "Netty/Codec/XML", "description": "", "deps": {"com.fasterxml:aalto-xml": "", "org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

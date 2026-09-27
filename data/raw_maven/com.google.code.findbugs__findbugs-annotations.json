@@ -1,0 +1,1 @@
+{"ga": "com.google.code.findbugs:findbugs-annotations", "group": "com.google.code.findbugs", "artifact": "findbugs-annotations", "latest": "3.0.1", "first_date": "2015-12-26", "latest_date": "2015-12-26", "latest_is_prerelease": false, "n_versions": 1, "name": "FindBugs-Native-Annotations", "description": "Annotation defined by the FindBugs tool", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "com.beust:jcommander", "group": "com.beust", "artifact": "jcommander", "latest": "1.82", "first_date": "2010-07-15", "latest_date": "2022-01-11", "latest_is_prerelease": false, "n_versions": 37, "name": "jcommander", "description": "Command line parsing library for Java", "deps": {}}

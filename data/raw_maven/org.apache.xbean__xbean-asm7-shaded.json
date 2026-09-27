@@ -1,0 +1,1 @@
+{"ga": "org.apache.xbean:xbean-asm7-shaded", "group": "org.apache.xbean", "artifact": "xbean-asm7-shaded", "latest": "4.16", "first_date": "2018-10-03", "latest_date": "2020-01-31", "latest_is_prerelease": false, "n_versions": 6, "name": "Apache XBean :: ASM shaded (repackaged)", "description": "Repackaged and shaded asm jars", "deps": {}}

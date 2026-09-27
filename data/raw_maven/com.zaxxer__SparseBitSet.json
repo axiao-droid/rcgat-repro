@@ -1,0 +1,1 @@
+{"ga": "com.zaxxer:SparseBitSet", "group": "com.zaxxer", "artifact": "SparseBitSet", "latest": "1.3", "first_date": "2014-05-26", "latest_date": "2023-09-06", "latest_is_prerelease": false, "n_versions": 4, "name": "SparseBitSet", "description": "An efficient sparse bitset implementation for Java", "deps": {}}

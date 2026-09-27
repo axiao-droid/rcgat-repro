@@ -1,0 +1,1 @@
+{"ga": "com.squareup.okio:okio", "group": "com.squareup.okio", "artifact": "okio", "latest": "3.18.2", "first_date": "2014-04-08", "latest_date": "2026-09-04", "latest_is_prerelease": false, "n_versions": 90, "name": "okio", "description": "A modern I/O library for Android, Java, and Kotlin Multiplatform.", "deps": {"com.squareup.okio:okio-jvm": "3.18.2"}}

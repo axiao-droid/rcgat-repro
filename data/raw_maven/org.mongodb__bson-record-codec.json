@@ -1,0 +1,1 @@
+{"ga": "org.mongodb:bson-record-codec", "group": "org.mongodb", "artifact": "bson-record-codec", "latest": "5.12.0", "first_date": "2022-04-18", "latest_date": "2026-09-17", "latest_is_prerelease": false, "n_versions": 63, "name": "BSON Record Codec", "description": "The BSON Codec for Java records", "deps": {"org.mongodb:bson": "5.12.0"}}

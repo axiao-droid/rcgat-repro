@@ -1,0 +1,1 @@
+{"ga": "org.apache.tomcat.embed:tomcat-embed-el", "group": "org.apache.tomcat.embed", "artifact": "tomcat-embed-el", "latest": "9.0.122", "first_date": "2014-01-29", "latest_date": "2026-09-10", "latest_is_prerelease": false, "n_versions": 434, "name": "", "description": "Core Tomcat implementation", "deps": {}}

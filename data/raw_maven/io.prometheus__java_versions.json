@@ -1,0 +1,1 @@
+{"ga": "io.prometheus:java_versions", "group": "io.prometheus", "artifact": "java_versions", "latest": "0.12.0", "first_date": "2021-05-30", "latest_date": "2021-08-29", "latest_is_prerelease": false, "n_versions": 2, "name": "Integration Test - Java Versions Smoke Test", "description": "", "deps": {}}

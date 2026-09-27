@@ -1,0 +1,1 @@
+{"ga": "org.jboss.logging:jul-to-slf4j-stub", "group": "org.jboss.logging", "artifact": "jul-to-slf4j-stub", "latest": "1.0.1.Final", "first_date": "2012-03-02", "latest_date": "2013-02-08", "latest_is_prerelease": false, "n_versions": 2, "name": "", "description": "", "deps": {"org.slf4j:slf4j-api": "${org.slf4j.version}"}}

@@ -1,0 +1,1 @@
+{"ga": "org.apache.logging.log4j:log4j-api-kotlin", "group": "org.apache.logging.log4j", "artifact": "log4j-api-kotlin", "latest": "1.5.0", "first_date": "2018-11-03", "latest_date": "2024-08-03", "latest_is_prerelease": false, "n_versions": 6, "name": "Apache Log4j Kotlin API", "description": "Kotlin wrapper for Log4j API", "deps": {"org.apache.logging.log4j:log4j-api": ""}}

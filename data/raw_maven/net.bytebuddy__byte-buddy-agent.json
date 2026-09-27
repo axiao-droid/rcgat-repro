@@ -1,0 +1,1 @@
+{"ga": "net.bytebuddy:byte-buddy-agent", "group": "net.bytebuddy", "artifact": "byte-buddy-agent", "latest": "1.18.14-jdk5", "first_date": "2014-09-15", "latest_date": "2026-09-14", "latest_is_prerelease": false, "n_versions": 324, "name": "Byte Buddy agent", "description": "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-build-common", "group": "io.netty", "artifact": "netty-build-common", "latest": "31", "first_date": "2020-11-05", "latest_date": "2022-08-10", "latest_is_prerelease": false, "n_versions": 5, "name": "Netty/Build/Common", "description": "", "deps": {"com.puppycrawl.tools:checkstyle": ""}}

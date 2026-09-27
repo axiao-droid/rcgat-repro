@@ -1,0 +1,24 @@
+# Reproduction environment (Python 3.12).
+# The reported runs used CPU wheels of torch==2.9.1+cpu and
+# torch_geometric==2.8.0.post1 (installed from the aliyun pytorch-wheels mirror,
+# because download.pytorch.org was slow from this host).
+#
+# --- core pipeline (src/) + the audit -------------------------------------
+numpy>=2.0
+scipy>=1.11
+scikit-learn>=1.4
+torch>=2.4              # CPU build is enough
+torch_geometric>=2.6
+#
+# --- used only by the figure scripts in tools/ ----------------------------
+matplotlib>=3.8         # tools/make_revision_figures.py, tools/make_revision_figure_datasets.py
+PyMuPDF>=1.24           # tools/fix_fig_mechanism_labels.py  (imported as `fitz`)
+#
+# --- not imported by the pipeline, kept for interactive use ---------------
+pandas>=2.0
+networkx>=3.0
+#
+# Note: matplotlib and PyMuPDF above are NOT needed to reproduce any number in
+# the paper -- only to regenerate the figures. They are listed here so that a
+# fresh `pip install -r requirements.txt` can also run tools/make_revision_*.py
+# and tools/fix_fig_mechanism_labels.py.

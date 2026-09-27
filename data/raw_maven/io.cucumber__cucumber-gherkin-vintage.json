@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-gherkin-vintage", "group": "io.cucumber", "artifact": "cucumber-gherkin-vintage", "latest": "5.7.0", "first_date": "2019-12-19", "latest_date": "2020-05-01", "latest_is_prerelease": false, "n_versions": 15, "name": "Cucumber-JVM: Gherkin Vintage", "description": "", "deps": {"io.cucumber:cucumber-gherkin": "5.7.0"}}

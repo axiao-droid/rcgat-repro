@@ -1,0 +1,1 @@
+{"ga": "org.xerial.snappy:snappy-java", "group": "org.xerial.snappy", "artifact": "snappy-java", "latest": "1.1.10.8", "first_date": "2011-04-01", "latest_date": "2025-07-19", "latest_is_prerelease": false, "n_versions": 83, "name": "snappy-java", "description": "snappy-java: A fast compression/decompression library", "deps": {}}

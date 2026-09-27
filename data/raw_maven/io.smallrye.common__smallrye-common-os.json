@@ -1,0 +1,1 @@
+{"ga": "io.smallrye.common:smallrye-common-os", "group": "io.smallrye.common", "artifact": "smallrye-common-os", "latest": "2.21.1", "first_date": "2020-09-07", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 56, "name": "SmallRye Common: OS", "description": "Operating system utilities", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "io.sgr:s2-geometry-library-java", "group": "io.sgr", "artifact": "s2-geometry-library-java", "latest": "1.0.1", "first_date": "2017-07-16", "latest_date": "2019-07-29", "latest_is_prerelease": false, "n_versions": 2, "name": "Google S2 geometry library", "description": "A java library for Google s2", "deps": {"com.google.guava:guava": "", "junit:junit": ""}}

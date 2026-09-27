@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:slf4j-android", "group": "org.slf4j", "artifact": "slf4j-android", "latest": "1.7.36", "first_date": "2010-08-25", "latest_date": "2022-02-08", "latest_is_prerelease": false, "n_versions": 31, "name": "SLF4J Android Binding", "description": "SLF4J Android Binding", "deps": {"org.slf4j:slf4j-api": "${project.version}"}}

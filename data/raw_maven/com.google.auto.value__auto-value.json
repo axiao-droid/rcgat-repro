@@ -1,0 +1,1 @@
+{"ga": "com.google.auto.value:auto-value", "group": "com.google.auto.value", "artifact": "auto-value", "latest": "1.11.1", "first_date": "2014-01-22", "latest_date": "2025-11-11", "latest_is_prerelease": false, "n_versions": 49, "name": "AutoValue Processor", "description": "Immutable value-type code generation for Java 8+.", "deps": {}}

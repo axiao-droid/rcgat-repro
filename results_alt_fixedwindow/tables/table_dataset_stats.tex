@@ -1,0 +1,15 @@
+\begin{table}[t]
+\caption{Software dependency networks, and the content floor. The floor is a train-only
+TF-IDF plus truncated-SVD (300-d) cosine ranker evaluated with the same per-source
+full-filtered protocol. Test sources and positive edges are means over the ten seeded test
+windows; the candidate pool size is the mean per source.}
+\label{tab:datasets}
+\begin{tabular}{lccccc}
+\toprule
+Graph & Nodes & Directed edges & Content floor test MRR & Test sources (positives) & Mean candidates \\
+\midrule
+npm (JavaScript registry) & 4{,}959 & 13{,}602 & 0.1557 & 181 (494) & 4{,}611 \\
+Maven (Java artifact repos.) & 1{,}664 & 5{,}651 & 0.0962 & 29 (63) & 1{,}547 \\
+\bottomrule
+\end{tabular}
+\end{table}

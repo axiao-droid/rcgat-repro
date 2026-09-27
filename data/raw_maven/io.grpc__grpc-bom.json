@@ -1,0 +1,1 @@
+{"ga": "io.grpc:grpc-bom", "group": "io.grpc", "artifact": "grpc-bom", "latest": "1.84.0", "first_date": "2019-02-27", "latest_date": "2026-09-01", "latest_is_prerelease": false, "n_versions": 150, "name": "io.grpc:grpc-bom", "description": "gRPC: BOM", "deps": {}}

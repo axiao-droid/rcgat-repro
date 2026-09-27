@@ -1,0 +1,1 @@
+{"ga": "org.apache.flink:flink-shaded-jackson", "group": "org.apache.flink", "artifact": "flink-shaded-jackson", "latest": "2.22.2-22.0", "first_date": "2017-10-24", "latest_date": "2026-08-24", "latest_is_prerelease": false, "n_versions": 23, "name": "flink-shaded-jackson-2", "description": "", "deps": {}}

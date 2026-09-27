@@ -1,0 +1,1 @@
+{"ga": "com.google.code.gson:gson-parent", "group": "com.google.code.gson", "artifact": "gson-parent", "latest": "2.14.0", "first_date": "2016-02-11", "latest_date": "2026-04-23", "latest_is_prerelease": false, "n_versions": 26, "name": "Gson Parent", "description": "Gson JSON library", "deps": {}}

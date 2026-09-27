@@ -1,0 +1,1 @@
+{"ga": "io.micrometer:micrometer-commons", "group": "io.micrometer", "artifact": "micrometer-commons", "latest": "1.17.1", "first_date": "2022-11-07", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 108, "name": "micrometer-commons", "description": "Module containing common code", "deps": {"org.jspecify:jspecify": "1.0.1"}}

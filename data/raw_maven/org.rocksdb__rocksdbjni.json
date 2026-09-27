@@ -1,0 +1,1 @@
+{"ga": "org.rocksdb:rocksdbjni", "group": "org.rocksdb", "artifact": "rocksdbjni", "latest": "10.10.1.1", "first_date": "2014-10-08", "latest_date": "2026-04-09", "latest_is_prerelease": false, "n_versions": 157, "name": "RocksDB JNI", "description": "RocksDB Java API and Native Libraries", "deps": {}}

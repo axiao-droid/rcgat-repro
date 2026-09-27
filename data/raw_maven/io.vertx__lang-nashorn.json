@@ -1,0 +1,1 @@
+{"ga": "io.vertx:lang-nashorn", "group": "io.vertx", "artifact": "lang-nashorn", "latest": "1.0.0-beta2", "first_date": "2013-12-07", "latest_date": "2014-03-26", "latest_is_prerelease": true, "n_versions": 2, "name": "mod-lang-nashorn", "description": "JavaScript language module which uses Nashorn JS engine", "deps": {}}

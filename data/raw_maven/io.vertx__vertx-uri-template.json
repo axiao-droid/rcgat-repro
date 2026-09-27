@@ -1,0 +1,1 @@
+{"ga": "io.vertx:vertx-uri-template", "group": "io.vertx", "artifact": "vertx-uri-template", "latest": "5.2.0", "first_date": "2022-05-11", "latest_date": "2026-09-18", "latest_is_prerelease": false, "n_versions": 85, "name": "Vert.x URI Template", "description": "", "deps": {"io.vertx:vertx-core": ""}}

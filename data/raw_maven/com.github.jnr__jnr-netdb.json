@@ -1,0 +1,1 @@
+{"ga": "com.github.jnr:jnr-netdb", "group": "com.github.jnr", "artifact": "jnr-netdb", "latest": "1.2.0", "first_date": "2011-08-07", "latest_date": "2020-09-11", "latest_is_prerelease": false, "n_versions": 11, "name": "jnr-netdb", "description": "Lookup TCP and UDP services from java", "deps": {"com.github.jnr:jnr-ffi": "2.2.0"}}

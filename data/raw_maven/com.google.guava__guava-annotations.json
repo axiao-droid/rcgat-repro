@@ -1,0 +1,1 @@
+{"ga": "com.google.guava:guava-annotations", "group": "com.google.guava", "artifact": "guava-annotations", "latest": "r03", "first_date": "2010-04-26", "latest_date": "2010-04-26", "latest_is_prerelease": false, "n_versions": 1, "name": "Guava (Google Common Libraries) Annotations", "description": "Guava annotations are used throughout the Guava libraries.", "deps": {}}

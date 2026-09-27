@@ -1,0 +1,1 @@
+{"ga": "org.apache.httpcomponents.core5:httpcore5", "group": "org.apache.httpcomponents.core5", "artifact": "httpcore5", "latest": "5.4.4", "first_date": "2015-12-20", "latest_date": "2026-09-20", "latest_is_prerelease": false, "n_versions": 59, "name": "Apache HttpComponents Core HTTP/1.1", "description": "Apache HttpComponents HTTP/1.1 core components", "deps": {}}

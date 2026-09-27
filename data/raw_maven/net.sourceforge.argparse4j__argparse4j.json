@@ -1,0 +1,1 @@
+{"ga": "net.sourceforge.argparse4j:argparse4j", "group": "net.sourceforge.argparse4j", "artifact": "argparse4j", "latest": "0.9.0", "first_date": "2011-11-29", "latest_date": "2021-04-09", "latest_is_prerelease": false, "n_versions": 17, "name": "argparse4j", "description": "The command-line parser library based on Python's argparse", "deps": {}}

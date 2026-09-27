@@ -1,0 +1,1 @@
+{"ga": "org.reflections:reflections-parent", "group": "org.reflections", "artifact": "reflections-parent", "latest": "0.9.8", "first_date": "2011-08-16", "latest_date": "2013-03-23", "latest_is_prerelease": false, "n_versions": 7, "name": "Reflections", "description": "Reflections - a Java runtime metadata analysis", "deps": {}}

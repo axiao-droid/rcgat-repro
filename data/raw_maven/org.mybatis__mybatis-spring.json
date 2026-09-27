@@ -1,0 +1,1 @@
+{"ga": "org.mybatis:mybatis-spring", "group": "org.mybatis", "artifact": "mybatis-spring", "latest": "3.0.6", "first_date": "2010-09-22", "latest_date": "2026-07-11", "latest_is_prerelease": false, "n_versions": 38, "name": "mybatis-spring", "description": "An easy-to-use Spring bridge for MyBatis sql mapping framework.", "deps": {}}

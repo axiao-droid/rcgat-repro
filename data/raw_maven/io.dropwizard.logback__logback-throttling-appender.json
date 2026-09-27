@@ -1,0 +1,1 @@
+{"ga": "io.dropwizard.logback:logback-throttling-appender", "group": "io.dropwizard.logback", "artifact": "logback-throttling-appender", "latest": "1.6.0", "first_date": "2018-12-30", "latest_date": "2026-08-28", "latest_is_prerelease": false, "n_versions": 29, "name": "Throttling Appender", "description": "Throttling appender wrapper for Logback", "deps": {}}

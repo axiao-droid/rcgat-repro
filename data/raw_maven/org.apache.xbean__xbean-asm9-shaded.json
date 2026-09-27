@@ -1,0 +1,1 @@
+{"ga": "org.apache.xbean:xbean-asm9-shaded", "group": "org.apache.xbean", "artifact": "xbean-asm9-shaded", "latest": "5.0.0", "first_date": "2020-09-21", "latest_date": "2026-08-02", "latest_is_prerelease": false, "n_versions": 15, "name": "Apache XBean :: ASM shaded (repackaged)", "description": "Repackaged and shaded asm jars", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.webjars:webjars-locator-lite", "group": "org.webjars", "artifact": "webjars-locator-lite", "latest": "1.1.5", "first_date": "2023-11-18", "latest_date": "2026-09-18", "latest_is_prerelease": false, "n_versions": 14, "name": "webjars-locator-lite", "description": "WebJars Locator Lite", "deps": {"org.jspecify:jspecify": "1.0.0"}}

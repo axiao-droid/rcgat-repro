@@ -1,0 +1,1 @@
+{"ga": "com.google.code.findbugs:jFormatString", "group": "com.google.code.findbugs", "artifact": "jFormatString", "latest": "3.0.0", "first_date": "2013-10-03", "latest_date": "2014-07-10", "latest_is_prerelease": false, "n_versions": 2, "name": "FindBugs-jFormatString", "description": "jFormatString for Findbugs", "deps": {}}

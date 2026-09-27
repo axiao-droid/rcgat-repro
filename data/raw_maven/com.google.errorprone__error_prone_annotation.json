@@ -1,0 +1,1 @@
+{"ga": "com.google.errorprone:error_prone_annotation", "group": "com.google.errorprone", "artifact": "error_prone_annotation", "latest": "2.50.0", "first_date": "2012-05-08", "latest_date": "2026-06-10", "latest_is_prerelease": false, "n_versions": 121, "name": "@BugPattern annotation", "description": "", "deps": {"com.google.guava:guava": "${guava.version}"}}

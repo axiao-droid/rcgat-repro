@@ -1,0 +1,1 @@
+{"ga": "com.mysql:mysql-connector-j", "group": "com.mysql", "artifact": "mysql-connector-j", "latest": "26.7.0", "first_date": "2022-10-13", "latest_date": "2026-07-24", "latest_is_prerelease": false, "n_versions": 16, "name": "MySQL Connector/J", "description": "JDBC Type 4 driver for MySQL.", "deps": {"com.google.protobuf:protobuf-java": "4.31.1"}}

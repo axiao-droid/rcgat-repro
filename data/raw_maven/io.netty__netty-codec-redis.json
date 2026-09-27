@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-redis", "group": "io.netty", "artifact": "netty-codec-redis", "latest": "4.2.18.Final", "first_date": "2016-05-25", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 168, "name": "Netty/Codec/Redis", "description": "", "deps": {"org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

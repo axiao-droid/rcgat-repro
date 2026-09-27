@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:agent-bond-jolokia", "group": "io.fabric8", "artifact": "agent-bond-jolokia", "latest": "1.2.0", "first_date": "2015-07-20", "latest_date": "2018-02-19", "latest_is_prerelease": false, "n_versions": 13, "name": "", "description": "", "deps": {"io.fabric8:agent-bond-core": "1.2.0"}}

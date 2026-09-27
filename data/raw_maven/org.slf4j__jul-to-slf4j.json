@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:jul-to-slf4j", "group": "org.slf4j", "artifact": "jul-to-slf4j", "latest": "2.0.20", "first_date": "2008-06-09", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 96, "name": "JUL to SLF4J bridge", "description": "JUL to SLF4J bridge", "deps": {"org.slf4j:slf4j-api": ""}}

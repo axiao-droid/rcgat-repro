@@ -1,0 +1,1 @@
+{"ga": "org.apache.commons:commons-pool2", "group": "org.apache.commons", "artifact": "commons-pool2", "latest": "2.13.1", "first_date": "2013-11-05", "latest_date": "2026-01-02", "latest_is_prerelease": false, "n_versions": 23, "name": "Apache Commons Pool", "description": "The Apache Commons Object Pooling Library.", "deps": {}}

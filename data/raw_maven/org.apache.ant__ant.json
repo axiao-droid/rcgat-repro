@@ -1,0 +1,1 @@
+{"ga": "org.apache.ant:ant", "group": "org.apache.ant", "artifact": "ant", "latest": "1.10.18", "first_date": "2006-12-22", "latest_date": "2026-09-03", "latest_is_prerelease": false, "n_versions": 43, "name": "Apache Ant Core", "description": "", "deps": {"org.apache.ant:ant-launcher": "1.10.18"}}

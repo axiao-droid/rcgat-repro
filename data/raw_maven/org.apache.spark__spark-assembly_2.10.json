@@ -1,0 +1,1 @@
+{"ga": "org.apache.spark:spark-assembly_2.10", "group": "org.apache.spark", "artifact": "spark-assembly_2.10", "latest": "1.1.1", "first_date": "2014-01-24", "latest_date": "2014-11-19", "latest_is_prerelease": false, "n_versions": 8, "name": "Spark Project Assembly", "description": "", "deps": {}}

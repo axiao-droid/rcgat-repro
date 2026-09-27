@@ -1,0 +1,1 @@
+{"ga": "org.scala-lang.modules:scala-java8-compat_2.13", "group": "org.scala-lang.modules", "artifact": "scala-java8-compat_2.13", "latest": "1.0.2", "first_date": "2019-06-08", "latest_date": "2021-10-28", "latest_is_prerelease": false, "n_versions": 7, "name": "scala-java8-compat", "description": "scala-java8-compat", "deps": {"org.scala-lang:scala-library": "2.13.6"}}

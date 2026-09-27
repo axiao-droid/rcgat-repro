@@ -1,0 +1,1 @@
+{"ga": "org.apache.solr:solr-common", "group": "org.apache.solr", "artifact": "solr-common", "latest": "1.3.0", "first_date": "2008-09-17", "latest_date": "2008-09-17", "latest_is_prerelease": false, "n_versions": 1, "name": "Apache Solr Common", "description": "Apache Solr Common", "deps": {}}

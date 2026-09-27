@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-smtp", "group": "io.netty", "artifact": "netty-codec-smtp", "latest": "4.2.18.Final", "first_date": "2016-04-10", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 169, "name": "Netty/Codec/SMTP", "description": "", "deps": {"org.reflections:reflections": "", "com.google.code.gson:gson": ""}}

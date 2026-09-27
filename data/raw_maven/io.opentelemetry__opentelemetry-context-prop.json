@@ -1,0 +1,1 @@
+{"ga": "io.opentelemetry:opentelemetry-context-prop", "group": "io.opentelemetry", "artifact": "opentelemetry-context-prop", "latest": "0.9.1", "first_date": "2020-03-16", "latest_date": "2020-10-07", "latest_is_prerelease": false, "n_versions": 12, "name": "OpenTelemetry Java", "description": "OpenTelemetry Context Propagation", "deps": {"io.grpc:grpc-context": "1.30.2"}}

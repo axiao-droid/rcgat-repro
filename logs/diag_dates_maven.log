@@ -1,0 +1,6 @@
+
+=== maven ===  published: nodes=1484 edges=5482 sources=94 positives=352 cand=1376
+  [latest_date               ] {"nodes": 1310, "edges": 4394, "n_test": 92, "cand": 1217, "max_out": 90, "max_in": 160, "dmin": "2005-09-20", "dmax": "2026-09-25", "src_any_out": 86, "src_nontest_target": 904, "pairs_t2t": 281, "pairs_t2n": 4025}
+  [latest_date >=2021-04-19  ] {"nodes": 1161, "edges": 4197, "n_test": 81, "cand": 1079, "max_out": 87, "max_in": 155, "dmin": "2021-04-24", "dmax": "2026-09-25", "src_any_out": 76, "src_nontest_target": 849, "pairs_t2t": 223, "pairs_t2n": 3720}
+  [first_date                ] {"nodes": 1314, "edges": 4406, "n_test": 92, "cand": 1221, "max_out": 90, "max_in": 161, "dmin": "2005-09-20", "dmax": "2026-09-09", "src_any_out": 77, "src_nontest_target": 958, "pairs_t2t": 124, "pairs_t2n": 4195}
+  [first_date >=2021-04-19   ] {"nodes": 269, "edges": 1095, "n_test": 19, "cand": 249, "max_out": 12, "max_in": 31, "dmin": "2021-04-28", "dmax": "2026-09-09", "src_any_out": 12, "src_nontest_target": 128, "pairs_t2t": 6, "pairs_t2n": 213}

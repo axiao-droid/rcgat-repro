@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-gherkin", "group": "io.cucumber", "artifact": "cucumber-gherkin", "latest": "8.0.1", "first_date": "2019-12-19", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 113, "name": "Cucumber-JVM: Gherkin", "description": "", "deps": {"org.jspecify:jspecify": "[1.0.0,2.0.0)", "io.cucumber:cucumber-plugin": ""}}

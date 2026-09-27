@@ -1,0 +1,1 @@
+{"ga": "ch.qos.logback:logback-classic", "group": "ch.qos.logback", "artifact": "logback-classic", "latest": "1.6.4", "first_date": "2006-08-23", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 174, "name": "Logback Classic Module", "description": "logback-classic module", "deps": {"ch.qos.logback:logback-core": "", "org.slf4j:slf4j-api": ""}}

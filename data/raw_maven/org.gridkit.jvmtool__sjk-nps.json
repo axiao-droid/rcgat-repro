@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:sjk-nps", "group": "org.gridkit.jvmtool", "artifact": "sjk-nps", "latest": "0.4", "first_date": "2017-07-24", "latest_date": "2018-06-09", "latest_is_prerelease": false, "n_versions": 3, "name": "${project.groupId}::${project.artifactId}", "description": "VisualVM snapshot support for SJK", "deps": {"org.gridkit.jvmtool:sjk-stacktrace": "0.6"}}

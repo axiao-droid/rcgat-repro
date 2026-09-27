@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-codec-classes-quic", "group": "io.netty", "artifact": "netty-codec-classes-quic", "latest": "4.2.18.Final", "first_date": "2025-05-06", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 18, "name": "Netty/Codec/Classes/Quic", "description": "", "deps": {"org.jetbrains:annotations": ""}}

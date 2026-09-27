@@ -1,0 +1,1 @@
+{"ga": "org.jboss.weld:as7-weld-subsystem-parent", "group": "org.jboss.weld", "artifact": "as7-weld-subsystem-parent", "latest": "2.0.0.Beta7", "first_date": "2012-11-28", "latest_date": "2013-03-25", "latest_is_prerelease": true, "n_versions": 5, "name": "AS7 Weld Subsystem parent", "description": "The parent for AS7 Weld Subsystem", "deps": {}}

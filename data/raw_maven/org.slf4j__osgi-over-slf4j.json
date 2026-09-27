@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:osgi-over-slf4j", "group": "org.slf4j", "artifact": "osgi-over-slf4j", "latest": "2.0.20", "first_date": "2012-10-11", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 74, "name": "OSGi LogService implemented over SLF4J", "description": "OSGi LogService implementation over SLF4J", "deps": {}}

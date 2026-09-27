@@ -1,0 +1,1 @@
+{"ga": "org.eclipse.angus:angus-activation", "group": "org.eclipse.angus", "artifact": "angus-activation", "latest": "2.0.3", "first_date": "2021-08-03", "latest_date": "2025-09-11", "latest_is_prerelease": false, "n_versions": 9, "name": "Angus Activation Registries", "description": "${project.name} Implementation", "deps": {"jakarta.activation:jakarta.activation-api": ""}}

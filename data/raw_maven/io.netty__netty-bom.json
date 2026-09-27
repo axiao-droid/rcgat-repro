@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-bom", "group": "io.netty", "artifact": "netty-bom", "latest": "4.2.18.Final", "first_date": "2017-03-10", "latest_date": "2026-09-09", "latest_is_prerelease": false, "n_versions": 171, "name": "Netty/BOM", "description": "Netty (Bill of Materials)", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "ch.qos.logback:audit-client", "group": "ch.qos.logback", "artifact": "audit-client", "latest": "0.6", "first_date": "2013-02-13", "latest_date": "2013-02-13", "latest_is_prerelease": false, "n_versions": 1, "name": "Logback Audit Client", "description": "", "deps": {"ch.qos.logback:audit-common": "", "ch.qos.logback:logback-core": "", "org.slf4j:slf4j-api": ""}}

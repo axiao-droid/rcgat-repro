@@ -1,0 +1,1 @@
+{"ga": "org.xerial:sqlite-jdbc", "group": "org.xerial", "artifact": "sqlite-jdbc", "latest": "3.53.4.0", "first_date": "2008-04-15", "latest_date": "2026-08-26", "latest_is_prerelease": false, "n_versions": 112, "name": "SQLite JDBC", "description": "SQLite JDBC library", "deps": {}}

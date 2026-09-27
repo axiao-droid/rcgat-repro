@@ -1,0 +1,1 @@
+{"ga": "org.apache.lucene:lucene-core", "group": "org.apache.lucene", "artifact": "lucene-core", "latest": "10.5.1", "first_date": "2006-06-11", "latest_date": "2026-08-12", "latest_is_prerelease": false, "n_versions": 157, "name": "Apache Lucene (module: core)", "description": "Apache Lucene (module: core)", "deps": {}}

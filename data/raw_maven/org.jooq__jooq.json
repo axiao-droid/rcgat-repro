@@ -1,0 +1,1 @@
+{"ga": "org.jooq:jooq", "group": "org.jooq", "artifact": "jooq", "latest": "3.21.9", "first_date": "2011-04-17", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 333, "name": "jOOQ", "description": "", "deps": {"io.r2dbc:r2dbc-spi": "", "org.slf4j:slf4j-api": ""}}

@@ -1,0 +1,1 @@
+{"ga": "org.apache.zookeeper:zookeeper-jute", "group": "org.apache.zookeeper", "artifact": "zookeeper-jute", "latest": "3.9.6", "first_date": "2019-05-03", "latest_date": "2026-09-03", "latest_is_prerelease": false, "n_versions": 29, "name": "Apache ZooKeeper - Jute", "description": "ZooKeeper jute", "deps": {"org.apache.yetus:audience-annotations": ""}}

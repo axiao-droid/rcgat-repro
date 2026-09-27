@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.lab:jvm-attach-api", "group": "org.gridkit.lab", "artifact": "jvm-attach-api", "latest": "1.5", "first_date": "2013-04-07", "latest_date": "2019-03-15", "latest_is_prerelease": false, "n_versions": 7, "name": "${project.groupId}::${project.artifactId}", "description": "", "deps": {}}

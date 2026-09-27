@@ -1,0 +1,1 @@
+{"ga": "org.apache.maven:maven-artifact", "group": "org.apache.maven", "artifact": "maven-artifact", "latest": "3.9.16", "first_date": "2005-11-08", "latest_date": "2026-09-21", "latest_is_prerelease": false, "n_versions": 105, "name": "Maven Artifact", "description": "", "deps": {"org.codehaus.plexus:plexus-utils": ""}}

@@ -1,0 +1,1 @@
+{"ga": "org.openjdk.jol:jol-core", "group": "org.openjdk.jol", "artifact": "jol-core", "latest": "0.17", "first_date": "2013-12-23", "latest_date": "2023-02-27", "latest_is_prerelease": false, "n_versions": 20, "name": "Java Object Layout: Core", "description": "", "deps": {}}

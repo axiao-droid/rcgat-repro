@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-accordion-flow", "group": "com.vaadin", "artifact": "vaadin-accordion-flow", "latest": "25.2.9", "first_date": "2019-02-05", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 570, "name": "Vaadin Accordion", "description": "Vaadin Accordion", "deps": {"com.vaadin:vaadin-details-flow": "25.2.9"}}

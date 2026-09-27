@@ -1,0 +1,1 @@
+{"ga": "org.apache.hadoop:hadoop-archive-logs", "group": "org.apache.hadoop", "artifact": "hadoop-archive-logs", "latest": "3.5.0", "first_date": "2016-08-30", "latest_date": "2026-03-24", "latest_is_prerelease": false, "n_versions": 43, "name": "Apache Hadoop Archive Logs", "description": "Apache Hadoop Archive Logs", "deps": {"org.apache.hadoop:hadoop-archives": ""}}

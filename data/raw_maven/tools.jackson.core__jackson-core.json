@@ -1,0 +1,1 @@
+{"ga": "tools.jackson.core:jackson-core", "group": "tools.jackson.core", "artifact": "jackson-core", "latest": "3.2.3", "first_date": "2025-03-07", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 28, "name": "Jackson-core", "description": "Core Jackson processing abstractions (aka Streaming API), implementation for JSON", "deps": {}}

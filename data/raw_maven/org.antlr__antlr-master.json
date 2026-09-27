@@ -1,0 +1,1 @@
+{"ga": "org.antlr:antlr-master", "group": "org.antlr", "artifact": "antlr-master", "latest": "3.5.3", "first_date": "2009-03-18", "latest_date": "2022-04-10", "latest_is_prerelease": false, "n_versions": 12, "name": "ANTLR 3 Master build control POM", "description": "Master build POM for ANTLR 3", "deps": {}}

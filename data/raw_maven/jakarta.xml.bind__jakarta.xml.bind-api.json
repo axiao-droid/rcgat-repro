@@ -1,0 +1,1 @@
+{"ga": "jakarta.xml.bind:jakarta.xml.bind-api", "group": "jakarta.xml.bind", "artifact": "jakarta.xml.bind-api", "latest": "4.0.5", "first_date": "2018-12-27", "latest_date": "2026-05-02", "latest_is_prerelease": false, "n_versions": 17, "name": "Jakarta XML Binding API", "description": "", "deps": {"jakarta.activation:jakarta.activation-api": ""}}

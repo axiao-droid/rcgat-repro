@@ -1,0 +1,1 @@
+{"ga": "com.googlecode.concurrent-trees:concurrent-trees", "group": "com.googlecode.concurrent-trees", "artifact": "concurrent-trees", "latest": "2.6.1", "first_date": "2012-07-09", "latest_date": "2017-07-14", "latest_is_prerelease": false, "n_versions": 10, "name": "Concurrent-Trees", "description": "Concurrent Radix Trees and Concurrent Suffix Trees for Java.", "deps": {}}

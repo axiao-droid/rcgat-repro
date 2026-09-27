@@ -1,0 +1,1 @@
+{"ga": "com.google.android:annotations", "group": "com.google.android", "artifact": "annotations", "latest": "4.1.1.4", "first_date": "2012-08-31", "latest_date": "2012-08-31", "latest_is_prerelease": false, "n_versions": 1, "name": "Google Android Annotations Library", "description": "A library jar that provides annotations for the Google Android Platform.", "deps": {}}

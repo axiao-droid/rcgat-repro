@@ -1,0 +1,1 @@
+{"ga": "io.vertx:lang-dynjs", "group": "io.vertx", "artifact": "lang-dynjs", "latest": "1.0.1", "first_date": "2013-11-07", "latest_date": "2014-05-06", "latest_is_prerelease": false, "n_versions": 5, "name": "DynJS Vert.x module", "description": "", "deps": {"org.dynjs:dynjs": "${version.dynjs}"}}

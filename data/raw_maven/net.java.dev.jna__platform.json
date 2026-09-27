@@ -1,0 +1,1 @@
+{"ga": "net.java.dev.jna:platform", "group": "net.java.dev.jna", "artifact": "platform", "latest": "3.5.2", "first_date": "2011-12-21", "latest_date": "2013-04-06", "latest_is_prerelease": false, "n_versions": 4, "name": "Java Native Access Platform", "description": "Java Native Access Platform", "deps": {"net.java.dev.jna:jna": "3.5.2"}}

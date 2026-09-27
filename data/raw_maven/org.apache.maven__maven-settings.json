@@ -1,0 +1,1 @@
+{"ga": "org.apache.maven:maven-settings", "group": "org.apache.maven", "artifact": "maven-settings", "latest": "3.9.16", "first_date": "2006-05-07", "latest_date": "2026-09-21", "latest_is_prerelease": false, "n_versions": 103, "name": "Maven Settings", "description": "Maven Settings model.", "deps": {"org.codehaus.plexus:plexus-utils": ""}}

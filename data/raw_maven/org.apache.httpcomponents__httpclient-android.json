@@ -1,0 +1,1 @@
+{"ga": "org.apache.httpcomponents:httpclient-android", "group": "org.apache.httpcomponents", "artifact": "httpclient-android", "latest": "4.3.5.1", "first_date": "2014-03-15", "latest_date": "2015-01-11", "latest_is_prerelease": false, "n_versions": 3, "name": "HttpComponents Client for Android", "description": "", "deps": {}}

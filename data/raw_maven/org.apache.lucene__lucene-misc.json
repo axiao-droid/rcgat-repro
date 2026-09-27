@@ -1,0 +1,1 @@
+{"ga": "org.apache.lucene:lucene-misc", "group": "org.apache.lucene", "artifact": "lucene-misc", "latest": "10.5.1", "first_date": "2007-06-19", "latest_date": "2026-08-12", "latest_is_prerelease": false, "n_versions": 157, "name": "Apache Lucene (module: misc)", "description": "Apache Lucene (module: misc)", "deps": {"org.apache.lucene:lucene-core": "10.5.1"}}

@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-time-picker-flow", "group": "com.vaadin", "artifact": "vaadin-time-picker-flow", "latest": "25.2.9", "first_date": "2018-11-14", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 588, "name": "Vaadin Time Picker", "description": "Vaadin Time Picker", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

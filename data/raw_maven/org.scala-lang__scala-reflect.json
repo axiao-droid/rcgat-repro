@@ -1,0 +1,1 @@
+{"ga": "org.scala-lang:scala-reflect", "group": "org.scala-lang", "artifact": "scala-reflect", "latest": "2.12.21", "first_date": "2012-06-12", "latest_date": "2025-12-08", "latest_is_prerelease": false, "n_versions": 128, "name": "Scala Reflect", "description": "Reflection Library for the Scala Programming Language", "deps": {"org.scala-lang:scala-library": "2.12.21"}}

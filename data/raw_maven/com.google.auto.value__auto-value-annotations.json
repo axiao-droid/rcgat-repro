@@ -1,0 +1,1 @@
+{"ga": "com.google.auto.value:auto-value-annotations", "group": "com.google.auto.value", "artifact": "auto-value-annotations", "latest": "1.11.1", "first_date": "2018-03-20", "latest_date": "2025-11-11", "latest_is_prerelease": false, "n_versions": 28, "name": "AutoValue Annotations", "description": "Immutable value-type code generation for Java 8+.", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:slf4j-bom", "group": "org.slf4j", "artifact": "slf4j-bom", "latest": "2.0.20", "first_date": "2023-09-03", "latest_date": "2026-09-22", "latest_is_prerelease": false, "n_versions": 15, "name": "SLF4J BOM", "description": "SLF4J project BOM", "deps": {}}

@@ -1,0 +1,397 @@
+written: /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/summary/summary.json|.md|.csv
+
+=== audit npm ===
+  [PASS] A1 node/edge counts match stats -- nodes=4959 edges=13602
+  [PASS] A2 degree extremes match stats -- max_out=167 max_in=254
+  [PASS] A3 no self loops
+  [PASS] A4 no duplicate edges -- 13602 edges / 13602 unique
+  [PASS] A5 date span matches stats -- 2010-12-19 .. 2026-09-17
+  [PASS] A6 snapshot sha256 recorded -- fd6773075e5a8973...
+  [PASS] A7 node order is the graph payload order (split and features share one indexing)
+  [PASS] B1 seed 101: fit/val/test partition is disjoint and exhaustive -- 4222/390/347 of 4959
+  [PASS] B2 seed 101: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 101: test window is exactly the date tail
+  [PASS] B4 seed 101: no fit node is newer than a validation node
+  [PASS] B5 seed 101: no validation node is newer than a test node
+  [PASS] B6 seed 101: validation size within the jitter band -- 390 nodes vs 397±20
+  [PASS] B1 seed 102: fit/val/test partition is disjoint and exhaustive -- 4217/395/347 of 4959
+  [PASS] B2 seed 102: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 102: test window is exactly the date tail
+  [PASS] B4 seed 102: no fit node is newer than a validation node
+  [PASS] B5 seed 102: no validation node is newer than a test node
+  [PASS] B6 seed 102: validation size within the jitter band -- 395 nodes vs 397±20
+  [PASS] B1 seed 103: fit/val/test partition is disjoint and exhaustive -- 4212/400/347 of 4959
+  [PASS] B2 seed 103: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 103: test window is exactly the date tail
+  [PASS] B4 seed 103: no fit node is newer than a validation node
+  [PASS] B5 seed 103: no validation node is newer than a test node
+  [PASS] B6 seed 103: validation size within the jitter band -- 400 nodes vs 397±20
+  [PASS] B1 seed 104: fit/val/test partition is disjoint and exhaustive -- 4207/405/347 of 4959
+  [PASS] B2 seed 104: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 104: test window is exactly the date tail
+  [PASS] B4 seed 104: no fit node is newer than a validation node
+  [PASS] B5 seed 104: no validation node is newer than a test node
+  [PASS] B6 seed 104: validation size within the jitter band -- 405 nodes vs 397±20
+  [PASS] B1 seed 105: fit/val/test partition is disjoint and exhaustive -- 4202/410/347 of 4959
+  [PASS] B2 seed 105: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 105: test window is exactly the date tail
+  [PASS] B4 seed 105: no fit node is newer than a validation node
+  [PASS] B5 seed 105: no validation node is newer than a test node
+  [PASS] B6 seed 105: validation size within the jitter band -- 410 nodes vs 397±20
+  [PASS] B1 seed 106: fit/val/test partition is disjoint and exhaustive -- 4197/415/347 of 4959
+  [PASS] B2 seed 106: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 106: test window is exactly the date tail
+  [PASS] B4 seed 106: no fit node is newer than a validation node
+  [PASS] B5 seed 106: no validation node is newer than a test node
+  [PASS] B6 seed 106: validation size within the jitter band -- 415 nodes vs 397±20
+  [PASS] B1 seed 107: fit/val/test partition is disjoint and exhaustive -- 4233/379/347 of 4959
+  [PASS] B2 seed 107: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 107: test window is exactly the date tail
+  [PASS] B4 seed 107: no fit node is newer than a validation node
+  [PASS] B5 seed 107: no validation node is newer than a test node
+  [PASS] B6 seed 107: validation size within the jitter band -- 379 nodes vs 397±20
+  [PASS] B1 seed 108: fit/val/test partition is disjoint and exhaustive -- 4228/384/347 of 4959
+  [PASS] B2 seed 108: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 108: test window is exactly the date tail
+  [PASS] B4 seed 108: no fit node is newer than a validation node
+  [PASS] B5 seed 108: no validation node is newer than a test node
+  [PASS] B6 seed 108: validation size within the jitter band -- 384 nodes vs 397±20
+  [PASS] B1 seed 109: fit/val/test partition is disjoint and exhaustive -- 4223/389/347 of 4959
+  [PASS] B2 seed 109: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 109: test window is exactly the date tail
+  [PASS] B4 seed 109: no fit node is newer than a validation node
+  [PASS] B5 seed 109: no validation node is newer than a test node
+  [PASS] B6 seed 109: validation size within the jitter band -- 389 nodes vs 397±20
+  [PASS] B1 seed 110: fit/val/test partition is disjoint and exhaustive -- 4218/394/347 of 4959
+  [PASS] B2 seed 110: test window is the newest 347 nodes -- 347 nodes
+  [PASS] B3 seed 110: test window is exactly the date tail
+  [PASS] B4 seed 110: no fit node is newer than a validation node
+  [PASS] B5 seed 110: no validation node is newer than a test node
+  [PASS] B6 seed 110: validation size within the jitter band -- 394 nodes vs 397±20
+  [PASS] B7 the ten seeds produce ten distinct training partitions (distinct fit windows, i.e. distinct training edge sets) -- 10/10 distinct
+  [PASS] B8 the test window is the same newest-fraction window in every seed (pinned by the published candidate arithmetic; variation sits in fit/val) -- 1 distinct windows (SPLIT_JITTER_TEST=0.0)
+  [PASS] C1 seed 101: training edges leave the fit window only -- 11946 training edges
+  [PASS] C2 seed 101: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 101: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 101: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 101: fit/val/test edge sources sit in their own windows -- fit 11946/11946 val 963/963 test 693/693
+  [PASS] C6 seed 101: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 101: descriptors ignore content outside the fit graph -- 128 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 101: fit-window metadata matches the split -- 4222+390+347=4959
+  [PASS] C8 seed 101: one edge-time feature row per edge in each window -- {'fit': 11946, 'val': 963, 'test': 693} vs {'fit': 11946, 'val': 963, 'test': 693}
+  [PASS] C1 seed 102: training edges leave the fit window only -- 11939 training edges
+  [PASS] C2 seed 102: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 102: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 102: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 102: fit/val/test edge sources sit in their own windows -- fit 11939/11939 val 970/970 test 693/693
+  [PASS] C6 seed 102: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 102: descriptors ignore content outside the fit graph -- 128 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 102: fit-window metadata matches the split -- 4217+395+347=4959
+  [PASS] C8 seed 102: one edge-time feature row per edge in each window -- {'fit': 11939, 'val': 970, 'test': 693} vs {'fit': 11939, 'val': 970, 'test': 693}
+  [PASS] C1 seed 103: training edges leave the fit window only -- 11908 training edges
+  [PASS] C2 seed 103: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 103: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 103: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 103: fit/val/test edge sources sit in their own windows -- fit 11908/11908 val 1001/1001 test 693/693
+  [PASS] C6 seed 103: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 103: descriptors ignore content outside the fit graph -- 137 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 103: fit-window metadata matches the split -- 4212+400+347=4959
+  [PASS] C8 seed 103: one edge-time feature row per edge in each window -- {'fit': 11908, 'val': 1001, 'test': 693} vs {'fit': 11908, 'val': 1001, 'test': 693}
+  [PASS] C1 seed 104: training edges leave the fit window only -- 11901 training edges
+  [PASS] C2 seed 104: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 104: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 104: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 104: fit/val/test edge sources sit in their own windows -- fit 11901/11901 val 1008/1008 test 693/693
+  [PASS] C6 seed 104: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 104: descriptors ignore content outside the fit graph -- 140 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 104: fit-window metadata matches the split -- 4207+405+347=4959
+  [PASS] C8 seed 104: one edge-time feature row per edge in each window -- {'fit': 11901, 'val': 1008, 'test': 693} vs {'fit': 11901, 'val': 1008, 'test': 693}
+  [PASS] C1 seed 105: training edges leave the fit window only -- 11877 training edges
+  [PASS] C2 seed 105: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 105: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 105: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 105: fit/val/test edge sources sit in their own windows -- fit 11877/11877 val 1032/1032 test 693/693
+  [PASS] C6 seed 105: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 105: descriptors ignore content outside the fit graph -- 140 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 105: fit-window metadata matches the split -- 4202+410+347=4959
+  [PASS] C8 seed 105: one edge-time feature row per edge in each window -- {'fit': 11877, 'val': 1032, 'test': 693} vs {'fit': 11877, 'val': 1032, 'test': 693}
+  [PASS] C1 seed 106: training edges leave the fit window only -- 11873 training edges
+  [PASS] C2 seed 106: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 106: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 106: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 106: fit/val/test edge sources sit in their own windows -- fit 11873/11873 val 1036/1036 test 693/693
+  [PASS] C6 seed 106: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 106: descriptors ignore content outside the fit graph -- 140 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 106: fit-window metadata matches the split -- 4197+415+347=4959
+  [PASS] C8 seed 106: one edge-time feature row per edge in each window -- {'fit': 11873, 'val': 1036, 'test': 693} vs {'fit': 11873, 'val': 1036, 'test': 693}
+  [PASS] C1 seed 107: training edges leave the fit window only -- 11995 training edges
+  [PASS] C2 seed 107: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 107: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 107: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 107: fit/val/test edge sources sit in their own windows -- fit 11995/11995 val 914/914 test 693/693
+  [PASS] C6 seed 107: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 107: descriptors ignore content outside the fit graph -- 121 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 107: fit-window metadata matches the split -- 4233+379+347=4959
+  [PASS] C8 seed 107: one edge-time feature row per edge in each window -- {'fit': 11995, 'val': 914, 'test': 693} vs {'fit': 11995, 'val': 914, 'test': 693}
+  [PASS] C1 seed 108: training edges leave the fit window only -- 11959 training edges
+  [PASS] C2 seed 108: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 108: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 108: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 108: fit/val/test edge sources sit in their own windows -- fit 11959/11959 val 950/950 test 693/693
+  [PASS] C6 seed 108: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 108: descriptors ignore content outside the fit graph -- 125 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 108: fit-window metadata matches the split -- 4228+384+347=4959
+  [PASS] C8 seed 108: one edge-time feature row per edge in each window -- {'fit': 11959, 'val': 950, 'test': 693} vs {'fit': 11959, 'val': 950, 'test': 693}
+  [PASS] C1 seed 109: training edges leave the fit window only -- 11949 training edges
+  [PASS] C2 seed 109: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 109: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 109: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 109: fit/val/test edge sources sit in their own windows -- fit 11949/11949 val 960/960 test 693/693
+  [PASS] C6 seed 109: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 109: descriptors ignore content outside the fit graph -- 128 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 109: fit-window metadata matches the split -- 4223+389+347=4959
+  [PASS] C8 seed 109: one edge-time feature row per edge in each window -- {'fit': 11949, 'val': 960, 'test': 693} vs {'fit': 11949, 'val': 960, 'test': 693}
+  [PASS] C1 seed 110: training edges leave the fit window only -- 11941 training edges
+  [PASS] C2 seed 110: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 110: candidate pool = every node outside the test window -- pool=4612 of 4959 (test window 347)
+  [PASS] C4 seed 110: rankable test positives re-derived from the pool -- 494 rankable of 693 test edges (199 point inside the test window)
+  [PASS] C5 seed 110: fit/val/test edge sources sit in their own windows -- fit 11941/11941 val 968/968 test 693/693
+  [PASS] C6 seed 110: descriptors are a [N,13] matrix over all nodes -- (4959, 13)
+  [PASS] C6b seed 110: descriptors ignore content outside the fit graph -- 128 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 110: fit-window metadata matches the split -- 4218+394+347=4959
+  [PASS] C8 seed 110: one edge-time feature row per edge in each window -- {'fit': 11941, 'val': 968, 'test': 693} vs {'fit': 11941, 'val': 968, 'test': 693}
+  [PASS] D1 features are L2-normalised (empty texts stay at the origin) -- 10 zero rows of 4959
+  [PASS] D2 feature metadata records the calibrated recipe -- "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*"
+  [PASS] D3 stored test floor is reproduced from the bundle -- recomputed 0.155906 vs stored 0.155906
+  [PASS] D4 stored floor reports sources and candidates -- sources=181 positives=494 candidates=4611
+
+=== audit maven ===
+  [PASS] A1 node/edge counts match stats -- nodes=1664 edges=5651
+  [PASS] A2 degree extremes match stats -- max_out=122 max_in=214
+  [PASS] A3 no self loops
+  [PASS] A4 no duplicate edges -- 5651 edges / 5651 unique
+  [PASS] A5 date span matches stats -- 2021-04-24 .. 2026-09-25
+  [PASS] A6 snapshot sha256 recorded -- fc479ad09fb64a9e...
+  [PASS] A7 node order is the graph payload order (split and features share one indexing)
+  [PASS] B1 seed 121: fit/val/test partition is disjoint and exhaustive -- 1426/122/116 of 1664
+  [PASS] B2 seed 121: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 121: test window is exactly the date tail
+  [PASS] B4 seed 121: no fit node is newer than a validation node
+  [PASS] B5 seed 121: no validation node is newer than a test node
+  [PASS] B6 seed 121: validation size within the jitter band -- 122 nodes vs 133±12
+  [PASS] B1 seed 122: fit/val/test partition is disjoint and exhaustive -- 1420/128/116 of 1664
+  [PASS] B2 seed 122: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 122: test window is exactly the date tail
+  [PASS] B4 seed 122: no fit node is newer than a validation node
+  [PASS] B5 seed 122: no validation node is newer than a test node
+  [PASS] B6 seed 122: validation size within the jitter band -- 128 nodes vs 133±12
+  [PASS] B1 seed 123: fit/val/test partition is disjoint and exhaustive -- 1414/134/116 of 1664
+  [PASS] B2 seed 123: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 123: test window is exactly the date tail
+  [PASS] B4 seed 123: no fit node is newer than a validation node
+  [PASS] B5 seed 123: no validation node is newer than a test node
+  [PASS] B6 seed 123: validation size within the jitter band -- 134 nodes vs 133±12
+  [PASS] B1 seed 124: fit/val/test partition is disjoint and exhaustive -- 1408/140/116 of 1664
+  [PASS] B2 seed 124: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 124: test window is exactly the date tail
+  [PASS] B4 seed 124: no fit node is newer than a validation node
+  [PASS] B5 seed 124: no validation node is newer than a test node
+  [PASS] B6 seed 124: validation size within the jitter band -- 140 nodes vs 133±12
+  [PASS] B1 seed 125: fit/val/test partition is disjoint and exhaustive -- 1427/121/116 of 1664
+  [PASS] B2 seed 125: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 125: test window is exactly the date tail
+  [PASS] B4 seed 125: no fit node is newer than a validation node
+  [PASS] B5 seed 125: no validation node is newer than a test node
+  [PASS] B6 seed 125: validation size within the jitter band -- 121 nodes vs 133±12
+  [PASS] B1 seed 126: fit/val/test partition is disjoint and exhaustive -- 1421/127/116 of 1664
+  [PASS] B2 seed 126: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 126: test window is exactly the date tail
+  [PASS] B4 seed 126: no fit node is newer than a validation node
+  [PASS] B5 seed 126: no validation node is newer than a test node
+  [PASS] B6 seed 126: validation size within the jitter band -- 127 nodes vs 133±12
+  [PASS] B1 seed 127: fit/val/test partition is disjoint and exhaustive -- 1415/133/116 of 1664
+  [PASS] B2 seed 127: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 127: test window is exactly the date tail
+  [PASS] B4 seed 127: no fit node is newer than a validation node
+  [PASS] B5 seed 127: no validation node is newer than a test node
+  [PASS] B6 seed 127: validation size within the jitter band -- 133 nodes vs 133±12
+  [PASS] B1 seed 128: fit/val/test partition is disjoint and exhaustive -- 1409/139/116 of 1664
+  [PASS] B2 seed 128: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 128: test window is exactly the date tail
+  [PASS] B4 seed 128: no fit node is newer than a validation node
+  [PASS] B5 seed 128: no validation node is newer than a test node
+  [PASS] B6 seed 128: validation size within the jitter band -- 139 nodes vs 133±12
+  [PASS] B1 seed 129: fit/val/test partition is disjoint and exhaustive -- 1403/145/116 of 1664
+  [PASS] B2 seed 129: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 129: test window is exactly the date tail
+  [PASS] B4 seed 129: no fit node is newer than a validation node
+  [PASS] B5 seed 129: no validation node is newer than a test node
+  [PASS] B6 seed 129: validation size within the jitter band -- 145 nodes vs 133±12
+  [PASS] B1 seed 130: fit/val/test partition is disjoint and exhaustive -- 1422/126/116 of 1664
+  [PASS] B2 seed 130: test window is the newest 116 nodes -- 116 nodes
+  [PASS] B3 seed 130: test window is exactly the date tail
+  [PASS] B4 seed 130: no fit node is newer than a validation node
+  [PASS] B5 seed 130: no validation node is newer than a test node
+  [PASS] B6 seed 130: validation size within the jitter band -- 126 nodes vs 133±12
+  [PASS] B7 the ten seeds produce ten distinct training partitions (distinct fit windows, i.e. distinct training edge sets) -- 10/10 distinct
+  [PASS] B8 the test window is the same newest-fraction window in every seed (pinned by the published candidate arithmetic; variation sits in fit/val) -- 1 distinct windows (SPLIT_JITTER_TEST=0.0)
+  [PASS] C1 seed 121: training edges leave the fit window only -- 4948 training edges
+  [PASS] C2 seed 121: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 121: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 121: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 121: fit/val/test edge sources sit in their own windows -- fit 4948/4948 val 376/376 test 327/327
+  [PASS] C6 seed 121: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 121: descriptors ignore content outside the fit graph -- 162 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 121: fit-window metadata matches the split -- 1426+122+116=1664
+  [PASS] C8 seed 121: one edge-time feature row per edge in each window -- {'fit': 4948, 'val': 376, 'test': 327} vs {'fit': 4948, 'val': 376, 'test': 327}
+  [PASS] C1 seed 122: training edges leave the fit window only -- 4925 training edges
+  [PASS] C2 seed 122: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 122: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 122: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 122: fit/val/test edge sources sit in their own windows -- fit 4925/4925 val 399/399 test 327/327
+  [PASS] C6 seed 122: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 122: descriptors ignore content outside the fit graph -- 171 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 122: fit-window metadata matches the split -- 1420+128+116=1664
+  [PASS] C8 seed 122: one edge-time feature row per edge in each window -- {'fit': 4925, 'val': 399, 'test': 327} vs {'fit': 4925, 'val': 399, 'test': 327}
+  [PASS] C1 seed 123: training edges leave the fit window only -- 4863 training edges
+  [PASS] C2 seed 123: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 123: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 123: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 123: fit/val/test edge sources sit in their own windows -- fit 4863/4863 val 461/461 test 327/327
+  [PASS] C6 seed 123: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 123: descriptors ignore content outside the fit graph -- 219 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 123: fit-window metadata matches the split -- 1414+134+116=1664
+  [PASS] C8 seed 123: one edge-time feature row per edge in each window -- {'fit': 4863, 'val': 461, 'test': 327} vs {'fit': 4863, 'val': 461, 'test': 327}
+  [PASS] C1 seed 124: training edges leave the fit window only -- 4859 training edges
+  [PASS] C2 seed 124: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 124: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 124: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 124: fit/val/test edge sources sit in their own windows -- fit 4859/4859 val 465/465 test 327/327
+  [PASS] C6 seed 124: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 124: descriptors ignore content outside the fit graph -- 225 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 124: fit-window metadata matches the split -- 1408+140+116=1664
+  [PASS] C8 seed 124: one edge-time feature row per edge in each window -- {'fit': 4859, 'val': 465, 'test': 327} vs {'fit': 4859, 'val': 465, 'test': 327}
+  [PASS] C1 seed 125: training edges leave the fit window only -- 4950 training edges
+  [PASS] C2 seed 125: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 125: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 125: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 125: fit/val/test edge sources sit in their own windows -- fit 4950/4950 val 374/374 test 327/327
+  [PASS] C6 seed 125: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 125: descriptors ignore content outside the fit graph -- 162 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 125: fit-window metadata matches the split -- 1427+121+116=1664
+  [PASS] C8 seed 125: one edge-time feature row per edge in each window -- {'fit': 4950, 'val': 374, 'test': 327} vs {'fit': 4950, 'val': 374, 'test': 327}
+  [PASS] C1 seed 126: training edges leave the fit window only -- 4926 training edges
+  [PASS] C2 seed 126: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 126: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 126: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 126: fit/val/test edge sources sit in their own windows -- fit 4926/4926 val 398/398 test 327/327
+  [PASS] C6 seed 126: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 126: descriptors ignore content outside the fit graph -- 170 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 126: fit-window metadata matches the split -- 1421+127+116=1664
+  [PASS] C8 seed 126: one edge-time feature row per edge in each window -- {'fit': 4926, 'val': 398, 'test': 327} vs {'fit': 4926, 'val': 398, 'test': 327}
+  [PASS] C1 seed 127: training edges leave the fit window only -- 4864 training edges
+  [PASS] C2 seed 127: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 127: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 127: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 127: fit/val/test edge sources sit in their own windows -- fit 4864/4864 val 460/460 test 327/327
+  [PASS] C6 seed 127: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 127: descriptors ignore content outside the fit graph -- 218 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 127: fit-window metadata matches the split -- 1415+133+116=1664
+  [PASS] C8 seed 127: one edge-time feature row per edge in each window -- {'fit': 4864, 'val': 460, 'test': 327} vs {'fit': 4864, 'val': 460, 'test': 327}
+  [PASS] C1 seed 128: training edges leave the fit window only -- 4859 training edges
+  [PASS] C2 seed 128: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 128: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 128: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 128: fit/val/test edge sources sit in their own windows -- fit 4859/4859 val 465/465 test 327/327
+  [PASS] C6 seed 128: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 128: descriptors ignore content outside the fit graph -- 224 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 128: fit-window metadata matches the split -- 1409+139+116=1664
+  [PASS] C8 seed 128: one edge-time feature row per edge in each window -- {'fit': 4859, 'val': 465, 'test': 327} vs {'fit': 4859, 'val': 465, 'test': 327}
+  [PASS] C1 seed 129: training edges leave the fit window only -- 4852 training edges
+  [PASS] C2 seed 129: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 129: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 129: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 129: fit/val/test edge sources sit in their own windows -- fit 4852/4852 val 472/472 test 327/327
+  [PASS] C6 seed 129: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 129: descriptors ignore content outside the fit graph -- 228 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 129: fit-window metadata matches the split -- 1403+145+116=1664
+  [PASS] C8 seed 129: one edge-time feature row per edge in each window -- {'fit': 4852, 'val': 472, 'test': 327} vs {'fit': 4852, 'val': 472, 'test': 327}
+  [PASS] C1 seed 130: training edges leave the fit window only -- 4927 training edges
+  [PASS] C2 seed 130: no test-window node is a training source -- 0 training edges leave a test node
+  [PASS] C3 seed 130: candidate pool = every node outside the test window -- pool=1548 of 1664 (test window 116)
+  [PASS] C4 seed 130: rankable test positives re-derived from the pool -- 63 rankable of 327 test edges (264 point inside the test window)
+  [PASS] C5 seed 130: fit/val/test edge sources sit in their own windows -- fit 4927/4927 val 397/397 test 327/327
+  [PASS] C6 seed 130: descriptors are a [N,13] matrix over all nodes -- (1664, 13)
+  [PASS] C6b seed 130: descriptors ignore content outside the fit graph -- 169 free nodes replaced, max |diff| = 0.00e+00
+  [PASS] C7 seed 130: fit-window metadata matches the split -- 1422+126+116=1664
+  [PASS] C8 seed 130: one edge-time feature row per edge in each window -- {'fit': 4927, 'val': 397, 'test': 327} vs {'fit': 4927, 'val': 397, 'test': 327}
+  [PASS] D1 features are L2-normalised (empty texts stay at the origin) -- 3 zero rows of 1664
+  [PASS] D2 feature metadata records the calibrated recipe -- "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*"
+  [PASS] D3 stored test floor is reproduced from the bundle -- recomputed 0.093199 vs stored 0.093199
+  [PASS] D4 stored floor reports sources and candidates -- sources=29 positives=63 candidates=1547
+
+=== run bookkeeping and contrasts ===
+  [PASS] E1 npm gat_dir: ten runs present, one frozen config -- 10 runs, cfg=['c1_h128_d0.2']
+  [PASS] E2 npm gat_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H npm gat_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 npm ragat_sym: ten runs present, one frozen config -- 10 runs, cfg=['c1_h128_d0.2']
+  [PASS] E2 npm ragat_sym: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H npm ragat_sym: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 npm gat_time: ten runs present, one frozen config -- 10 runs, cfg=['c4_h128_d0.5']
+  [PASS] E2 npm gat_time: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H npm gat_time: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 npm ragat_time: ten runs present, one frozen config -- 10 runs, cfg=['c4_h128_d0.5']
+  [PASS] E2 npm ragat_time: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H npm ragat_time: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 npm gcn_dir: ten runs present, one frozen config -- 10 runs, cfg=['c1_h128_d0.2']
+  [PASS] E2 npm gcn_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H npm gcn_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 npm sage_dir: ten runs present, one frozen config -- 10 runs, cfg=['c1_h128_d0.2']
+  [PASS] E2 npm sage_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H npm sage_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 npm gatv2_dir: ten runs present, one frozen config -- 10 runs, cfg=['c4_h128_d0.5']
+  [PASS] E2 npm gatv2_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H npm gatv2_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] F npm gate: summary matches the audit recomputation -- summary -0.002058/5 vs audit -0.002058/5
+  [PASS] F npm time: summary matches the audit recomputation -- summary +0.016690/8 vs audit +0.016690/8
+  [PASS] F npm gate_under_time: summary matches the audit recomputation -- summary -0.015816/3 vs audit -0.015816/3
+  [PASS] F npm full_vs_gatdir: summary matches the audit recomputation -- summary +0.000875/5 vs audit +0.000875/5
+  [PASS] F npm gcn_vs_gatdir: summary matches the audit recomputation -- summary +0.047468/10 vs audit +0.047468/10
+  [PASS] F npm sage_vs_gatdir: summary matches the audit recomputation -- summary +0.005193/8 vs audit +0.005193/8
+  [PASS] F npm gatv2_vs_gatdir: summary matches the audit recomputation -- summary -0.000991/3 vs audit -0.000991/3
+  [PASS] F npm: every audited contrast is present in the summary -- 7/7
+      re-selected per cell: {'gat_dir': 'c1_h128_d0.2', 'ragat_sym': 'c1_h128_d0.2', 'gat_time': 'c4_h128_d0.5', 'ragat_time': 'c4_h128_d0.5'}; recorded {'gat_dir': 'c1_h128_d0.2', 'ragat_sym': 'c1_h128_d0.2', 'gat_time': 'c4_h128_d0.5', 'ragat_time': 'c4_h128_d0.5'}
+  [PASS] G npm: the frozen configs equal the re-selected ones
+  [PASS] E1 maven gat_dir: ten runs present, one frozen config -- 10 runs, cfg=['c4_h128_d0.5']
+  [PASS] E2 maven gat_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H maven gat_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 maven ragat_sym: ten runs present, one frozen config -- 10 runs, cfg=['c3_h64_d0.5']
+  [PASS] E2 maven ragat_sym: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H maven ragat_sym: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 maven gat_time: ten runs present, one frozen config -- 10 runs, cfg=['c2_h64_d0.2']
+  [PASS] E2 maven gat_time: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H maven gat_time: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 maven ragat_time: ten runs present, one frozen config -- 10 runs, cfg=['c1_h128_d0.2']
+  [PASS] E2 maven ragat_time: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H maven ragat_time: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 maven gcn_dir: ten runs present, one frozen config -- 10 runs, cfg=['c4_h128_d0.5']
+  [PASS] E2 maven gcn_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H maven gcn_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 maven sage_dir: ten runs present, one frozen config -- 10 runs, cfg=['c1_h128_d0.2']
+  [PASS] E2 maven sage_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H maven sage_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] E1 maven gatv2_dir: ten runs present, one frozen config -- 10 runs, cfg=['c3_h64_d0.5']
+  [PASS] E2 maven gatv2_dir: floor recorded in the run equals the floor phase -- max diff 0.00e+00
+  [PASS] H maven gatv2_dir: untrained model reproduces the content floor on validation -- max |init_val_mrr - floor_val| = 0.00e+00
+  [PASS] F maven gate: summary matches the audit recomputation -- summary -0.001441/5 vs audit -0.001441/5
+  [PASS] F maven time: summary matches the audit recomputation -- summary -0.000087/4 vs audit -0.000087/4
+  [PASS] F maven gate_under_time: summary matches the audit recomputation -- summary -0.000735/6 vs audit -0.000735/6
+  [PASS] F maven full_vs_gatdir: summary matches the audit recomputation -- summary -0.000822/5 vs audit -0.000822/5
+  [PASS] F maven gcn_vs_gatdir: summary matches the audit recomputation -- summary +0.058661/9 vs audit +0.058661/9
+  [PASS] F maven sage_vs_gatdir: summary matches the audit recomputation -- summary +0.042491/8 vs audit +0.042491/8
+  [PASS] F maven gatv2_vs_gatdir: summary matches the audit recomputation -- summary +0.001404/6 vs audit +0.001404/6
+  [PASS] F maven: every audited contrast is present in the summary -- 7/7
+      re-selected per cell: {'gat_dir': 'c4_h128_d0.5', 'ragat_sym': 'c3_h64_d0.5', 'gat_time': 'c2_h64_d0.2', 'ragat_time': 'c1_h128_d0.2'}; recorded {'gat_dir': 'c4_h128_d0.5', 'ragat_sym': 'c3_h64_d0.5', 'gat_time': 'c2_h64_d0.2', 'ragat_time': 'c1_h128_d0.2'}
+  [PASS] G maven: the frozen configs equal the re-selected ones
+
+audit written to /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/audit.json; 0 failing checks

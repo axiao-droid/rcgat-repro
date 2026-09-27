@@ -1,0 +1,58 @@
+{
+  "dataset": "maven",
+  "seed": 122,
+  "floor": {
+    "val": {
+      "mrr": 0.28513193165937856,
+      "hits@10": 0.4838709677419355,
+      "hits@100": 0.9032258064516129,
+      "sources": 124,
+      "positives": 397,
+      "candidates_mean": 1547.0
+    },
+    "test": {
+      "mrr": 0.09889055713506512,
+      "hits@10": 0.1724137931034483,
+      "hits@100": 0.6206896551724138,
+      "sources": 29,
+      "positives": 63,
+      "candidates_mean": 1547.0
+    },
+    "feature": "cosine on L2-normalised TF-IDF+SVD300 fitted on fit window"
+  },
+  "fit_window_metadata": {
+    "dataset": "maven",
+    "seed": 122,
+    "n_nodes": 1664,
+    "n_edges": 5651,
+    "fit_nodes": 1414,
+    "val_nodes": 134,
+    "test_nodes": 116,
+    "fit_edges": 4863,
+    "val_edges": 461,
+    "test_edges": 327,
+    "cutoff": "2026-09-25",
+    "split_rule": "node_date_quantile_fixed_fraction_per_seed",
+    "f_test": 0.07,
+    "f_val": 0.08,
+    "jitter": 0.05
+  },
+  "feature_metadata": {
+    "type": "tfidf_svd_content_floor",
+    "fit_scope": "fit_window_only",
+    "dim": 300,
+    "tfidf_max_features": 20000,
+    "tfidf_token_pattern": "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*",
+    "tfidf_stopwords": "english",
+    "tfidf_min_df": 1,
+    "svd_n_iter": 10,
+    "svd_random_state": 42,
+    "tfidf_sublinear": true,
+    "l2_normalised": true,
+    "floor_reference": {
+      "npm": 0.1565,
+      "maven": 0.3377
+    }
+  },
+  "seconds": 0.8
+}

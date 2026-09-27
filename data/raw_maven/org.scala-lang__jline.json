@@ -1,0 +1,1 @@
+{"ga": "org.scala-lang:jline", "group": "org.scala-lang", "artifact": "jline", "latest": "2.10.7", "first_date": "2011-03-25", "latest_date": "2017-11-03", "latest_is_prerelease": false, "n_versions": 57, "name": "jline", "description": "Like readline, but better", "deps": {"org.fusesource.jansi:jansi": "1.4"}}

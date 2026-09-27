@@ -1,0 +1,1 @@
+{"ga": "com.azure:azure-json", "group": "com.azure", "artifact": "azure-json", "latest": "1.5.1", "first_date": "2022-09-22", "latest_date": "2026-01-14", "latest_is_prerelease": false, "n_versions": 11, "name": "Microsoft Azure Java JSON Library", "description": "This package provides interfaces for reading and writing JSON.", "deps": {}}

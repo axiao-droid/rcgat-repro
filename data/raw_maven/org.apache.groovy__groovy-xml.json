@@ -1,0 +1,1 @@
+{"ga": "org.apache.groovy:groovy-xml", "group": "org.apache.groovy", "artifact": "groovy-xml", "latest": "6.0.0", "first_date": "2020-10-19", "latest_date": "2026-09-19", "latest_is_prerelease": false, "n_versions": 78, "name": "Apache Groovy", "description": "Groovy: A powerful multi-faceted language for the JVM", "deps": {"org.apache.groovy:groovy": "6.0.0"}}

@@ -1,0 +1,1 @@
+{"ga": "org.codehaus.plexus:plexus-classworlds", "group": "org.codehaus.plexus", "artifact": "plexus-classworlds", "latest": "2.12.1", "first_date": "2006-11-18", "latest_date": "2026-08-19", "latest_is_prerelease": false, "n_versions": 37, "name": "Plexus Classworlds", "description": "A class loader framework", "deps": {}}

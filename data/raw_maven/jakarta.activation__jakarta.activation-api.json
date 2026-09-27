@@ -1,0 +1,1 @@
+{"ga": "jakarta.activation:jakarta.activation-api", "group": "jakarta.activation", "artifact": "jakarta.activation-api", "latest": "2.1.4", "first_date": "2018-11-20", "latest_date": "2026-04-20", "latest_is_prerelease": false, "n_versions": 16, "name": "Jakarta Activation API", "description": "${project.name} ${spec.version} Specification", "deps": {}}

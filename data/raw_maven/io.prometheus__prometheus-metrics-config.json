@@ -1,0 +1,1 @@
+{"ga": "io.prometheus:prometheus-metrics-config", "group": "io.prometheus", "artifact": "prometheus-metrics-config", "latest": "1.9.0", "first_date": "2023-07-17", "latest_date": "2026-09-16", "latest_is_prerelease": false, "n_versions": 33, "name": "Prometheus Metrics Config", "description": "Configuration for Prometheus metrics and exposition formats.", "deps": {}}

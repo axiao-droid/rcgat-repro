@@ -1,0 +1,1 @@
+{"ga": "jakarta.cdi:jakarta.cdi-lang-model-api", "group": "jakarta.cdi", "artifact": "jakarta.cdi-lang-model-api", "latest": "5.0.0", "first_date": "2025-11-26", "latest_date": "2026-09-16", "latest_is_prerelease": false, "n_versions": 8, "name": "CDI Language Model", "description": "Build Compatible (Reflection-Free) Java Language Model for CDI", "deps": {}}

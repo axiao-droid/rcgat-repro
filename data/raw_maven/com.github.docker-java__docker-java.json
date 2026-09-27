@@ -1,0 +1,1 @@
+{"ga": "com.github.docker-java:docker-java", "group": "com.github.docker-java", "artifact": "docker-java", "latest": "3.7.1", "first_date": "2014-06-11", "latest_date": "2026-03-18", "latest_is_prerelease": false, "n_versions": 96, "name": "docker-java", "description": "Java API Client for Docker", "deps": {"org.slf4j:jcl-over-slf4j": "${slf4j-api.version}"}}

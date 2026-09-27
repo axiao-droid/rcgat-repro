@@ -1,0 +1,1 @@
+{"ga": "net.openhft:affinity-test", "group": "net.openhft", "artifact": "affinity-test", "latest": "2026.2", "first_date": "2018-07-04", "latest_date": "2026-01-28", "latest_is_prerelease": false, "n_versions": 25, "name": "OpenHFT/Java-Thread-Affinity/affinity-test", "description": "Java Thread Affinity library", "deps": {"net.openhft:affinity": ""}}

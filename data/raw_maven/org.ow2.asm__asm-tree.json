@@ -1,0 +1,1 @@
+{"ga": "org.ow2.asm:asm-tree", "group": "org.ow2.asm", "artifact": "asm-tree", "latest": "9.10.1", "first_date": "2011-12-06", "latest_date": "2026-05-23", "latest_is_prerelease": false, "n_versions": 46, "name": "asm-tree", "description": "Tree API of ASM, a very small and fast Java bytecode manipulation framework", "deps": {"org.ow2.asm:asm": "9.10.1"}}

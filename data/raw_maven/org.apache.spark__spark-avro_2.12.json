@@ -1,0 +1,1 @@
+{"ga": "org.apache.spark:spark-avro_2.12", "group": "org.apache.spark", "artifact": "spark-avro_2.12", "latest": "3.5.9", "first_date": "2018-10-29", "latest_date": "2026-07-12", "latest_is_prerelease": false, "n_versions": 44, "name": "Spark Avro", "description": "", "deps": {"org.apache.spark:spark-tags_2.12": "3.5.9", "org.tukaani:xz": "1.9"}}

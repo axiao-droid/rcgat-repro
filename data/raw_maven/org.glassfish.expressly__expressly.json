@@ -1,0 +1,1 @@
+{"ga": "org.glassfish.expressly:expressly", "group": "org.glassfish.expressly", "artifact": "expressly", "latest": "6.0.0", "first_date": "2022-02-18", "latest_date": "2025-05-20", "latest_is_prerelease": false, "n_versions": 5, "name": "Eclipse Expressly", "description": "Jakarta Expression Language Implementation", "deps": {"jakarta.el:jakarta.el-api": "6.0.1"}}

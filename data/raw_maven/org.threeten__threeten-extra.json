@@ -1,0 +1,1 @@
+{"ga": "org.threeten:threeten-extra", "group": "org.threeten", "artifact": "threeten-extra", "latest": "1.10.0", "first_date": "2014-02-10", "latest_date": "2026-06-16", "latest_is_prerelease": false, "n_versions": 17, "name": "ThreeTen-Extra", "description": "Additional functionality that enhances JSR-310 dates and times in Java SE 8 and later", "deps": {}}

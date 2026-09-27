@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:heap-cli", "group": "org.gridkit.jvmtool", "artifact": "heap-cli", "latest": "0.2", "first_date": "2019-07-28", "latest_date": "2021-01-27", "latest_is_prerelease": false, "n_versions": 2, "name": "${project.groupId}::${project.artifactId}", "description": "CLI for HPROF heap dump analysis", "deps": {}}

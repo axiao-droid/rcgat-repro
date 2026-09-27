@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-avatar-flow", "group": "com.vaadin", "artifact": "vaadin-avatar-flow", "latest": "25.2.9", "first_date": "2020-09-04", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 560, "name": "Vaadin Avatar", "description": "Vaadin Avatar", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

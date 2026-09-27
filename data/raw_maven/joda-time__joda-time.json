@@ -1,0 +1,1 @@
+{"ga": "joda-time:joda-time", "group": "joda-time", "artifact": "joda-time", "latest": "2.14.4", "first_date": "2005-09-20", "latest_date": "2026-09-19", "latest_is_prerelease": false, "n_versions": 67, "name": "Joda-Time", "description": "Date and time library to replace JDK date handling", "deps": {}}

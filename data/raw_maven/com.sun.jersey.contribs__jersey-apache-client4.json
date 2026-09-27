@@ -1,0 +1,1 @@
+{"ga": "com.sun.jersey.contribs:jersey-apache-client4", "group": "com.sun.jersey.contribs", "artifact": "jersey-apache-client4", "latest": "1.19.4", "first_date": "2011-08-26", "latest_date": "2017-05-24", "latest_is_prerelease": false, "n_versions": 38, "name": "Jersey Apache HTTP Client 4.x", "description": "", "deps": {"org.apache.httpcomponents:httpclient": "4.1.1"}}

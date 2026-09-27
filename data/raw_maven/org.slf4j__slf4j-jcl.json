@@ -1,0 +1,1 @@
+{"ga": "org.slf4j:slf4j-jcl", "group": "org.slf4j", "artifact": "slf4j-jcl", "latest": "1.7.36", "first_date": "2005-12-01", "latest_date": "2022-02-08", "latest_is_prerelease": false, "n_versions": 74, "name": "SLF4J JCL Binding", "description": "SLF4J JCL Binding", "deps": {"org.slf4j:slf4j-api": "", "commons-logging:commons-logging": "1.1.1"}}

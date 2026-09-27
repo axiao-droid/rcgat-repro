@@ -1,0 +1,1 @@
+{"ga": "com.google.guava:guava-io", "group": "com.google.guava", "artifact": "guava-io", "latest": "r03", "first_date": "2010-04-26", "latest_date": "2010-04-26", "latest_is_prerelease": false, "n_versions": 1, "name": "Guava (Google Common Libraries) Input/Output", "description": "Guava IO contains a variety of types and utilities to ease IO handling in Java.", "deps": {}}

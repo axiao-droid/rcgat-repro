@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:kubernetes-model-extensions", "group": "io.fabric8", "artifact": "kubernetes-model-extensions", "latest": "8.0.0", "first_date": "2020-05-04", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 103, "name": "Fabric8 :: Kubernetes Model :: Extensions", "description": "", "deps": {"io.fabric8:kubernetes-model-core": ""}}

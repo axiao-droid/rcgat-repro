@@ -1,0 +1,1 @@
+{"ga": "org.conscrypt:conscrypt-openjdk-uber", "group": "org.conscrypt", "artifact": "conscrypt-openjdk-uber", "latest": "2.7.0", "first_date": "2017-02-23", "latest_date": "2026-08-31", "latest_is_prerelease": false, "n_versions": 45, "name": "org.conscrypt:conscrypt-openjdk-uber", "description": "Conscrypt: OpenJdk UberJAR", "deps": {}}

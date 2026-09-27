@@ -1,0 +1,1 @@
+{"ga": "io.rest-assured:rest-assured-common", "group": "io.rest-assured", "artifact": "rest-assured-common", "latest": "6.0.1", "first_date": "2016-06-03", "latest_date": "2026-07-10", "latest_is_prerelease": false, "n_versions": 45, "name": "rest-assured-common", "description": "", "deps": {"org.apache.groovy:groovy": "", "org.apache.commons:commons-lang3": ""}}

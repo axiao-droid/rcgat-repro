@@ -1,0 +1,1 @@
+{"ga": "io.dropwizard:dropwizard-bom", "group": "io.dropwizard", "artifact": "dropwizard-bom", "latest": "5.0.2", "first_date": "2015-10-20", "latest_date": "2026-05-31", "latest_is_prerelease": false, "n_versions": 216, "name": "Dropwizard BOM", "description": "Bill of materials to make sure a consistent set of versions is used for Dropwizard modules.", "deps": {}}

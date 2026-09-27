@@ -1,0 +1,16 @@
+{
+  "nodes": 4959,
+  "edges": 13602,
+  "avg_out": 2.7428917120387175,
+  "avg_in": 2.7428917120387175,
+  "density": 0.0005532254360707376,
+  "reciprocity": 0.000882223202470225,
+  "max_out": 167,
+  "max_in": 254,
+  "date_min": "2010-12-19",
+  "date_max": "2026-09-17",
+  "nodes_with_out": 3081,
+  "src_count": 4959,
+  "isolated_nodes": 64,
+  "min_edges_rule": 0
+}

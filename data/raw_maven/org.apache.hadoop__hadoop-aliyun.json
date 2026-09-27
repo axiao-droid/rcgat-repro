@@ -1,0 +1,1 @@
+{"ga": "org.apache.hadoop:hadoop-aliyun", "group": "org.apache.hadoop", "artifact": "hadoop-aliyun", "latest": "3.5.0", "first_date": "2017-01-20", "latest_date": "2026-03-24", "latest_is_prerelease": false, "n_versions": 35, "name": "Apache Hadoop Aliyun OSS support", "description": "", "deps": {"com.aliyun.oss:aliyun-sdk-oss": "", "org.codehaus.jettison:jettison": ""}}

@@ -1,0 +1,1 @@
+{"ga": "org.apache.poi:poi-ooxml-lite", "group": "org.apache.poi", "artifact": "poi-ooxml-lite", "latest": "5.5.1", "first_date": "2021-01-12", "latest_date": "2025-11-26", "latest_is_prerelease": false, "n_versions": 13, "name": "Apache POI", "description": "Apache POI - Java API To Access Microsoft Format Files", "deps": {"org.apache.xmlbeans:xmlbeans": "5.3.0"}}

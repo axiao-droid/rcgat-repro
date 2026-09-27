@@ -1,0 +1,1 @@
+{"ga": "com.google.inject:guice", "group": "com.google.inject", "artifact": "guice", "latest": "7.0.0", "first_date": "2009-05-26", "latest_date": "2023-05-12", "latest_is_prerelease": false, "n_versions": 24, "name": "Google Guice - Core Library", "description": "", "deps": {"jakarta.inject:jakarta.inject-api": "", "aopalliance:aopalliance": "", "com.google.guava:guava": ""}}

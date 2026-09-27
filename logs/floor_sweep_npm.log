@@ -1,0 +1,14 @@
+graph nodes=4959 edges=13602 raw texts available=4959
+published npm floor = 0.1565
+  v1_cur_pipe              floor=0.1669  per-seed=[0.1657, 0.1659, 0.169] sources=181 positives=494 dims=300 vocab<=20000 (15s)
+  v2_sklearn_tok           floor=0.1633  per-seed=[0.1613, 0.1638, 0.165] sources=181 positives=494 dims=300 vocab<=20000 (14s)
+  v3_readme500             floor=0.1754  per-seed=[0.1746, 0.1757, 0.1759] sources=181 positives=494 dims=300 vocab<=20000 (11s)
+  v4_no_readme             floor=0.1384  per-seed=[0.1397, 0.1382, 0.1372] sources=181 positives=494 dims=300 vocab<=20000 (7s)
+  v5_plain_tf              floor=0.1796  per-seed=[0.1788, 0.1792, 0.1809] sources=181 positives=494 dims=300 vocab<=20000 (15s)
+  v6_no_stopwords          floor=0.1675  per-seed=[0.1672, 0.1677, 0.1676] sources=181 positives=494 dims=300 vocab<=20000 (16s)
+  v7_feat5000              floor=0.1645  per-seed=[0.167, 0.1635, 0.163] sources=181 positives=494 dims=300 vocab<=5000 (10s)
+  v8_mindf2                floor=0.1609  per-seed=[0.1622, 0.1595, 0.1611] sources=181 positives=494 dims=300 vocab<=20000 (12s)
+  v9_no_smooth_idf         floor=0.1669  per-seed=[0.1666, 0.1673, 0.1668] sources=181 positives=494 dims=300 vocab<=20000 (15s)
+  v10_desc_only            floor=0.0870  per-seed=[0.0837, 0.088, 0.0891] sources=181 positives=494 dims=300 vocab<=20000 (6s)
+  v11_svd100               floor=0.1394  per-seed=[0.139, 0.1395, 0.1395] sources=181 positives=494 dims=100 vocab<=20000 (8s)
+  v12_min_df1_nostop_tok   floor=0.1567  per-seed=[0.1563, 0.1562, 0.1575] sources=181 positives=494 dims=300 vocab<=20000 (14s)

@@ -1,0 +1,1 @@
+{"ga": "io.opentelemetry:opentelemetry-bom", "group": "io.opentelemetry", "artifact": "opentelemetry-bom", "latest": "1.66.0", "first_date": "2020-10-06", "latest_date": "2026-09-11", "latest_is_prerelease": false, "n_versions": 93, "name": "OpenTelemetry Java", "description": "OpenTelemetry Bill of Materials", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.apache.kerby:kerby-asn1", "group": "org.apache.kerby", "artifact": "kerby-asn1", "latest": "2.1.2", "first_date": "2015-09-10", "latest_date": "2026-06-12", "latest_is_prerelease": false, "n_versions": 13, "name": "Kerby ASN1 Project", "description": "Kerby ASN1 Project", "deps": {"org.junit.jupiter:junit-jupiter-engine": "", "org.assertj:assertj-core": ""}}

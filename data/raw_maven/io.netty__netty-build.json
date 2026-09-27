@@ -1,0 +1,1 @@
+{"ga": "io.netty:netty-build", "group": "io.netty", "artifact": "netty-build", "latest": "31", "first_date": "2012-01-11", "latest_date": "2022-08-10", "latest_is_prerelease": false, "n_versions": 31, "name": "Netty/Build", "description": "Resources required to build Netty", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "org.jboss.slf4j:slf4j-jboss-logmanager", "group": "org.jboss.slf4j", "artifact": "slf4j-jboss-logmanager", "latest": "2.1.0.Final", "first_date": "2009-06-17", "latest_date": "2026-02-10", "latest_is_prerelease": false, "n_versions": 18, "name": "SLF4J: JBoss Log Manager", "description": "An adaptor for SLF4J which delegates to the JBoss Log Manager", "deps": {}}

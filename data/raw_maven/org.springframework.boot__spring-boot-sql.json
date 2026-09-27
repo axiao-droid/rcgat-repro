@@ -1,0 +1,1 @@
+{"ga": "org.springframework.boot:spring-boot-sql", "group": "org.springframework.boot", "artifact": "spring-boot-sql", "latest": "4.1.1", "first_date": "2025-07-24", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 23, "name": "spring-boot-sql", "description": "Spring Boot SQL", "deps": {"org.springframework.boot:spring-boot": "4.1.1"}}

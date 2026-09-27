@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-card-flow", "group": "com.vaadin", "artifact": "vaadin-card-flow", "latest": "25.2.9", "first_date": "2025-03-19", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 135, "name": "Vaadin Card", "description": "Vaadin Card", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

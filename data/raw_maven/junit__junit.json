@@ -1,0 +1,1 @@
+{"ga": "junit:junit", "group": "junit", "artifact": "junit", "latest": "4.13.2", "first_date": "2005-09-20", "latest_date": "2021-02-13", "latest_is_prerelease": false, "n_versions": 32, "name": "JUnit", "description": "JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck.", "deps": {"org.hamcrest:hamcrest-core": "${hamcrestVersion}"}}

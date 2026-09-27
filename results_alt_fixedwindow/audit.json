@@ -1,0 +1,158 @@
+{
+  "datasets": {
+    "npm": {
+      "floor_mean": 0.15590215029157842,
+      "contrasts": [
+        {
+          "contrast": "gate",
+          "mean": -0.002898832782868463,
+          "ci95": [
+            -0.0080200216110756,
+            0.002222356045338675
+          ],
+          "signs_positive": 3,
+          "seeds": 10
+        },
+        {
+          "contrast": "time",
+          "mean": 0.00979578068964003,
+          "ci95": [
+            -0.003699264330483126,
+            0.023290825709763187
+          ],
+          "signs_positive": 7,
+          "seeds": 10
+        },
+        {
+          "contrast": "gate_under_time",
+          "mean": 0.00499910691047874,
+          "ci95": [
+            -0.006981128214014954,
+            0.016979342034972433
+          ],
+          "signs_positive": 6,
+          "seeds": 10
+        },
+        {
+          "contrast": "full_vs_gatdir",
+          "mean": 0.01479488760011877,
+          "ci95": [
+            0.00659105216862714,
+            0.0229987230316104
+          ],
+          "signs_positive": 8,
+          "seeds": 10
+        },
+        {
+          "contrast": "gcn_vs_gatdir",
+          "mean": 0.05778522730973576,
+          "ci95": [
+            0.04501613258332543,
+            0.07055432203614609
+          ],
+          "signs_positive": 10,
+          "seeds": 10
+        },
+        {
+          "contrast": "sage_vs_gatdir",
+          "mean": 0.0017686511195628806,
+          "ci95": [
+            -0.009683710849626201,
+            0.01322101308875196
+          ],
+          "signs_positive": 5,
+          "seeds": 10
+        },
+        {
+          "contrast": "gatv2_vs_gatdir",
+          "mean": -0.0038606930852346177,
+          "ci95": [
+            -0.006341003792575297,
+            -0.0013803823778939387
+          ],
+          "signs_positive": 1,
+          "seeds": 10
+        }
+      ]
+    },
+    "maven": {
+      "floor_mean": 0.09619409824357275,
+      "contrasts": [
+        {
+          "contrast": "gate",
+          "mean": 0.0004973717579166856,
+          "ci95": [
+            -0.010688291453438836,
+            0.011683034969272208
+          ],
+          "signs_positive": 5,
+          "seeds": 10
+        },
+        {
+          "contrast": "time",
+          "mean": 0.001110909119509458,
+          "ci95": [
+            -0.008716531418955394,
+            0.01093834965797431
+          ],
+          "signs_positive": 5,
+          "seeds": 10
+        },
+        {
+          "contrast": "gate_under_time",
+          "mean": -0.007868622462358104,
+          "ci95": [
+            -0.017716635807527754,
+            0.001979390882811547
+          ],
+          "signs_positive": 3,
+          "seeds": 10
+        },
+        {
+          "contrast": "full_vs_gatdir",
+          "mean": -0.006757713342848646,
+          "ci95": [
+            -0.014387757884386395,
+            0.000872331198689103
+          ],
+          "signs_positive": 3,
+          "seeds": 10
+        },
+        {
+          "contrast": "gcn_vs_gatdir",
+          "mean": 0.08154703539476725,
+          "ci95": [
+            0.042657477263203576,
+            0.12043659352633093
+          ],
+          "signs_positive": 10,
+          "seeds": 10
+        },
+        {
+          "contrast": "sage_vs_gatdir",
+          "mean": 0.03205229916135195,
+          "ci95": [
+            0.00908752939045351,
+            0.05501706893225039
+          ],
+          "signs_positive": 8,
+          "seeds": 10
+        },
+        {
+          "contrast": "gatv2_vs_gatdir",
+          "mean": 0.001034460240643066,
+          "ci95": [
+            -0.009487865019494205,
+            0.011556785500780336
+          ],
+          "signs_positive": 6,
+          "seeds": 10
+        }
+      ]
+    }
+  },
+  "fails": [
+    "B7 the ten seeds produce ten distinct training partitions (fit windows)",
+    "B7 the ten seeds produce ten distinct training partitions (fit windows)"
+  ]
+}

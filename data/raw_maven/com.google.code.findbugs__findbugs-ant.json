@@ -1,0 +1,1 @@
+{"ga": "com.google.code.findbugs:findbugs-ant", "group": "com.google.code.findbugs", "artifact": "findbugs-ant", "latest": "3.0.0", "first_date": "2013-10-03", "latest_date": "2014-07-10", "latest_is_prerelease": false, "n_versions": 3, "name": "FindBugs-AntTask", "description": "AntTask to run Findbugs", "deps": {"com.google.code.findbugs:findbugs": "3.0.0"}}

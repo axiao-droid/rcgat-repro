@@ -1,0 +1,1 @@
+{"ga": "dev.cel:verifier-cli", "group": "dev.cel", "artifact": "verifier-cli", "latest": "0.14.0", "first_date": "2026-08-17", "latest_date": "2026-08-17", "latest_is_prerelease": false, "n_versions": 1, "name": "CEL Java Verifier CLI", "description": "Formal verification CLI and REPL tool for Common Expression Language for Java.", "deps": {}}

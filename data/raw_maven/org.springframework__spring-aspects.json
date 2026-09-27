@@ -1,0 +1,1 @@
+{"ga": "org.springframework:spring-aspects", "group": "org.springframework", "artifact": "spring-aspects", "latest": "7.0.9", "first_date": "2005-12-23", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 317, "name": "Spring Aspects", "description": "Spring Aspects", "deps": {"org.aspectj:aspectjweaver": "1.9.25"}}

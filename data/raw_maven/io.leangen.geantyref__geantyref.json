@@ -1,0 +1,1 @@
+{"ga": "io.leangen.geantyref:geantyref", "group": "io.leangen.geantyref", "artifact": "geantyref", "latest": "2.0.1", "first_date": "2016-10-08", "latest_date": "2025-01-21", "latest_is_prerelease": false, "n_versions": 24, "name": "GeantyRef", "description": "Generic type reflection library with support for AnnotatedType", "deps": {}}

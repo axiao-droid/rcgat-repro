@@ -1,0 +1,1 @@
+{"ga": "com.jcraft:jsch", "group": "com.jcraft", "artifact": "jsch", "latest": "0.1.55", "first_date": "2006-01-05", "latest_date": "2018-11-26", "latest_is_prerelease": false, "n_versions": 24, "name": "JSch", "description": "JSch is a pure Java implementation of SSH2", "deps": {}}

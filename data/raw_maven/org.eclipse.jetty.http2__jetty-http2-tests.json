@@ -1,0 +1,1 @@
+{"ga": "org.eclipse.jetty.http2:jetty-http2-tests", "group": "org.eclipse.jetty.http2", "artifact": "jetty-http2-tests", "latest": "12.0.0.beta0", "first_date": "2022-08-22", "latest_date": "2023-02-23", "latest_is_prerelease": true, "n_versions": 5, "name": "Core :: HTTP2 :: Tests", "description": "", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "io.opencensus:ocjdbc", "group": "io.opencensus", "artifact": "ocjdbc", "latest": "0.0.1", "first_date": "2018-09-25", "latest_date": "2018-09-25", "latest_is_prerelease": false, "n_versions": 1, "name": "ocjdbc", "description": "OpenCensus instrumented JDBC wrapper", "deps": {"io.opencensus:opencensus-api": "0.16.1", "io.opencensus:opencensus-impl": "0.16.1"}}

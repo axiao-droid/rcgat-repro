@@ -1,0 +1,1 @@
+{"ga": "org.apache.camel:bom-generator", "group": "org.apache.camel", "artifact": "bom-generator", "latest": "4.22.1", "first_date": "2017-10-07", "latest_date": "2026-09-13", "latest_is_prerelease": false, "n_versions": 189, "name": "Camel :: BOM :: Generator", "description": "Camel Tooling", "deps": {}}

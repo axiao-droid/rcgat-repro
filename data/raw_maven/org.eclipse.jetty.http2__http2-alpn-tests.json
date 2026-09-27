@@ -1,0 +1,1 @@
+{"ga": "org.eclipse.jetty.http2:http2-alpn-tests", "group": "org.eclipse.jetty.http2", "artifact": "http2-alpn-tests", "latest": "9.3.30.v20211001", "first_date": "2015-03-11", "latest_date": "2021-10-01", "latest_is_prerelease": false, "n_versions": 54, "name": "Jetty :: HTTP2 :: ALPN Tests", "description": "", "deps": {}}

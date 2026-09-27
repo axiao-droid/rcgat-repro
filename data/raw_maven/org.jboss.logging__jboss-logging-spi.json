@@ -1,0 +1,1 @@
+{"ga": "org.jboss.logging:jboss-logging-spi", "group": "org.jboss.logging", "artifact": "jboss-logging-spi", "latest": "2.1.2.GA", "first_date": "2008-04-08", "latest_date": "2010-09-21", "latest_is_prerelease": false, "n_versions": 5, "name": "JBoss Logging Programming Interface", "description": "The JBoss Logging Framework Programming Interface", "deps": {}}

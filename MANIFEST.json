@@ -1,0 +1,132 @@
+{
+  "datasets": [
+    "npm",
+    "maven"
+  ],
+  "models": {
+    "cells": [
+      "gat_dir",
+      "ragat_sym",
+      "gat_time",
+      "ragat_time"
+    ],
+    "baselines": [
+      "gcn_dir",
+      "sage_dir",
+      "gatv2_dir"
+    ]
+  },
+  "tuning": {
+    "tuning_seed": 11,
+    "grid": [
+      {
+        "id": "c1_h128_d0.2",
+        "hidden": 128,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "heads": 4
+      },
+      {
+        "id": "c2_h64_d0.2",
+        "hidden": 64,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "heads": 4
+      },
+      {
+        "id": "c3_h64_d0.5",
+        "hidden": 64,
+        "dropout": 0.5,
+        "lr": 0.001,
+        "heads": 4
+      },
+      {
+        "id": "c4_h128_d0.5",
+        "hidden": 128,
+        "dropout": 0.5,
+        "lr": 0.001,
+        "heads": 4
+      }
+    ]
+  },
+  "final_seeds": {
+    "npm": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "maven": [
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130
+    ]
+  },
+  "training": {
+    "epochs_max_tuning": 80,
+    "epochs_max_final": 100,
+    "patience_tuning": 15,
+    "patience_final": 20,
+    "eval_every": 2,
+    "negatives_per_positive": 10
+  },
+  "note": "tuning_seed 11, four grid points, lr fixed at 1e-3 and epochs 80/100 follow the manuscript (Section 6.1 + Table 4). final_seeds follow the only two seed labels quoted in the manuscript (npm seed 101, Maven seed 127) and the recovered MANIFEST's 'ten seeds per graph'. Tuning is shared per dataset by default (the grid varies hidden size and dropout but not the learning rate, and the paper states the learning-rate and dropout choices are identical across cells); --per-model computes per-cell selections as a robustness check.",
+  "text_recipe": {
+    "calibrated_against": {
+      "npm": 0.1565,
+      "maven": 0.3377
+    },
+    "fields": "npm: name + description + keywords + README[:1500]; maven: <name> + <description>",
+    "tfidf": {
+      "max_features": 20000,
+      "sublinear_tf": true,
+      "stop_words": "english",
+      "token_pattern": "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*",
+      "min_df": 1,
+      "lowercase": true
+    },
+    "svd": {
+      "n_components": 300,
+      "random_state": 42,
+      "n_iter": 10,
+      "fit_rows": "ascending node index"
+    },
+    "l2_normalised": true,
+    "fit_scope": "fit window texts only",
+    "sensitivity_npm_floor_by_recipe": {
+      "token_[a-zA-Z][a-zA-Z0-9_+#.-]*_readme1500_sublinear": 0.1573,
+      "token_\\w+_readme1500_sublinear": 0.1669,
+      "sklearn_default_token_\\w\\w+_readme1500_sublinear": 0.1633,
+      "readme500": 0.1754,
+      "no_readme": 0.1384,
+      "description_only": 0.087,
+      "plain_tf": 0.1796,
+      "no_stopwords": 0.1675,
+      "max_features_5000": 0.1645,
+      "min_df_2": 0.1609,
+      "smooth_idf_False": 0.1669,
+      "svd_100": 0.1394
+    },
+    "sensitivity_note": "the twelve recipes span 0.087-0.180 on npm, so the published floor cannot be reproduced from the paper's description alone; the code-aware token pattern above is the only recipe whose ten-seed mean lands on the published value (0.1573 vs 0.1565). Run-to-run SVD noise moves the realized floor by about +/-0.006, which is why bundles are built single-threaded and cached."
+  },
+  "protocol": {
+    "split": "node-date split; test = newest round(F_TEST*n) nodes (F_TEST=0.07), fixed size so that the published mean candidate count holds; the validation window keeps F_VAL=0.08 with a +/-5% per-seed jitter of the fit/val boundary, so each seed yields a distinct partition without moving the test window",
+    "candidate_pool": "all nodes outside the test window, minus the source itself (mean pool 4,611 on npm vs 4,614 published; 1,379 on Maven vs 1,376 published)",
+    "targets": "out-edges of test sources whose target lies in the candidate pool (edges inside the test window are unrankable under the pool rule, which contradicts the paper's Gamma_out(u) = N_out(u) cap V_test definition)",
+    "evaluation": "per source reciprocal rank of the best true target, averaged over sources with at least one rankable target; MRR primary, hits@10/100 alongside",
+    "judgment": "paired per-seed contrast with Student t 95% interval; reported together with the sign count"
+  }
+}

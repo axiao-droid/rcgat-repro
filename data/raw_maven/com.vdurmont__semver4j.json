@@ -1,0 +1,1 @@
+{"ga": "com.vdurmont:semver4j", "group": "com.vdurmont", "artifact": "semver4j", "latest": "3.1.0", "first_date": "2015-07-14", "latest_date": "2019-09-13", "latest_is_prerelease": false, "n_versions": 14, "name": "semver4j", "description": "Semantic versioning for Java apps.", "deps": {}}

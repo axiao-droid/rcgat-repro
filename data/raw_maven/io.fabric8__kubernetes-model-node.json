@@ -1,0 +1,1 @@
+{"ga": "io.fabric8:kubernetes-model-node", "group": "io.fabric8", "artifact": "kubernetes-model-node", "latest": "8.0.0", "first_date": "2020-11-10", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 95, "name": "Fabric8 :: Kubernetes Model :: Node", "description": "", "deps": {"io.fabric8:kubernetes-model-core": ""}}

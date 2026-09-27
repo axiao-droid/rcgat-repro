@@ -1,0 +1,1 @@
+{"ga": "io.jsonwebtoken:jjwt-jackson", "group": "io.jsonwebtoken", "artifact": "jjwt-jackson", "latest": "0.13.0", "first_date": "2018-08-01", "latest_date": "2025-08-20", "latest_is_prerelease": false, "n_versions": 24, "name": "JJWT :: Extensions :: Jackson", "description": "", "deps": {"io.jsonwebtoken:jjwt-api": "", "com.fasterxml.jackson.core:jackson-databind": ""}}

@@ -1,0 +1,1 @@
+{"ga": "org.eclipse.parsson:parsson", "group": "org.eclipse.parsson", "artifact": "parsson", "latest": "1.1.9", "first_date": "2021-06-11", "latest_date": "2026-05-26", "latest_is_prerelease": false, "n_versions": 16, "name": "Eclipse Parsson", "description": "Jakarta JSON Processing provider", "deps": {"jakarta.json:jakarta.json-api": ""}}

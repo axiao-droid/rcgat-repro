@@ -1,0 +1,1 @@
+{"ga": "org.apache.hbase:hbase-annotations", "group": "org.apache.hbase", "artifact": "hbase-annotations", "latest": "3.0.0", "first_date": "2014-10-08", "latest_date": "2026-07-17", "latest_is_prerelease": false, "n_versions": 216, "name": "Apache HBase - Annotations", "description": "Annotations for tests", "deps": {}}

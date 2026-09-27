@@ -1,0 +1,1 @@
+{"ga": "org.apache.httpcomponents:httpcore", "group": "org.apache.httpcomponents", "artifact": "httpcore", "latest": "4.4.16", "first_date": "2006-12-06", "latest_date": "2022-11-26", "latest_is_prerelease": false, "n_versions": 52, "name": "Apache HttpCore", "description": "Apache HttpComponents Core (blocking I/O)", "deps": {}}

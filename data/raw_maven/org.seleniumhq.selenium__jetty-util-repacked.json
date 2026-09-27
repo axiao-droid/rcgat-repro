@@ -1,0 +1,1 @@
+{"ga": "org.seleniumhq.selenium:jetty-util-repacked", "group": "org.seleniumhq.selenium", "artifact": "jetty-util-repacked", "latest": "9.2.13.v20150730", "first_date": "2015-10-01", "latest_date": "2015-10-01", "latest_is_prerelease": false, "n_versions": 1, "name": "selenium-jetty-util-repacked", "description": "Browser automation framework dependency on jetty", "deps": {}}

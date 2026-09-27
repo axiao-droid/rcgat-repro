@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-ordered-layout-flow", "group": "com.vaadin", "artifact": "vaadin-ordered-layout-flow", "latest": "25.2.9", "first_date": "2018-06-22", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 574, "name": "Vaadin Ordered Layout", "description": "Vaadin Ordered Layout", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

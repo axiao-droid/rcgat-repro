@@ -1,0 +1,1 @@
+{"ga": "net.openhft:compiler", "group": "net.openhft", "artifact": "compiler", "latest": "2026.2", "first_date": "2013-09-24", "latest_date": "2026-01-28", "latest_is_prerelease": false, "n_versions": 34, "name": "OpenHFT/Java-Runtime-Compiler", "description": "Java Runtime Compiler library.", "deps": {"org.slf4j:slf4j-api": "", "org.jetbrains:annotations": ""}}

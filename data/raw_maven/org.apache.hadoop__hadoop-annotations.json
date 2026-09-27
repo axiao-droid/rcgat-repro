@@ -1,0 +1,1 @@
+{"ga": "org.apache.hadoop:hadoop-annotations", "group": "org.apache.hadoop", "artifact": "hadoop-annotations", "latest": "3.5.0", "first_date": "2012-02-18", "latest_date": "2026-03-24", "latest_is_prerelease": false, "n_versions": 83, "name": "Apache Hadoop Annotations", "description": "Apache Hadoop Annotations", "deps": {}}

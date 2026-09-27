@@ -1,0 +1,1 @@
+{"ga": "org.apache.hadoop:hadoop-client-api", "group": "org.apache.hadoop", "artifact": "hadoop-client-api", "latest": "3.5.0", "first_date": "2017-01-20", "latest_date": "2026-03-24", "latest_is_prerelease": false, "n_versions": 30, "name": "Apache Hadoop Client API", "description": "Apache Hadoop Client", "deps": {"org.xerial.snappy:snappy-java": "1.1.10.4"}}

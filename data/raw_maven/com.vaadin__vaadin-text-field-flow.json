@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-text-field-flow", "group": "com.vaadin", "artifact": "vaadin-text-field-flow", "latest": "25.2.9", "first_date": "2018-06-22", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 599, "name": "Vaadin Text Field", "description": "Vaadin Text Field", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

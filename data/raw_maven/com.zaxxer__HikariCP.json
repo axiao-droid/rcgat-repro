@@ -1,0 +1,1 @@
+{"ga": "com.zaxxer:HikariCP", "group": "com.zaxxer", "artifact": "HikariCP", "latest": "7.1.0", "first_date": "2013-11-04", "latest_date": "2026-06-14", "latest_is_prerelease": false, "n_versions": 104, "name": "HikariCP", "description": "Ultimate JDBC Connection Pool", "deps": {"org.slf4j:slf4j-api": "${slf4j.version}"}}

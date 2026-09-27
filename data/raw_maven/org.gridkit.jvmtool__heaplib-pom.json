@@ -1,0 +1,1 @@
+{"ga": "org.gridkit.jvmtool:heaplib-pom", "group": "org.gridkit.jvmtool", "artifact": "heaplib-pom", "latest": "0.2", "first_date": "2019-07-28", "latest_date": "2021-01-27", "latest_is_prerelease": false, "n_versions": 2, "name": "${project.groupId}::${project.artifactId}", "description": "HeapLib parent pom", "deps": {}}

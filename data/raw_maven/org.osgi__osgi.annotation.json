@@ -1,0 +1,1 @@
+{"ga": "org.osgi:osgi.annotation", "group": "org.osgi", "artifact": "osgi.annotation", "latest": "8.1.0", "first_date": "2015-01-18", "latest_date": "2022-02-08", "latest_is_prerelease": false, "n_versions": 6, "name": "org.osgi:osgi.annotation", "description": "OSGi Annotation Release 8, Annotations for use in compiling bundles", "deps": {}}

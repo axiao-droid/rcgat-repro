@@ -1,0 +1,1 @@
+{"ga": "org.apache.lucene:lucene-queries", "group": "org.apache.lucene", "artifact": "lucene-queries", "latest": "10.5.1", "first_date": "2007-06-19", "latest_date": "2026-08-12", "latest_is_prerelease": false, "n_versions": 157, "name": "Apache Lucene (module: queries)", "description": "Apache Lucene (module: queries)", "deps": {"org.apache.lucene:lucene-core": "10.5.1"}}

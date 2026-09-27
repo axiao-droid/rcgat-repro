@@ -1,0 +1,1 @@
+{"ga": "com.thoughtworks.xstream:xstream", "group": "com.thoughtworks.xstream", "artifact": "xstream", "latest": "1.4.21", "first_date": "2006-09-19", "latest_date": "2024-11-07", "latest_is_prerelease": false, "n_versions": 41, "name": "XStream Core", "description": "", "deps": {"io.github.x-stream:mxparser": "", "junit:junit": "", "jmock:jmock": ""}}

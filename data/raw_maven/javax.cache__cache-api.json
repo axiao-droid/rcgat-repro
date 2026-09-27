@@ -1,0 +1,1 @@
+{"ga": "javax.cache:cache-api", "group": "javax.cache", "artifact": "cache-api", "latest": "1.1.1", "first_date": "2011-08-16", "latest_date": "2019-05-10", "latest_is_prerelease": false, "n_versions": 15, "name": "JSR107 API and SPI", "description": "", "deps": {}}

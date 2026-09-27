@@ -1,0 +1,1 @@
+{"ga": "jakarta.enterprise:jakarta.enterprise.cdi-api", "group": "jakarta.enterprise", "artifact": "jakarta.enterprise.cdi-api", "latest": "5.0.0", "first_date": "2018-11-29", "latest_date": "2026-09-16", "latest_is_prerelease": false, "n_versions": 35, "name": "CDI APIs (Relocation)", "description": "APIs for CDI (Contexts and Dependency Injection for Java)", "deps": {}}

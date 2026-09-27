@@ -1,0 +1,1 @@
+{"ga": "org.scala-lang.modules:scala-xml_2.13", "group": "org.scala-lang.modules", "artifact": "scala-xml_2.13", "latest": "2.5.0", "first_date": "2019-06-07", "latest_date": "2026-09-08", "latest_is_prerelease": false, "n_versions": 17, "name": "scala-xml", "description": "scala-xml", "deps": {"org.scala-lang:scala-library": "2.13.18"}}

@@ -1,0 +1,1 @@
+{"ga": "org.assertj:assertj-core", "group": "org.assertj", "artifact": "assertj-core", "latest": "3.27.7", "first_date": "2013-03-26", "latest_date": "2026-01-24", "latest_is_prerelease": false, "n_versions": 82, "name": "AssertJ Core", "description": "Rich and fluent assertions for testing in Java", "deps": {"net.bytebuddy:byte-buddy": "1.18.3"}}

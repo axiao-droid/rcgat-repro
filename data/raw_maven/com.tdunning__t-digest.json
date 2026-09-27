@@ -1,0 +1,1 @@
+{"ga": "com.tdunning:t-digest", "group": "com.tdunning", "artifact": "t-digest", "latest": "3.3", "first_date": "2013-12-04", "latest_date": "2021-05-31", "latest_is_prerelease": false, "n_versions": 8, "name": "t-digest", "description": "Data structure which allows accurate estimation of quantiles and related rank statistics", "deps": {}}

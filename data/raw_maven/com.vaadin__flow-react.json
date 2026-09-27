@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:flow-react", "group": "com.vaadin", "artifact": "flow-react", "latest": "25.2.10", "first_date": "2024-06-11", "latest_date": "2026-09-24", "latest_is_prerelease": false, "n_versions": 201, "name": "Flow React Component Support", "description": "${project.name}", "deps": {"com.vaadin:flow-server": "25.2.10"}}

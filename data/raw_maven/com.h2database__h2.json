@@ -1,0 +1,1 @@
+{"ga": "com.h2database:h2", "group": "com.h2database", "artifact": "h2", "latest": "2.5.250", "first_date": "2006-12-22", "latest_date": "2026-09-04", "latest_is_prerelease": false, "n_versions": 141, "name": "H2 Database Engine", "description": "H2 Database Engine", "deps": {}}

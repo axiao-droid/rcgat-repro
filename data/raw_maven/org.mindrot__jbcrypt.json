@@ -1,0 +1,1 @@
+{"ga": "org.mindrot:jbcrypt", "group": "org.mindrot", "artifact": "jbcrypt", "latest": "0.4", "first_date": "2010-05-17", "latest_date": "2017-02-13", "latest_is_prerelease": false, "n_versions": 2, "name": "jBCrypt", "description": "OpenBSD-style Blowfish password hashing for Java", "deps": {}}

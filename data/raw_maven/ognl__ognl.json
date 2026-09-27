@@ -1,0 +1,1 @@
+{"ga": "ognl:ognl", "group": "ognl", "artifact": "ognl", "latest": "3.4.13", "first_date": "2005-09-20", "latest_date": "2026-09-14", "latest_is_prerelease": false, "n_versions": 114, "name": "OGNL - Object Graph Navigation Library", "description": "OGNL - Object Graph Navigation Library", "deps": {"org.javassist:javassist": "3.33.0-GA"}}

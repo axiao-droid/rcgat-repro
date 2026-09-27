@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-lumo-theme", "group": "com.vaadin", "artifact": "vaadin-lumo-theme", "latest": "25.2.9", "first_date": "2018-06-21", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 663, "name": "Vaadin Lumo Theme", "description": "Vaadin Lumo Theme", "deps": {"com.vaadin:vaadin-icons-flow": "25.2.9"}}

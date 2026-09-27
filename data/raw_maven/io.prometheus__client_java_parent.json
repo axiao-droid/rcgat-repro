@@ -1,0 +1,1 @@
+{"ga": "io.prometheus:client_java_parent", "group": "io.prometheus", "artifact": "client_java_parent", "latest": "1.9.0", "first_date": "2025-05-26", "latest_date": "2026-09-16", "latest_is_prerelease": false, "n_versions": 14, "name": "Prometheus Metrics Library Parent", "description": "The Prometheus Java Metrics Library Parent", "deps": {}}

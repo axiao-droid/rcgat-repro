@@ -1,0 +1,1 @@
+{"ga": "com.vaadin:vaadin-icons-flow", "group": "com.vaadin", "artifact": "vaadin-icons-flow", "latest": "25.2.9", "first_date": "2018-06-22", "latest_date": "2026-09-25", "latest_is_prerelease": false, "n_versions": 576, "name": "Vaadin Icons", "description": "Vaadin Icons", "deps": {"com.vaadin:vaadin-flow-components-base": "25.2.9"}}

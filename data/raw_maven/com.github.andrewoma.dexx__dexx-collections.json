@@ -1,0 +1,1 @@
+{"ga": "com.github.andrewoma.dexx:dexx-collections", "group": "com.github.andrewoma.dexx", "artifact": "dexx-collections", "latest": "0.2", "first_date": "2014-03-30", "latest_date": "2014-04-10", "latest_is_prerelease": false, "n_versions": 2, "name": "Dexx collections", "description": "Persistent (immutable) collection library for Java", "deps": {}}

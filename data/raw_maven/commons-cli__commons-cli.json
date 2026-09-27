@@ -1,0 +1,1 @@
+{"ga": "commons-cli:commons-cli", "group": "commons-cli", "artifact": "commons-cli", "latest": "1.11.0", "first_date": "2005-09-20", "latest_date": "2025-11-08", "latest_is_prerelease": false, "n_versions": 16, "name": "Apache Commons CLI", "description": "Apache Commons CLI provides a simple API for presenting, processing, and validating a Command Line Interface.", "deps": {}}

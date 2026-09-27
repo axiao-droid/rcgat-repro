@@ -1,0 +1,1 @@
+{"ga": "jakarta.ws.rs:jakarta.ws.rs-api", "group": "jakarta.ws.rs", "artifact": "jakarta.ws.rs-api", "latest": "4.0.0", "first_date": "2018-10-07", "latest_date": "2024-04-02", "latest_is_prerelease": false, "n_versions": 10, "name": "Jakarta RESTful WS API", "description": "Jakarta RESTful Web Services", "deps": {}}

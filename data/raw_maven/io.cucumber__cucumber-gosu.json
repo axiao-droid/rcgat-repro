@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:cucumber-gosu", "group": "io.cucumber", "artifact": "cucumber-gosu", "latest": "2.0.1", "first_date": "2017-08-29", "latest_date": "2017-09-17", "latest_is_prerelease": false, "n_versions": 2, "name": "Cucumber-JVM: Gosu", "description": "", "deps": {"io.cucumber:cucumber-core": ""}}

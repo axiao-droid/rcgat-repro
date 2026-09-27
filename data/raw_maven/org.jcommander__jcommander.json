@@ -1,0 +1,1 @@
+{"ga": "org.jcommander:jcommander", "group": "org.jcommander", "artifact": "jcommander", "latest": "3.0", "first_date": "2023-08-21", "latest_date": "2025-10-05", "latest_is_prerelease": false, "n_versions": 5, "name": "jcommander", "description": "Command line parsing library for Java", "deps": {}}

@@ -1,0 +1,1 @@
+{"ga": "io.prometheus:integration_tests", "group": "io.prometheus", "artifact": "integration_tests", "latest": "0.12.0", "first_date": "2021-05-30", "latest_date": "2021-08-29", "latest_is_prerelease": false, "n_versions": 2, "name": "Prometheus Java Suit - Integration Tests", "description": "", "deps": {}}

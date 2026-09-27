@@ -1,0 +1,1 @@
+{"ga": "io.cucumber:create-meta", "group": "io.cucumber", "artifact": "create-meta", "latest": "6.0.4", "first_date": "2020-06-29", "latest_date": "2021-11-16", "latest_is_prerelease": false, "n_versions": 16, "name": "Cucumber create meta", "description": "Produce the meta message for Cucumber-JVM", "deps": {"io.cucumber:messages": "[17.1.1,18.0.0)"}}
