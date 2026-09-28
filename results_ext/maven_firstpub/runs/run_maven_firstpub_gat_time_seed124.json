@@ -1,0 +1,99 @@
+{
+  "dataset": "maven_firstpub",
+  "model": "gat_time",
+  "registry_model": "gat_time",
+  "seed": 124,
+  "grid_id": "c3_h64_d0.5",
+  "config": {
+    "id": "c3_h64_d0.5",
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.001,
+    "heads": 4
+  },
+  "floor": {
+    "mrr": 0.28269112798098306,
+    "hits@10": 0.7777777777777778,
+    "hits@100": 0.8333333333333334,
+    "sources": 18,
+    "positives": 23,
+    "candidates_mean": 466.0
+  },
+  "floor_val": {
+    "mrr": 0.2508115752896737,
+    "hits@10": 0.5,
+    "hits@100": 0.7727272727272727,
+    "sources": 22,
+    "positives": 31,
+    "candidates_mean": 466.0
+  },
+  "graph_built_at": "2026-09-28T04:32:21+00:00",
+  "fit_window_metadata": {
+    "dataset": "maven_firstpub",
+    "seed": 124,
+    "n_nodes": 502,
+    "n_edges": 364,
+    "fit_nodes": 420,
+    "val_nodes": 47,
+    "test_nodes": 35,
+    "fit_edges": 309,
+    "val_edges": 31,
+    "test_edges": 24,
+    "cutoff": "2026-05-19",
+    "split_rule": "node_date_quantile_fixed_fraction_per_seed",
+    "f_test": 0.07,
+    "f_val": 0.08,
+    "jitter": 0.05,
+    "jitter_test": 0.0,
+    "val_half_band": 12,
+    "split_rule_version": 2
+  },
+  "feature_metadata": {
+    "type": "tfidf_svd_content_floor",
+    "fit_scope": "fit_window_only",
+    "dim": 300,
+    "tfidf_max_features": 20000,
+    "tfidf_token_pattern": "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*",
+    "tfidf_stopwords": "english",
+    "tfidf_min_df": 1,
+    "svd_n_iter": 10,
+    "svd_random_state": 42,
+    "tfidf_sublinear": true,
+    "l2_normalised": true,
+    "floor_reference": {
+      "npm": 0.1565,
+      "maven": 0.3377
+    }
+  },
+  "edge_time_edges": {
+    "fit": 309,
+    "val": 31,
+    "test": 24
+  },
+  "wall_seconds": 3.6,
+  "phase": "final",
+  "best_epoch": 22,
+  "checkpoint_rule": "best_val",
+  "selected_epoch": 22,
+  "init_val_mrr": 0.2508115752896737,
+  "select_from_init": false,
+  "epochs_run": 62,
+  "param_count": 123009,
+  "train_seconds": 3.6,
+  "val": {
+    "mrr": 0.38194204643387475,
+    "hits@10": 0.7272727272727273,
+    "hits@100": 1.0,
+    "sources": 22,
+    "positives": 31,
+    "candidates_mean": 466.0
+  },
+  "test": {
+    "mrr": 0.5722222222222223,
+    "hits@10": 1.0,
+    "hits@100": 1.0,
+    "sources": 18,
+    "positives": 23,
+    "candidates_mean": 466.0
+  }
+}

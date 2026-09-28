@@ -1,0 +1,46 @@
+{
+  "mode": "per_model",
+  "hepph": {
+    "shared_grid_id": "c2_h64_d0.2",
+    "shared_mean_cell_val_mrr": 0.49737945650097726,
+    "config": {
+      "id": "c2_h64_d0.2",
+      "hidden": 64,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "heads": 4
+    },
+    "per_model_best": {
+      "gat_dir": {
+        "grid_id": "c2_h64_d0.2",
+        "tuning_val_mrr": 0.49725807777689796,
+        "tuning_test_mrr": 0.488090994624979,
+        "param_count": 122881
+      },
+      "ragat_sym": {
+        "grid_id": "c2_h64_d0.2",
+        "tuning_val_mrr": 0.4979685885959069,
+        "tuning_test_mrr": 0.48812617757622784,
+        "param_count": 122937
+      },
+      "gat_time": {
+        "grid_id": "c1_h128_d0.2",
+        "tuning_val_mrr": 0.4976629455893327,
+        "tuning_test_mrr": 0.4904555376970052,
+        "param_count": 409857
+      },
+      "ragat_time": {
+        "grid_id": "c1_h128_d0.2",
+        "tuning_val_mrr": 0.49782866120331115,
+        "tuning_test_mrr": 0.4921858281400696,
+        "param_count": 409913
+      }
+    },
+    "used": {
+      "gat_dir": "c2_h64_d0.2",
+      "ragat_sym": "c2_h64_d0.2",
+      "gat_time": "c1_h128_d0.2",
+      "ragat_time": "c1_h128_d0.2"
+    }
+  }
+}

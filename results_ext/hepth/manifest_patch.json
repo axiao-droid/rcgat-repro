@@ -1,0 +1,14 @@
+{
+  "dataset": "hepth",
+  "final_seeds": [
+    25
+  ],
+  "tuning_seed": 11,
+  "cells": [
+    "gat_dir",
+    "ragat_sym",
+    "gat_time",
+    "ragat_time"
+  ],
+  "note": "citation control: four gated cells only, five seeds per graph as in the frozen table"
+}

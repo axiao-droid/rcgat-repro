@@ -1,0 +1,16 @@
+{
+  "test": {
+    "mrr": 0.0876233200751893,
+    "hits@10": 0.1724137931034483,
+    "hits@100": 0.6206896551724138,
+    "sources": 29,
+    "positives": 63,
+    "candidates_mean": 1547.0
+  },
+  "recipe": "big_word",
+  "dataset": "maven",
+  "seed": 122,
+  "dim": 300,
+  "seconds": 1.2,
+  "frozen_floor_test": 0.09286718806536698
+}

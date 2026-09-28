@@ -1,17 +1,30 @@
 \begin{table}[t]
-\caption{Protocol sensitivity of the content floor. The candidate pool is either the nodes outside the test window (reading~A, the reading implied by the published mean candidate count) or every node except the source (reading~B). When models and floor are read the same way, every cell stays above the floor; crediting the floor under reading~B while scoring the models under reading~A reverses the sign. $\Delta$ is the mean test MRR of the cell minus the mean floor of the stated reading; the parenthetical value is the number of seeds of ten whose MRR falls below that mean floor. npm, ten seeds.}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Protocol sensitivity of the content floor. The candidate pool is either the nodes outside the test window (reading~A, the stricter reading, under which a source on npm faces $4{,}611$ candidates) or every node except the source (reading~B). When models and floor are read the same way, every cell stays above the floor; crediting the floor under reading~B while scoring the models under reading~A reverses the sign. $\Delta$ is the mean test MRR of the cell minus the mean floor of the stated reading, and ``seeds below'' is the number of seeds of ten whose MRR falls below that mean floor. npm and Maven, ten seeds each.}
 \label{tab:protocol}
-\begin{tabular}{llcccc}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}%
+  >{\raggedright\arraybackslash}p{94pt}%
+  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}%
+  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}%
+  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}%
+  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}@{}}
 \toprule
-Graph & Accounting & gat\_dir & rcgat\_sym & gat\_time & rcgat\_time \\
+ & \multicolumn{2}{c}{gat\_dir} & \multicolumn{2}{c}{rcgat\_sym} & \multicolumn{2}{c}{gat\_time} & \multicolumn{2}{c}{rcgat\_time} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+Accounting & $\Delta$ & seeds below & $\Delta$ & seeds below & $\Delta$ & seeds below & $\Delta$ & seeds below \\
 \midrule
-npm & same reading (A/A) & $+0.0078$ (1/10) & $+0.0057$ (0/10) & $+0.0245$ (0/10) & $+0.0087$ (2/10) \\
-npm & mixed (models A, floor B) & $-0.0088$ (10/10) & $-0.0108$ (10/10) & $+0.0079$ (3/10) & $-0.0079$ (8/10) \\
-npm & floor (A / B) & \multicolumn{4}{c}{0.1566 / 0.1731} \\
+\multicolumn{9}{@{}l}{\emph{npm}}\\
 \midrule
-Maven & same reading (A/A) & $+0.0116$ (2/10) & $+0.0102$ (1/10) & $+0.0115$ (0/10) & $+0.0108$ (1/10) \\
-Maven & mixed (models A, floor B) & $-0.0394$ (10/10) & $-0.0409$ (10/10) & $-0.0395$ (10/10) & $-0.0403$ (10/10) \\
-Maven & floor (A / B) & \multicolumn{4}{c}{0.0922 / 0.1433} \\
+same reading (A/A) & $+0.0078$ & 1/10 & $+0.0057$ & 0/10 & $+0.0245$ & 0/10 & $+0.0087$ & 2/10 \\
+mixed (models A, floor B) & $-0.0088$ & 10/10 & $-0.0108$ & 10/10 & $+0.0079$ & 3/10 & $-0.0079$ & 8/10 \\
+floor (A / B) & \multicolumn{8}{c}{0.1566\ /\ 0.1731} \\
+\midrule
+\multicolumn{9}{@{}l}{\emph{Maven}}\\
+\midrule
+same reading (A/A) & $+0.0116$ & 2/10 & $+0.0102$ & 1/10 & $+0.0115$ & 0/10 & $+0.0108$ & 1/10 \\
+mixed (models A, floor B) & $-0.0394$ & 10/10 & $-0.0409$ & 10/10 & $-0.0395$ & 10/10 & $-0.0403$ & 10/10 \\
+floor (A / B) & \multicolumn{8}{c}{0.0922\ /\ 0.1433} \\
 \bottomrule
-\end{tabular}
+\end{tabular*}
 \end{table}

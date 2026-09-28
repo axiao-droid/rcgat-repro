@@ -4,11 +4,15 @@ Mechanism figure (RC-GAT) -- precise vector redraw, journal-body restrained styl
 
 Authoring model
 ---------------
-The page IS the final print size for `\\includegraphics[width=\\textwidth]` in the
-Springer `sn-jnl[sn-basic]` single-column layout: 415 pt wide, so every font size
-below is the literal printed size (no downscaling -> no unreadable 5 pt text).
-This is the central repair of the original figure, whose 9.5 pt labels shrank to
-~5 pt when the 762 pt-wide artwork was placed at \\textwidth.
+The page is the DESIGN CANVAS, 415 pt wide, laid out as if it were the final print
+width. Measured with pdflatex + PyMuPDF, the real `\\includegraphics[width=\\textwidth]`
+column of `sn-jnl[sn-basic]` is 370.7 pt wide, so the canvas is placed at
+370.7/415 = 0.893x and the printed sizes are 0.893 x the numbers below
+(body text 5.0-6.6 pt, sub/superscripts 3.7-4.1 pt). That is still the central
+repair of the original figure, whose 9.5 pt labels shrank to 9.5 x 370.7/762
+= 4.6 pt when the 762 pt-wide artwork was placed at \\textwidth.
+FIG_FONT_SCALE (see below) exists to buy back the 0.893 factor if the occlusion
+audit still passes at a larger setting.
 
 Deliverables (all from this one coordinate table, so they cannot drift apart):
   fig_mechanism_redraw.pdf    -> pdflatex \\includegraphics
@@ -33,7 +37,15 @@ INK, SUB = "#333333", "#5A5A5A"
 T_TEAL, T_ORANGE, T_GREEN, T_BLUE, T_GREY = (
     "#F4FAF9", "#FDF6EE", "#F3F9F1", "#F2F6FB", "#F7F7F7")
 
-W, H = 415.0, 232.0          # page = final print size (pt)
+W, H = 415.0, 232.0          # design canvas (pt)
+# The sn-jnl single-column \textwidth is 370.7 pt, so this canvas is placed at
+# 370.7/415 = 0.893x and every nominal font size prints 0.893x smaller. Set
+# FIG_FONT_SCALE to compensate. The shipped figure uses 1.0, which is the
+# largest setting that passes check_fig_occlusion.py: 1.06 already overlaps
+# 'out-neighbours' with 'out', and 1.12 pushes 'out-view aggregation' across a
+# card border. Buying the 0.893 factor back therefore needs a re-layout of the
+# canvas at 370.7 pt (or shorter labels), not a global font scale.
+FS = float(os.environ.get("FIG_FONT_SCALE", "1.0"))
 
 # ----------------------------------------------------------------- fonts ----
 # URW base35 (Nimbus Sans = the Helvetica clone this figure is set in).
@@ -51,7 +63,7 @@ _fonts = {k: fitz.Font(fontfile=FDIR + v) for k, v in FILES.items()}
 
 def tw(s, sz, st="r"):
     """Measured text width in pt -- the basis of every alignment decision."""
-    return _fonts[st].text_length(s, fontsize=sz)
+    return _fonts[st].text_length(s, fontsize=sz * FS)
 
 
 def rgb(h):
@@ -97,7 +109,7 @@ def runs(page, x, y, parts, anchor="l", color=INK):
     elif anchor == "r":
         x -= tot
     for (t, st, sz, dy), w in zip(parts, wid):
-        page.insert_text((x, y + dy), t, fontsize=sz, fontname="f_" + st,
+        page.insert_text((x, y + dy), t, fontsize=sz * FS, fontname="f_" + st,
                          color=rgb(color))
         x += w
     return tot

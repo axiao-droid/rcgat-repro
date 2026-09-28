@@ -1,0 +1,57 @@
+{
+  "dataset": "maven",
+  "seed": 124,
+  "n_nodes": 1664,
+  "train_positives": 5324,
+  "variants": {
+    "onehop": {
+      "train_seconds": 6.4,
+      "obs": {
+        "mrr": 0.16090135207768308,
+        "hits@10": 0.1724137931034483,
+        "hits@100": 0.3103448275862069,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 6.6
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 7.0
+      }
+    },
+    "full": {
+      "train_seconds": 6.6,
+      "obs": {
+        "mrr": 0.18096427705598878,
+        "hits@10": 0.2413793103448276,
+        "hits@100": 0.5172413793103449,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 6.8
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 7.3
+      }
+    }
+  },
+  "floor": {
+    "mrr": 0.08663480413859112,
+    "hits@10": 0.13793103448275862,
+    "hits@100": 0.5862068965517241,
+    "sources": 29,
+    "positives": 63
+  }
+}

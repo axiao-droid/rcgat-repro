@@ -1,0 +1,57 @@
+{
+  "dataset": "npm",
+  "seed": 101,
+  "n_nodes": 4959,
+  "train_positives": 12909,
+  "variants": {
+    "onehop": {
+      "train_seconds": 17.2,
+      "obs": {
+        "mrr": 0.02098337389195606,
+        "hits@10": 0.0718232044198895,
+        "hits@100": 0.27624309392265195,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 18.0
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 21.0
+      }
+    },
+    "full": {
+      "train_seconds": 16.4,
+      "obs": {
+        "mrr": 0.1739541530109167,
+        "hits@10": 0.5027624309392266,
+        "hits@100": 0.7016574585635359,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 17.2
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 20.3
+      }
+    }
+  },
+  "floor": {
+    "mrr": 0.1559055186397788,
+    "hits@10": 0.26519337016574585,
+    "hits@100": 0.6187845303867403,
+    "sources": 181,
+    "positives": 494
+  }
+}

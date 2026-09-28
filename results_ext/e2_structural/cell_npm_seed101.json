@@ -1,0 +1,199 @@
+{
+  "dataset": "npm",
+  "seed": 101,
+  "n_nodes": 4959,
+  "edge_counts": {
+    "fit": 11946,
+    "val": 963,
+    "test": 693
+  },
+  "heuristics": {
+    "random": {
+      "obs": {
+        "mrr": 0.004821470639445711,
+        "hits@10": 0.011049723756906077,
+        "hits@100": 0.049723756906077346,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.2
+      },
+      "test": {
+        "mrr": 0.0019117747750144079,
+        "hits@10": 0.0,
+        "hits@100": 0.03867403314917127,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.2
+      }
+    },
+    "degree": {
+      "obs": {
+        "mrr": 0.08315453521864337,
+        "hits@10": 0.13259668508287292,
+        "hits@100": 0.30386740331491713,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 0.27881226542605897,
+        "hits@10": 0.48066298342541436,
+        "hits@100": 0.8839779005524862,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      }
+    },
+    "pa": {
+      "obs": {
+        "mrr": 0.08066567913805063,
+        "hits@10": 0.11602209944751381,
+        "hits@100": 0.27071823204419887,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 0.27881226542605897,
+        "hits@10": 0.48066298342541436,
+        "hits@100": 0.8839779005524862,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      }
+    },
+    "cn": {
+      "obs": {
+        "mrr": 0.002350559652550507,
+        "hits@10": 0.0,
+        "hits@100": 0.027624309392265192,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      }
+    },
+    "ncn": {
+      "obs": {
+        "mrr": 0.002350559652550507,
+        "hits@10": 0.0,
+        "hits@100": 0.027624309392265192,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      }
+    },
+    "aa": {
+      "obs": {
+        "mrr": 0.0024033111775461024,
+        "hits@10": 0.0,
+        "hits@100": 0.027624309392265192,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 0.9007149003469264,
+        "hits@10": 0.9005524861878453,
+        "hits@100": 0.9060773480662984,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      }
+    },
+    "ra": {
+      "obs": {
+        "mrr": 0.002350559652550507,
+        "hits@10": 0.0,
+        "hits@100": 0.027624309392265192,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      }
+    },
+    "ppr": {
+      "obs": {
+        "mrr": 0.2131535352723083,
+        "hits@10": 0.569060773480663,
+        "hits@100": 0.7900552486187845,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.2
+      },
+      "test": {
+        "mrr": 0.9972375690607734,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.1
+      }
+    },
+    "spectral": {
+      "obs": {
+        "mrr": 0.20665707373183748,
+        "hits@10": 0.5138121546961326,
+        "hits@100": 0.6740331491712708,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.7
+      },
+      "test": {
+        "mrr": 0.38122806847869317,
+        "hits@10": 0.5414364640883977,
+        "hits@100": 0.6408839779005525,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 0.7
+      }
+    }
+  },
+  "floor": {
+    "mrr": 0.1559055186397788,
+    "hits@10": 0.26519337016574585,
+    "hits@100": 0.6187845303867403,
+    "sources": 181,
+    "positives": 494
+  }
+}

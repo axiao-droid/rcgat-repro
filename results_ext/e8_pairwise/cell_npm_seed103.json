@@ -1,0 +1,57 @@
+{
+  "dataset": "npm",
+  "seed": 103,
+  "n_nodes": 4959,
+  "train_positives": 12909,
+  "variants": {
+    "onehop": {
+      "train_seconds": 15.8,
+      "obs": {
+        "mrr": 0.010605546804791352,
+        "hits@10": 0.022099447513812154,
+        "hits@100": 0.12154696132596685,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 16.5
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 19.7
+      }
+    },
+    "full": {
+      "train_seconds": 16.1,
+      "obs": {
+        "mrr": 0.19804860122676313,
+        "hits@10": 0.48066298342541436,
+        "hits@100": 0.569060773480663,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 16.8
+      },
+      "test": {
+        "mrr": 0.9861878453038674,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 181,
+        "positives": 494,
+        "candidates_mean": 4611.0,
+        "seconds": 20.5
+      }
+    }
+  },
+  "floor": {
+    "mrr": 0.15876983837161435,
+    "hits@10": 0.27071823204419887,
+    "hits@100": 0.6187845303867403,
+    "sources": 181,
+    "positives": 494
+  }
+}

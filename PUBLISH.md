@@ -2,25 +2,31 @@
 
 这份说明与稿件里的 **Data Availability / Code Availability** 两段是同一条口径。投稿前请读一遍。
 
-## 1. 结论：发这一份（2,651 个文件 / 实测 5,542 KB≈5.4 MB 内容，占盘约 14 MB）
+## 1. 结论：发这一份（**18,311 个文件 / 实测 ≈28,854 KB ≈28.2 MB 内容**，占盘约 37 MB）
 
 | 目录 / 文件 | 文件数 | 体积 | 发？ | 说明 |
 |---|---|---|---|---|
 | `src/` | 11 | 153 KB | ✅ | 抓取、建图、门槛、四个 cell、训练、汇总、审计（10 个 `.py` + `fetch.log`） |
-| `tools/` | 26 | 155 KB | ✅ | 诊断与产物脚本（含改稿包用的表/图生成器、机制图重绘与遮挡审计） |
+| `tools/` | 26 | 158 KB | ✅ | 诊断与产物脚本（含改稿包用的表/图生成器、机制图重绘与遮挡审计） |
+| `tools/ext/` | 14 | 148 KB | ✅ | **v18 新增**：扩展实验 E1–E8 的脚本 + 九张扩展表的生成器 `make_extension_tables.py` |
 | `results/` | 256 | 1.1 MB | ✅ | 每条 run 的 json（主结果、门槛、配对对比的来源） |
 | `results_ckpt_last/` | 31 | 71 KB | ✅ | `CHECKPOINT_RULE=last` 的原始 runs（`tab:checkpoint` 的来源） |
 | `results_alt_fixedwindow/` | 242 | 639 KB | ✅ | 固定窗口切分的稳健性 runs |
 | `logs/` | 47 | 427 KB | ✅ | 建图日志、诊断、`floor_pool_readings*.json`、`checkpoint_rules.json` |
+| `results_ext/` | 525 | 6.0 MB | ✅ | **v18 新增**：E1–E8 的原始产物（每个 (数据集, 模型, 种子, 条件) 一个 JSON/NPZ，含 per-source 数组与门控插桩量） |
+| `data/graphs_ext/` | 4 | 2.3 MB | ✅ | **v18 新增**：从一手数据重建的引用网络（HepTh/HepPh 图 + 统计），E7 的输入 |
+| `data/raw_citation/` | 15,093 | 14.6 MB | ⚠️ | **v18 新增**：arXiv Atom API 抓来的标题/摘要/发布日期缓存（8,852 篇），见 §2.5 的口径提醒 |
 | `data/graphs/` | 5 | 1.8 MB | ✅ | **冻结图快照**（npm/maven 的 `*_graph.json.gz` + `*_stats.json`） |
 | `data/seeds/` | 1 | 41 KB | ✅ | Maven 的额外种子记录 |
 | `data/raw_maven/` | 2,022 | 1.05 MB | ✅ | Maven Central 原始元数据快照（见 §3 的口径说明；小文件多，占盘约 8 MB） |
 | `assets/` | 1 | 81 KB | ✅ | 机制图**原图**（作者 762 pt 版，供对照；新图由 `tools/make_fig_mechanism.py` 生成） |
-| `.gitignore`、`.gitattributes`、`LICENSE`、`CITATION.cff`、`MANIFEST.json`、`requirements.txt`、`run_all.sh`、`README.md`、`PUBLISH.md` | 9 | 68 KB | ✅ | 配置、依赖、授权、引用信息、一键复现、主文档、本文档 |
+| `.gitignore`、`.gitattributes`、`LICENSE`、`CITATION.cff`、`MANIFEST.json`、`requirements.txt`、`run_all.sh`、`README.md`、`PUBLISH.md`、**`EXT-EXPERIMENTS.md`** | 10 | 92 KB | ✅ | 配置、依赖（**v18 起含 torch 与 PyG**）、授权、引用信息、一键复现、主文档、本文档，以及 E1–E8 的实验说明书 |
 | **`data/raw_npm/`** | 4,959 | **2.7 GB** | ❌ | 见 §2 |
 | **`data/bundles/`** | 22 | 98 MB | ❌ | 见 §2 |
 
-合计 **2,651 个文件 / 实测 5,542 KB ≈ 5.4 MB 内容**（`du` 口径约 14 MB，因为 `raw_maven` 有 2,022 个小文件）；
+合计 **18,311 个文件 / 实测 ≈28,854 KB ≈ 28.2 MB 内容**（`du` 口径约 37 MB，因为 `raw_maven` 有 2,022 个、
+`raw_citation` 有 15,093 个小文件；
+KB 数按各文件字节数求和 ÷1024 —— 含本文件自身，所以再改动本文档会让末位有几 KB 的自指浮动）；
 `raw_npm` 一个目录就占全仓体积的 96%（2.7 GB / 2.8 GB）。
 
 > `CITATION.cff` 与 `.gitattributes` 是 2026-09-27 补的：前者给 GitHub/Zenodo 提供正确的引用信息，
@@ -29,11 +35,34 @@
 >
 > `results/revision_figures/fig_mechanism.pdf` 2026-09-27 被**重绘版**取代：先前是在作者原图上
 > 改字（`fix_fig_mechanism_labels.py`）再修箭头（`fix_fig_mechanism_arrows.py`），只治了标；真正的
-> 病根是**尺度**——原图 762 pt 宽，`\includegraphics[width=\textwidth]` 缩到 0.545 倍，9.5 pt 的
-> 字号实际只印出 ≈5.2 pt。新图 `tools/make_fig_mechanism.py` 直接按最终印刷尺寸（页幅 415 × 232 pt）
-> 作图，脚本里的 6.1–7.2 pt 就是印刷字号。`tools/check_fig_occlusion.py` 做几何审计（文字墨迹框
-> 两两求交 + 线段穿字 + 越框），实测 0 重叠 / 0 穿字 / 0 越框、最小净距 1.05 pt。
+> 病根是**尺度**——原图 762.12 pt 宽，`\includegraphics[width=\textwidth]` 缩到 **0.4865** 倍，
+> 9.5 pt 的字号实际只印出 **≈4.6 pt**。新图 `tools/make_fig_mechanism.py` 把画布缩到 415 × 232 pt，
+> 实测在本模板下按 **0.893 倍**印出（单栏 `\textwidth` = 370.7 pt），图内正文 **5.0–6.6 pt**、
+> 上下标 3.7–4.1 pt——是改善，但不是「字号即印刷字号」。`tools/check_fig_occlusion.py` 做几何审计
+> （文字墨迹框两两求交 + 线段穿字 + 越框），实测 0 重叠 / 0 穿字 / 0 越框、最小净距 1.05 pt；
+> `FIG_FONT_SCALE=1.06` 起（`out-neighbours` ↔ `out` 重叠）即 FAIL，所以 1.0 是本版式能过审计的上限。
 > 文件数因此从 2,647 变成 2,651（+2 工具、+SVG、+PNG），`assets/` 与 `original/` 里的作者原图未动。
+> 2026-09-27 晚又补了印刷尺寸的**实测更正**（`FIG_FONT_SCALE` 旋钮 + 文档订正，见 `repro/README.md` §8 与改稿包
+> `CHANGELOG-numbers.md` §17.8），内容体积随之从约 5,542 KB 变成约 **5,548 KB**（文件数不变）。
+>
+> 2026-09-27 第九次重打（改稿包表格重排，见 `CHANGELOG-numbers.md` §18 / §19）之前又改了这里的四个文件：
+> `results/revision_tables/*.tex` 四张生成表与生成器 `tools/make_revision_tables.py` 同步到新的列结构，
+> 内容体积 5,548 → **5,551 KB**（+2,546 B；文件数仍 2,651，`tools/` 因此 156 → 158 KB）。
+> 数字、标签与结论一个都没变，改的只是列宽、表头词与分组标签行。
+
+### 口径提醒：`data/raw_citation/`（v18 新增）
+
+它是 E7 引用网络对照的**可复现锚**：8,852 篇 arXiv 论文的标题、摘要与提交日期，由
+`tools/ext/e7_citation_control.py --fetch` 从 arXiv 官方 Atom API 按 ≤150 篇/批、每批间隔 3 s 抓取，
+落盘缓存；`--build` 与整条链在缓存命中时**不会重新请求** arXiv。
+
+- **为什么留在包里**：不留的话，E7 就得重抓（限速下约 10–30 分钟，且依赖 arXiv 可达），
+  `data/graphs_ext/*.json.gz` 又**内含**这些标题与摘要文本，删缓存并不能让包"不含"这些内容。
+- **权利归属**：与 `raw_maven` 同类，属**上游公开元数据**，MIT 不覆盖（见 §6）。
+  发布到公开仓库/Zenodo 之前，请按 arXiv 当时的 API/OAI 使用条款确认批量元数据的再分发口径；
+  若你选择不发布这一目录，就把它加进 `.gitignore`，并让 E7 的重跑走 `--fetch` 先抓一遍。
+- **可核对性**：即使不发布缓存，`data/graphs_ext/*_stats.json` + `results_ext/e7_*` 也在包内，
+  E7 的每一个数字仍能对着论文复算。
 
 ## 2. 为什么排除这两个
 
@@ -137,6 +166,8 @@ python3 tools/compare_vs_paper.py                              # 逐数字对照
 python3 tools/compare_checkpoint_rules.py --dataset npm        # best_val vs last 两套策略
 python3 tools/gate_within_config.py                            # 同配置门控复核
 python3 tools/check_fig_occlusion.py results/revision_figures/fig_mechanism.pdf  # RESULT: PASS
+FIG_FONT_SCALE=1.06 python3 tools/make_fig_mechanism.py --out <tmp> --stem f_106   # 反例：审计 FAIL
+FIG_FONT_SCALE=1.12 python3 tools/make_fig_mechanism.py --out <tmp> --stem f_112   # 反例：审计 FAIL
 ```
 
 **机制图重绘也过了实跑验证**（2026-09-27）：在包内重跑
@@ -145,6 +176,15 @@ python3 tools/check_fig_occlusion.py results/revision_figures/fig_mechanism.pdf 
 `check_fig_occlusion.py` 报 `text_text_overlaps 0 / line_ink_hits 0 / words_crossing_a_border 0`、
 最小净距 1.05 pt。生成器用 `freeze_pdf_id()` 冻结了 PyMuPDF 的随机 trailer `/ID`，所以是字节级可复现，
 不是"看起来一样"。
+
+**印刷尺寸是量出来的，不是算出来的**（2026-09-27 晚补）：把改稿包真装进稿件、用用户态 TeX Live 2026
+编译出 `main.pdf`（37 页、0 error、0 undefined ref）后，第 8 页机制图的文字 span 实测为
+**5.00–6.61 pt**（上下标 3.69–4.13 pt），除以「画布 415 ÷ 实测 `\textwidth` 370.7」即得设计字号 5.6–7.4 pt，
+**与脚本里的数字对得上**——这条反过来说明缩放系数是 **0.893 倍**而非 1.0。同一测量给出作者原图的实际印刷字号：
+762.12 pt 画布 → 0.4865 倍 → 统一的 9.5 pt 印成 **≈4.6 pt**。想把这 0.893 买回来只有两条路：
+在 370.7 pt 画布上重排，或整体调大字号；后者已用 `FIG_FONT_SCALE` 做反例验证——
+`1.06` 让 `out-neighbours` 与 `out` 重叠、`1.12` 让 `out-view aggregation` 越框（两次审计都 FAIL），
+所以 **1.0 就是本版式能过审计的上限**。
 
 **最重要的一条**：把 `BUNDLE_DIR` 指向空目录后强制从 `data/raw_npm/` 与 `data/raw_maven/`
 重建 20 个 bundle，审计**仍然 414/414**，而且 414 行输出与"读 98 MB 缓存"那一次
@@ -187,5 +227,7 @@ cffconvert --validate -i CITATION.cff
 ```
 
 > 作者的 **ORCID 不要臆造**：没注册就保持注释掉；注册是免费的，投稿/归档前花两分钟建一个即可。
-> 作者顺序与通讯作者以稿件 `main.tex` 的 `\author*` 与 Author Contributions 为准，
-> 现在稿件是**单一作者**（Runxiao Jiang，通讯作者）。
+> 作者顺序与通讯作者以稿件 `main.tex` 的 `\author*` 与 Author Contributions 为准。
+> **2026-09-27（第十次重打）起稿件是两位作者**：`Runxiao Jiang` 为第一作者，`Jialiang Xie`
+> （谢加良老师）为**通讯作者**；`CITATION.cff` 的 `authors` 与 `preferred-citation.authors`
+> 已同步为两人（`authors[].corresponding: true` 挂在 Xie 上，CFF 1.2.0 的 person 字段支持它）。

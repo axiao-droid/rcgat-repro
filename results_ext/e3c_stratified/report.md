@@ -1,0 +1,144 @@
+# E3c -- content floor and structural increment, stratified
+
+Per-source paired difference (model minus content floor, test stage) of the frozen
+zero-initialised runs, split by the length of the source's description, by the source's
+namespace, and by the number of positive targets. ``floor`` is the content floor itself
+in that stratum: the picture to look for is a weak floor together with a large
+structural increment.
+
+## npm / gat_dir
+
+181 rankable sources per seed (5 seeds)
+
+**description length (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| length_q1 | 225 | 0.1691 | +0.0252 | [+0.0072,+0.0433] | 48% |
+| length_q2 | 220 | 0.1941 | -0.0004 | [-0.0038,+0.0030] | 45% |
+| length_q3 | 230 | 0.1396 | +0.0035 | [+0.0010,+0.0061] | 58% |
+| length_q4 | 230 | 0.1267 | +0.0062 | [+0.0005,+0.0119] | 46% |
+
+**positives per source (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| pos_q1 | 165 | 0.1128 | +0.0144 | [+0.0022,+0.0267] | 38% |
+| pos_q2 | 250 | 0.0967 | -0.0006 | [-0.0027,+0.0016] | 54% |
+| pos_q3 | 130 | 0.2497 | +0.0081 | [-0.0015,+0.0176] | 48% |
+| pos_q4 | 360 | 0.1854 | +0.0126 | [+0.0024,+0.0228] | 52% |
+
+**namespace / groupId**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| (unscoped) | 165 | 0.1128 | +0.0017 | [+0.0003,+0.0031] | 47% |
+| @csstools | 55 | 0.0147 | +0.0002 | [-0.0000,+0.0004] | 53% |
+| @devframes | 50 | 0.0014 | +0.0006 | [+0.0002,+0.0011] | 56% |
+| @jsonjoy.com | 25 | 0.0107 | +0.0006 | [-0.0006,+0.0018] | 80% |
+| @prisma | 45 | 0.0421 | +0.0165 | [-0.0015,+0.0345] | 44% |
+| @rc-component | 165 | 0.2115 | +0.0013 | [-0.0006,+0.0031] | 68% |
+| other | 400 | 0.2136 | +0.0164 | [+0.0057,+0.0271] | 40% |
+
+## npm / ragat_sym
+
+181 rankable sources per seed (5 seeds)
+
+**description length (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| length_q1 | 225 | 0.1691 | +0.0119 | [+0.0003,+0.0236] | 44% |
+| length_q2 | 220 | 0.1941 | +0.0016 | [-0.0006,+0.0037] | 45% |
+| length_q3 | 230 | 0.1396 | +0.0025 | [+0.0007,+0.0043] | 60% |
+| length_q4 | 230 | 0.1267 | +0.0043 | [-0.0027,+0.0113] | 53% |
+
+**positives per source (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| pos_q1 | 165 | 0.1128 | +0.0041 | [-0.0047,+0.0128] | 50% |
+| pos_q2 | 250 | 0.0967 | +0.0021 | [-0.0025,+0.0066] | 55% |
+| pos_q3 | 130 | 0.2497 | -0.0024 | [-0.0079,+0.0032] | 45% |
+| pos_q4 | 360 | 0.1854 | +0.0103 | [+0.0036,+0.0171] | 50% |
+
+**namespace / groupId**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| (unscoped) | 165 | 0.1128 | +0.0026 | [+0.0011,+0.0042] | 51% |
+| @csstools | 55 | 0.0147 | +0.0005 | [+0.0003,+0.0006] | 78% |
+| @devframes | 50 | 0.0014 | +0.0004 | [+0.0001,+0.0007] | 54% |
+| @jsonjoy.com | 25 | 0.0107 | +0.0008 | [-0.0000,+0.0016] | 88% |
+| @prisma | 45 | 0.0421 | +0.0128 | [-0.0014,+0.0270] | 62% |
+| @rc-component | 165 | 0.2115 | +0.0029 | [+0.0003,+0.0056] | 65% |
+| other | 400 | 0.2136 | +0.0076 | [+0.0000,+0.0152] | 37% |
+
+## maven / gat_dir
+
+29 rankable sources per seed (5 seeds)
+
+**description length (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| length_q1 | 35 | 0.0830 | +0.0394 | [-0.0015,+0.0804] | 51% |
+| length_q2 | 30 | 0.1045 | +0.0025 | [-0.0149,+0.0198] | 23% |
+| length_q3 | 40 | 0.1462 | +0.0104 | [-0.0103,+0.0311] | 52% |
+| length_q4 | 40 | 0.0375 | -0.0103 | [-0.0154,-0.0051] | 38% |
+
+**positives per source (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| pos_q1 | 25 | 0.0632 | +0.0036 | [-0.0062,+0.0133] | 52% |
+| pos_q2 | 45 | 0.0437 | -0.0022 | [-0.0053,+0.0009] | 40% |
+| pos_q3 | 20 | 0.1065 | +0.0230 | [-0.0273,+0.0733] | 50% |
+| pos_q4 | 55 | 0.1401 | +0.0184 | [-0.0080,+0.0447] | 36% |
+
+**namespace / groupId**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| com.vaadin | 20 | 0.0240 | +0.0106 | [+0.0013,+0.0199] | 85% |
+| io.micronaut.sourcegen | 15 | 0.0569 | -0.0302 | [-0.0325,-0.0278] | 0% |
+| org.bouncycastle | 10 | 0.0625 | +0.0047 | [+0.0029,+0.0065] | 90% |
+| org.jboss.weld | 10 | 0.6667 | +0.0083 | [-0.0509,+0.0676] | 20% |
+| org.springframework | 35 | 0.0801 | +0.0115 | [-0.0123,+0.0354] | 17% |
+| other | 15 | 0.1124 | +0.0790 | [-0.0185,+0.1765] | 80% |
+| software.amazon.awssdk | 40 | 0.0068 | -0.0004 | [-0.0009,+0.0001] | 38% |
+
+## maven / ragat_sym
+
+29 rankable sources per seed (5 seeds)
+
+**description length (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| length_q1 | 35 | 0.0830 | +0.0183 | [-0.0205,+0.0572] | 37% |
+| length_q2 | 30 | 0.1045 | +0.0392 | [-0.0227,+0.1010] | 40% |
+| length_q3 | 40 | 0.1462 | -0.0007 | [-0.0040,+0.0027] | 42% |
+| length_q4 | 40 | 0.0375 | -0.0054 | [-0.0105,-0.0002] | 40% |
+
+**positives per source (quartiles)**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| pos_q1 | 25 | 0.0632 | -0.0037 | [-0.0094,+0.0019] | 28% |
+| pos_q2 | 45 | 0.0437 | -0.0014 | [-0.0044,+0.0015] | 42% |
+| pos_q3 | 20 | 0.1065 | -0.0246 | [-0.0717,+0.0225] | 40% |
+| pos_q4 | 55 | 0.1401 | +0.0405 | [+0.0037,+0.0772] | 44% |
+
+**namespace / groupId**
+
+| stratum | sources | floor MRR | Δ vs floor | 95% CI | share > 0 |
+|---|---|---|---|---|---|
+| com.vaadin | 20 | 0.0240 | +0.0007 | [-0.0039,+0.0054] | 70% |
+| io.micronaut.sourcegen | 15 | 0.0569 | -0.0142 | [-0.0274,-0.0011] | 40% |
+| org.bouncycastle | 10 | 0.0625 | +0.0000 | [-0.0034,+0.0034] | 30% |
+| org.jboss.weld | 10 | 0.6667 | -0.0417 | [-0.1440,+0.0606] | 10% |
+| org.springframework | 35 | 0.0801 | +0.0431 | [-0.0017,+0.0879] | 20% |
+| other | 15 | 0.1124 | +0.0449 | [-0.0503,+0.1402] | 60% |
+| software.amazon.awssdk | 40 | 0.0068 | +0.0002 | [-0.0013,+0.0017] | 45% |
+

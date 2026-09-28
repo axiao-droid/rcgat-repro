@@ -1,0 +1,16 @@
+{
+  "test": {
+    "mrr": 0.15091036544657582,
+    "hits@10": 0.24861878453038674,
+    "hits@100": 0.6022099447513812,
+    "sources": 181,
+    "positives": 494,
+    "candidates_mean": 4611.0
+  },
+  "recipe": "big_word",
+  "dataset": "npm",
+  "seed": 105,
+  "dim": 300,
+  "seconds": 19.8,
+  "frozen_floor_test": 0.1599865431116602
+}

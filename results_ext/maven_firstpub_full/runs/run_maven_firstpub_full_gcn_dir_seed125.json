@@ -1,0 +1,99 @@
+{
+  "dataset": "maven_firstpub_full",
+  "model": "gcn_dir",
+  "registry_model": "gcn_dir",
+  "seed": 125,
+  "grid_id": "c1_h128_d0.2",
+  "config": {
+    "id": "c1_h128_d0.2",
+    "hidden": 128,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "heads": 4
+  },
+  "floor": {
+    "mrr": 0.22586422982768103,
+    "hits@10": 0.46808510638297873,
+    "hits@100": 0.8723404255319149,
+    "sources": 94,
+    "positives": 332,
+    "candidates_mean": 1879.0
+  },
+  "floor_val": {
+    "mrr": 0.25043874729338433,
+    "hits@10": 0.5145631067961165,
+    "hits@100": 0.7961165048543689,
+    "sources": 103,
+    "positives": 460,
+    "candidates_mean": 1879.0
+  },
+  "graph_built_at": "2026-09-28T04:36:48+00:00",
+  "fit_window_metadata": {
+    "dataset": "maven_firstpub_full",
+    "seed": 125,
+    "n_nodes": 2022,
+    "n_edges": 6357,
+    "fit_nodes": 1730,
+    "val_nodes": 150,
+    "test_nodes": 142,
+    "fit_edges": 5498,
+    "val_edges": 472,
+    "test_edges": 387,
+    "cutoff": "2025-11-26",
+    "split_rule": "node_date_quantile_fixed_fraction_per_seed",
+    "f_test": 0.07,
+    "f_val": 0.08,
+    "jitter": 0.05,
+    "jitter_test": 0.0,
+    "val_half_band": 12,
+    "split_rule_version": 2
+  },
+  "feature_metadata": {
+    "type": "tfidf_svd_content_floor",
+    "fit_scope": "fit_window_only",
+    "dim": 300,
+    "tfidf_max_features": 20000,
+    "tfidf_token_pattern": "(?u)[a-zA-Z][a-zA-Z0-9_+#.-]*",
+    "tfidf_stopwords": "english",
+    "tfidf_min_df": 1,
+    "svd_n_iter": 10,
+    "svd_random_state": 42,
+    "tfidf_sublinear": true,
+    "l2_normalised": true,
+    "floor_reference": {
+      "npm": 0.1565,
+      "maven": 0.3377
+    }
+  },
+  "edge_time_edges": {
+    "fit": 5498,
+    "val": 472,
+    "test": 387
+  },
+  "wall_seconds": 125.2,
+  "phase": "final",
+  "best_epoch": 88,
+  "checkpoint_rule": "best_val",
+  "selected_epoch": 88,
+  "init_val_mrr": 0.25043874729338433,
+  "select_from_init": false,
+  "epochs_run": 100,
+  "param_count": 208897,
+  "train_seconds": 124.5,
+  "val": {
+    "mrr": 0.30926964611427693,
+    "hits@10": 0.5728155339805825,
+    "hits@100": 0.941747572815534,
+    "sources": 103,
+    "positives": 460,
+    "candidates_mean": 1879.0
+  },
+  "test": {
+    "mrr": 0.3349024303949279,
+    "hits@10": 0.5531914893617021,
+    "hits@100": 0.9468085106382979,
+    "sources": 94,
+    "positives": 332,
+    "candidates_mean": 1879.0
+  }
+}

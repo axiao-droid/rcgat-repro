@@ -1,0 +1,687 @@
+{
+  "datasets": [
+    "maven",
+    "npm"
+  ],
+  "models": [
+    "gat_dir",
+    "gat_time",
+    "gatv2_dir",
+    "gcn_dir",
+    "ragat_sym",
+    "ragat_time",
+    "sage_dir"
+  ],
+  "n_runs": 140,
+  "sources": [
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed121.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed122.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed123.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed124.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed125.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed126.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed127.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed128.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed129.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_dir_seed130.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed121.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed122.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed123.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed124.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed125.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed126.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed127.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed128.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed129.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gat_time_seed130.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed121.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed122.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed123.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed124.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed125.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed126.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed127.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed128.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed129.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gatv2_dir_seed130.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed121.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed122.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed123.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed124.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed125.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed126.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed127.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed128.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed129.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_gcn_dir_seed130.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed121.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed122.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed123.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed124.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed125.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed126.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed127.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed128.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed129.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_sym_seed130.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed121.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed122.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed123.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed124.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed125.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed126.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed127.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed128.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed129.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_ragat_time_seed130.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed121.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed122.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed123.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed124.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed125.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed126.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed127.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed128.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed129.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_maven_sage_dir_seed130.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed101.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed102.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed103.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed104.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed105.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed106.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed107.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed108.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed109.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_dir_seed110.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed101.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed102.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed103.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed104.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed105.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed106.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed107.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed108.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed109.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gat_time_seed110.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed101.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed102.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed103.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed104.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed105.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed106.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed107.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed108.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed109.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gatv2_dir_seed110.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed101.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed102.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed103.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed104.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed105.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed106.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed107.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed108.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed109.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_gcn_dir_seed110.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed101.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed102.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed103.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed104.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed105.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed106.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed107.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed108.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed109.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_sym_seed110.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed101.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed102.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed103.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed104.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed105.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed106.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed107.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed108.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed109.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_ragat_time_seed110.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed101.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed102.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed103.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed104.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed105.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed106.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed107.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed108.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed109.json",
+    "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results/runs/run_npm_sage_dir_seed110.json"
+  ],
+  "cells": {
+    "maven|gat_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.10383904985598828,
+      "test_sd": 0.011974787505635836,
+      "delta_mean": 0.01160258343403739,
+      "delta_sd": 0.010283406940667223,
+      "floor_mean": 0.09223646642195091,
+      "floor_sd": 0.004231465023504469
+    },
+    "maven|gat_time": {
+      "n_seeds": 10,
+      "test_mean": 0.10375253079950582,
+      "test_sd": 0.006854771568623343,
+      "delta_mean": 0.011516064377554919,
+      "delta_sd": 0.0075857921055179035,
+      "floor_mean": 0.09223646642195091,
+      "floor_sd": 0.004231465023504469
+    },
+    "maven|gatv2_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.10524325331023358,
+      "test_sd": 0.011637973629617819,
+      "delta_mean": 0.01300678688828269,
+      "delta_sd": 0.009857028323883398,
+      "floor_mean": 0.09223646642195091,
+      "floor_sd": 0.004231465023504469
+    },
+    "maven|gcn_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.16249993351816677,
+      "test_sd": 0.05410243882273502,
+      "delta_mean": 0.07026346709621589,
+      "delta_sd": 0.05363334574104048,
+      "floor_mean": 0.09223646642195091,
+      "floor_sd": 0.004231465023504469
+    },
+    "maven|ragat_sym": {
+      "n_seeds": 10,
+      "test_mean": 0.1023980333520711,
+      "test_sd": 0.007418654319951712,
+      "delta_mean": 0.010161566930120202,
+      "delta_sd": 0.007917196524164184,
+      "floor_mean": 0.09223646642195091,
+      "floor_sd": 0.004231465023504469
+    },
+    "maven|ragat_time": {
+      "n_seeds": 10,
+      "test_mean": 0.10301706292009827,
+      "test_sd": 0.006022509632266358,
+      "delta_mean": 0.010780596498147377,
+      "delta_sd": 0.007091815155958328,
+      "floor_mean": 0.09223646642195091,
+      "floor_sd": 0.004231465023504469
+    },
+    "maven|sage_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.14633001037304721,
+      "test_sd": 0.0443759899859528,
+      "delta_mean": 0.05409354395109635,
+      "delta_sd": 0.044862096973410655,
+      "floor_mean": 0.09223646642195091,
+      "floor_sd": 0.004231465023504469
+    },
+    "npm|gat_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.16436609092308774,
+      "test_sd": 0.005036248459269916,
+      "delta_mean": 0.007785173875005405,
+      "delta_sd": 0.00525798949227285,
+      "floor_mean": 0.1565809170480823,
+      "floor_sd": 0.002197252365006605
+    },
+    "npm|gat_time": {
+      "n_seeds": 10,
+      "test_mean": 0.18105651279683568,
+      "test_sd": 0.015751449073327144,
+      "delta_mean": 0.024475595748753347,
+      "delta_sd": 0.016206409150943003,
+      "floor_mean": 0.1565809170480823,
+      "floor_sd": 0.002197252365006605
+    },
+    "npm|gatv2_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.16337549703848425,
+      "test_sd": 0.004686750480184685,
+      "delta_mean": 0.006794579990401959,
+      "delta_sd": 0.004650023100526325,
+      "floor_mean": 0.1565809170480823,
+      "floor_sd": 0.002197252365006605
+    },
+    "npm|gcn_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.21183455635836884,
+      "test_sd": 0.020690689294765606,
+      "delta_mean": 0.055253639310286505,
+      "delta_sd": 0.021229637053809525,
+      "floor_mean": 0.1565809170480823,
+      "floor_sd": 0.002197252365006605
+    },
+    "npm|ragat_sym": {
+      "n_seeds": 10,
+      "test_mean": 0.16230785570340855,
+      "test_sd": 0.003267174902296195,
+      "delta_mean": 0.005726938655326236,
+      "delta_sd": 0.0023847346213970617,
+      "floor_mean": 0.1565809170480823,
+      "floor_sd": 0.002197252365006605
+    },
+    "npm|ragat_time": {
+      "n_seeds": 10,
+      "test_mean": 0.1652409710889,
+      "test_sd": 0.014466588009001377,
+      "delta_mean": 0.008660054040817707,
+      "delta_sd": 0.015605863415483605,
+      "floor_mean": 0.1565809170480823,
+      "floor_sd": 0.002197252365006605
+    },
+    "npm|sage_dir": {
+      "n_seeds": 10,
+      "test_mean": 0.169559057213706,
+      "test_sd": 0.002877247025150926,
+      "delta_mean": 0.012978140165623694,
+      "delta_sd": 0.0029477195963591037,
+      "floor_mean": 0.1565809170480823,
+      "floor_sd": 0.002197252365006605
+    }
+  },
+  "test_mrr": {
+    "anova": {
+      "ss": {
+        "dataset": 0.10901125481139068,
+        "model": 0.04911398537453444,
+        "interaction": 0.008255151607316186,
+        "split": 0.05638691374357447
+      },
+      "ss_share": {
+        "dataset": 0.489350331498151,
+        "model": 0.22047214359477715,
+        "interaction": 0.0370572853472517,
+        "split": 0.2531202395598202
+      },
+      "df": {
+        "dataset": 1,
+        "model": 6,
+        "interaction": 6,
+        "split": 126
+      },
+      "ms": {
+        "dataset": 0.10901125481139068,
+        "model": 0.008185664229089073,
+        "interaction": 0.0013758586012193642,
+        "split": 0.0004475151884410672
+      },
+      "variance_components": {
+        "dataset": 0.0015376485172881617,
+        "model": 0.00034049028139348543,
+        "interaction": 9.28343412778297e-05,
+        "split": 0.0004475151884410672
+      },
+      "variance_share": {
+        "dataset": 0.6357890998403446,
+        "model": 0.14078640669672657,
+        "interaction": 0.03838527570617852,
+        "split": 0.18503921775675028
+      },
+      "sd_components": {
+        "dataset": 0.03921286163095167,
+        "model": 0.01845237874620737,
+        "interaction": 0.009635057928099327,
+        "split": 0.021154554791842518
+      },
+      "n_seeds": 10
+    },
+    "seeds": {
+      "maven": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "npm": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ]
+    },
+    "rank_stability_maven": {
+      "pooled_best": "gcn_dir",
+      "per_seed_best": [
+        "sage_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "sage_dir",
+        "sage_dir",
+        "sage_dir",
+        "sage_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir"
+      ],
+      "share_seed_best_agrees": 0.5,
+      "mean_spearman_seed_vs_pooled": 0.49642857142857144,
+      "min_spearman_seed_vs_pooled": 0.03571428571428571,
+      "mean_spearman_seed_pairs": 0.2626984126984127
+    },
+    "seed_sd_maven": 0.020341017923540417,
+    "model_sd_maven": 0.02522179686189162,
+    "seed_corr_between_models_maven": {
+      "mean": -0.006637398405020082,
+      "min": -0.45612622183395884,
+      "max": 0.5631222723030633
+    },
+    "rank_stability_npm": {
+      "pooled_best": "gcn_dir",
+      "per_seed_best": [
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gat_time",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gat_time",
+        "gcn_dir"
+      ],
+      "share_seed_best_agrees": 0.8,
+      "mean_spearman_seed_vs_pooled": 0.6714285714285715,
+      "min_spearman_seed_vs_pooled": 0.21428571428571427,
+      "mean_spearman_seed_pairs": 0.4777777777777778
+    },
+    "seed_sd_npm": 0.009539449606285121,
+    "model_sd_npm": 0.017888914055590902,
+    "seed_corr_between_models_npm": {
+      "mean": -0.07867938054826586,
+      "min": -0.6361035991223105,
+      "max": 0.5728222351473244
+    }
+  },
+  "delta_vs_floor": {
+    "anova": {
+      "ss": {
+        "dataset": 0.0025500862451798005,
+        "model": 0.049113985374534444,
+        "interaction": 0.00825515160731619,
+        "split": 0.05654795768197249
+      },
+      "ss_share": {
+        "dataset": 0.021895320426551845,
+        "model": 0.421698069715517,
+        "interaction": 0.07087963787640768,
+        "split": 0.4855269719815235
+      },
+      "df": {
+        "dataset": 1,
+        "model": 6,
+        "interaction": 6,
+        "split": 126
+      },
+      "ms": {
+        "dataset": 0.0025500862451798005,
+        "model": 0.008185664229089075,
+        "interaction": 0.0013758586012193649,
+        "split": 0.00044879331493628957
+      },
+      "variance_components": {
+        "dataset": 1.6774680628006225e-05,
+        "model": 0.0003404902813934855,
+        "interaction": 9.270652862830753e-05,
+        "split": 0.00044879331493628957
+      },
+      "variance_share": {
+        "dataset": 0.018664149423460542,
+        "model": 0.3788424727773471,
+        "interaction": 0.10314881941538995,
+        "split": 0.4993445583838025
+      },
+      "sd_components": {
+        "dataset": 0.0040956904946548665,
+        "model": 0.01845237874620737,
+        "interaction": 0.009628422956450736,
+        "split": 0.02118474250342188
+      },
+      "n_seeds": 10
+    },
+    "seeds": {
+      "maven": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "npm": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ]
+    },
+    "rank_stability_maven": {
+      "pooled_best": "gcn_dir",
+      "per_seed_best": [
+        "sage_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "sage_dir",
+        "sage_dir",
+        "sage_dir",
+        "sage_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir"
+      ],
+      "share_seed_best_agrees": 0.5,
+      "mean_spearman_seed_vs_pooled": 0.49642857142857144,
+      "min_spearman_seed_vs_pooled": 0.03571428571428571,
+      "mean_spearman_seed_pairs": 0.2626984126984127
+    },
+    "seed_sd_maven": 0.02017581168066317,
+    "model_sd_maven": 0.025221796861891632,
+    "seed_corr_between_models_maven": {
+      "mean": -0.04756032154400666,
+      "min": -0.6040787216217749,
+      "max": 0.45513957738893696
+    },
+    "rank_stability_npm": {
+      "pooled_best": "gcn_dir",
+      "per_seed_best": [
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gat_time",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gat_time",
+        "gcn_dir"
+      ],
+      "share_seed_best_agrees": 0.8,
+      "mean_spearman_seed_vs_pooled": 0.6714285714285715,
+      "min_spearman_seed_vs_pooled": 0.21428571428571427,
+      "mean_spearman_seed_pairs": 0.4777777777777778
+    },
+    "seed_sd_npm": 0.00975462520439878,
+    "model_sd_npm": 0.017888914055590892,
+    "seed_corr_between_models_npm": {
+      "mean": 0.01765412863807455,
+      "min": -0.5524930635613126,
+      "max": 0.646160627306984
+    }
+  },
+  "val_mrr": {
+    "anova": {
+      "ss": {
+        "dataset": 0.48200214728291635,
+        "model": 0.014051327871774256,
+        "interaction": 0.011417948874390146,
+        "split": 0.014914127947515756
+      },
+      "ss_share": {
+        "dataset": 0.9226942541942864,
+        "model": 0.026898385337433245,
+        "interaction": 0.0218573213428033,
+        "split": 0.02855003912547705
+      },
+      "df": {
+        "dataset": 1,
+        "model": 6,
+        "interaction": 6,
+        "split": 126
+      },
+      "ms": {
+        "dataset": 0.48200214728291635,
+        "model": 0.0023418879786290428,
+        "interaction": 0.0019029914790650243,
+        "split": 0.00011836609482155362
+      },
+      "variance_components": {
+        "dataset": 0.006858559368626447,
+        "model": 2.194482497820092e-05,
+        "interaction": 0.00017846253842434707,
+        "split": 0.00011836609482155362
+      },
+      "variance_share": {
+        "dataset": 0.9555860838678731,
+        "model": 0.0030575180930867358,
+        "interaction": 0.024864743314774965,
+        "split": 0.016491654724265208
+      },
+      "sd_components": {
+        "dataset": 0.0828164196800758,
+        "model": 0.004684530390359414,
+        "interaction": 0.013358987178089029,
+        "split": 0.010879618321501614
+      },
+      "n_seeds": 10
+    },
+    "seeds": {
+      "maven": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "npm": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ]
+    },
+    "rank_stability_maven": {
+      "pooled_best": "gat_dir",
+      "per_seed_best": [
+        "gcn_dir",
+        "ragat_time",
+        "gat_dir",
+        "ragat_time",
+        "gat_dir",
+        "ragat_time",
+        "sage_dir",
+        "gat_dir",
+        "gat_dir",
+        "gat_time"
+      ],
+      "share_seed_best_agrees": 0.4,
+      "mean_spearman_seed_vs_pooled": 0.5392857142857143,
+      "min_spearman_seed_vs_pooled": -0.21428571428571427,
+      "mean_spearman_seed_pairs": 0.24841269841269842
+    },
+    "seed_sd_maven": 0.012809691032648712,
+    "model_sd_maven": 0.005239918087046951,
+    "seed_corr_between_models_maven": {
+      "mean": 0.4384785513137585,
+      "min": -0.19630289960429745,
+      "max": 0.7793871160400185
+    },
+    "rank_stability_npm": {
+      "pooled_best": "gcn_dir",
+      "per_seed_best": [
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir",
+        "gcn_dir"
+      ],
+      "share_seed_best_agrees": 1.0,
+      "mean_spearman_seed_vs_pooled": 0.7285714285714284,
+      "min_spearman_seed_vs_pooled": 0.42857142857142855,
+      "mean_spearman_seed_pairs": 0.5619047619047619
+    },
+    "seed_sd_npm": 0.008084221619652505,
+    "model_sd_npm": 0.01992564187699971,
+    "seed_corr_between_models_npm": {
+      "mean": 0.20031855338194177,
+      "min": -0.3155584699942859,
+      "max": 0.6846493685243886
+    }
+  },
+  "gate_contrast": {
+    "maven": {
+      "mean": -0.001441016503917189,
+      "sd": 0.014940798860139274,
+      "n_seeds": 10,
+      "positive_seeds": 5,
+      "se": 0.0047246954460487605,
+      "ci95": [
+        -0.012128277602879486,
+        0.009246244595045108
+      ]
+    },
+    "maven_note": "gate contrast here is the test-MRR difference ragat_sym - gat_dir; the manuscript's gate contrast is the same pair, so signs match",
+    "npm": {
+      "mean": -0.0020582352196791692,
+      "sd": 0.005527311042359885,
+      "n_seeds": 10,
+      "positive_seeds": 5,
+      "se": 0.001747889223005666,
+      "ci95": [
+        -0.006011960642117986,
+        0.0018954902027596473
+      ]
+    },
+    "npm_note": "gate contrast here is the test-MRR difference ragat_sym - gat_dir; the manuscript's gate contrast is the same pair, so signs match"
+  }
+}

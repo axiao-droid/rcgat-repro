@@ -1,0 +1,22 @@
+{
+  "dataset": "maven_firstpub",
+  "base_dataset": "maven",
+  "node_date_field": "first non-prerelease release date",
+  "maven_min_date": "2021-04-19",
+  "stats": {
+    "nodes": 502,
+    "edges": 364,
+    "avg_out": 0.7250996015936255,
+    "avg_in": 0.7250996015936255,
+    "density": 0.0014473045939992525,
+    "reciprocity": 0.0,
+    "max_out": 23,
+    "max_in": 39,
+    "date_min": "2021-04-28",
+    "date_max": "2026-09-09",
+    "nodes_with_out": 205,
+    "src_count": 502,
+    "isolated_nodes": 227,
+    "min_edges_rule": 0
+  }
+}

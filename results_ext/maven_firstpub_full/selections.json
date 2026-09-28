@@ -1,0 +1,67 @@
+{
+  "mode": "per_model",
+  "maven_firstpub_full": {
+    "shared_grid_id": "c4_h128_d0.5",
+    "shared_mean_cell_val_mrr": 0.3002814774870045,
+    "config": {
+      "id": "c4_h128_d0.5",
+      "hidden": 128,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "heads": 4
+    },
+    "per_model_best": {
+      "gat_dir": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.2822951152173616,
+        "tuning_test_mrr": 0.3391440569963324,
+        "param_count": 409601
+      },
+      "ragat_sym": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.2827532074304988,
+        "tuning_test_mrr": 0.2831826866272935,
+        "param_count": 409657
+      },
+      "gat_time": {
+        "grid_id": "c4_h128_d0.5",
+        "tuning_val_mrr": 0.3198689119710334,
+        "tuning_test_mrr": 0.3899825434623634,
+        "param_count": 409857
+      },
+      "ragat_time": {
+        "grid_id": "c3_h64_d0.5",
+        "tuning_val_mrr": 0.3253753791638404,
+        "tuning_test_mrr": 0.37716755210697406,
+        "param_count": 123065
+      },
+      "gcn_dir": {
+        "grid_id": "c1_h128_d0.2",
+        "tuning_val_mrr": 0.2869979251208854,
+        "tuning_test_mrr": 0.3007726222096727,
+        "param_count": 208897
+      },
+      "sage_dir": {
+        "grid_id": "c3_h64_d0.5",
+        "tuning_val_mrr": 0.27691045973681827,
+        "tuning_test_mrr": 0.28279886285803485,
+        "param_count": 88065
+      },
+      "gatv2_dir": {
+        "grid_id": "c2_h64_d0.2",
+        "tuning_val_mrr": 0.27460722050513287,
+        "tuning_test_mrr": 0.28522865267071423,
+        "param_count": 189441
+      }
+    },
+    "used": {
+      "gat_dir": "c4_h128_d0.5",
+      "ragat_sym": "c4_h128_d0.5",
+      "gat_time": "c4_h128_d0.5",
+      "ragat_time": "c3_h64_d0.5",
+      "gcn_dir": "c1_h128_d0.2",
+      "sage_dir": "c3_h64_d0.5",
+      "gatv2_dir": "c2_h64_d0.2"
+    }
+  }
+}

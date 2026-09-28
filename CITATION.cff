@@ -16,6 +16,10 @@ authors:
   - family-names: Jiang
     given-names: Runxiao
     affiliation: "School of Science, Jimei University, 185 Yinjiang Road, Xiamen 361021, Fujian, China"
+  - family-names: Xie
+    given-names: Jialiang
+    affiliation: "School of Science, Jimei University, 185 Yinjiang Road, Xiamen 361021, Fujian, China"
+    corresponding: true
     # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: replace with the real ORCID.  Must be the full https://orcid.org/... URL: the CFF 1.2.0 schema rejects a bare digit string.
 license: MIT
 version: "1.0.0"
@@ -41,6 +45,8 @@ preferred-citation:
   authors:
     - family-names: Jiang
       given-names: Runxiao
+    - family-names: Xie
+      given-names: Jialiang
   journal: "Empirical Software Engineering"
   year: 2026
   # doi: "10.1007/s10664-0xx-xxxx-x"   # TODO: fill in the article DOI once the paper is accepted.

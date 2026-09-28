@@ -1,0 +1,199 @@
+{
+  "dataset": "maven",
+  "seed": 125,
+  "n_nodes": 1664,
+  "edge_counts": {
+    "fit": 4950,
+    "val": 374,
+    "test": 327
+  },
+  "heuristics": {
+    "random": {
+      "obs": {
+        "mrr": 0.016388500853510915,
+        "hits@10": 0.06896551724137931,
+        "hits@100": 0.06896551724137931,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 0.023146180599652823,
+        "hits@10": 0.13793103448275862,
+        "hits@100": 0.2413793103448276,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "degree": {
+      "obs": {
+        "mrr": 0.15166322567196616,
+        "hits@10": 0.1724137931034483,
+        "hits@100": 0.2413793103448276,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      },
+      "test": {
+        "mrr": 0.37104059476402723,
+        "hits@10": 0.7586206896551724,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "pa": {
+      "obs": {
+        "mrr": 0.011969816368784875,
+        "hits@10": 0.034482758620689655,
+        "hits@100": 0.034482758620689655,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      },
+      "test": {
+        "mrr": 0.37104059476402723,
+        "hits@10": 0.7586206896551724,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "cn": {
+      "obs": {
+        "mrr": 0.001560169377916472,
+        "hits@10": 0.0,
+        "hits@100": 0.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "ncn": {
+      "obs": {
+        "mrr": 0.001560169377916472,
+        "hits@10": 0.0,
+        "hits@100": 0.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "aa": {
+      "obs": {
+        "mrr": 0.001561325018667146,
+        "hits@10": 0.0,
+        "hits@100": 0.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      },
+      "test": {
+        "mrr": 0.8966343431735535,
+        "hits@10": 0.896551724137931,
+        "hits@100": 0.896551724137931,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "ra": {
+      "obs": {
+        "mrr": 0.001560169377916472,
+        "hits@10": 0.0,
+        "hits@100": 0.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "ppr": {
+      "obs": {
+        "mrr": 0.05216119090514195,
+        "hits@10": 0.2413793103448276,
+        "hits@100": 0.41379310344827586,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      },
+      "test": {
+        "mrr": 1.0,
+        "hits@10": 1.0,
+        "hits@100": 1.0,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.0
+      }
+    },
+    "spectral": {
+      "obs": {
+        "mrr": 0.03402219154771897,
+        "hits@10": 0.10344827586206896,
+        "hits@100": 0.3103448275862069,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.1
+      },
+      "test": {
+        "mrr": 0.4200439069680896,
+        "hits@10": 0.7586206896551724,
+        "hits@100": 0.7931034482758621,
+        "sources": 29,
+        "positives": 63,
+        "candidates_mean": 1547.0,
+        "seconds": 0.1
+      }
+    }
+  },
+  "floor": {
+    "mrr": 0.09001336883459324,
+    "hits@10": 0.1724137931034483,
+    "hits@100": 0.6206896551724138,
+    "sources": 29,
+    "positives": 63
+  }
+}

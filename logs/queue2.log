@@ -1,0 +1,116 @@
+=== 1. E8 learned pairwise structural ranker (NCN-style) ===
+[e8] maven seed=122 floor=0.0929 | onehop: obs=0.0018/test=1.0000 | full: obs=0.1709/test=1.0000
+[e8] maven seed=123 floor=0.0989 | onehop: obs=0.1499/test=1.0000 | full: obs=0.1710/test=1.0000
+[e8] maven seed=124 floor=0.0866 | onehop: obs=0.1609/test=1.0000 | full: obs=0.1810/test=1.0000
+[e8] maven seed=125 floor=0.0900 | onehop: obs=0.1494/test=1.0000 | full: obs=0.1748/test=1.0000
+[e8] npm seed=102 floor=0.1522 | onehop: obs=0.0243/test=1.0000 | full: obs=0.1733/test=0.9509
+[e8] npm seed=101 floor=0.1559 | onehop: obs=0.0210/test=1.0000 | full: obs=0.1740/test=1.0000
+[e8] npm seed=104 floor=0.1576 | onehop: obs=0.0403/test=1.0000 | full: obs=0.1820/test=0.9604
+[e8] npm seed=103 floor=0.1588 | onehop: obs=0.0106/test=1.0000 | full: obs=0.1980/test=0.9862
+[e8] npm seed=105 floor=0.1600 | onehop: obs=0.0151/test=1.0000 | full: obs=0.1249/test=0.9945
+=== 2. E3c stratified floor / increment ===
+Traceback (most recent call last):
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e3c_stratified.py", line 190, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e3c_stratified.py", line 162, in main
+    rows = _collect(dataset, model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e3c_stratified.py", line 80, in _collect
+    src = z["test_arrays_source"]
+          ~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 243, in __getitem__
+    raise KeyError(f"{key} is not a file in the archive") from None
+KeyError: 'test_arrays_source is not a file in the archive'
+=== 2b. drop the seed-mismatched maven text-only cells (seeds 101-105) ===
+=== 3. E4 aggregate (gate, gradients, ablations) ===
+wrote /mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/results_ext/e4_instrument_report.md (12 cells, 70 runs)
+=== 4. E5 per-source inference ===
+Traceback (most recent call last):
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e5_per_source_inference.py", line 187, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e5_per_source_inference.py", line 138, in main
+    col = collect(dataset, seeds, model)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e5_per_source_inference.py", line 115, in collect
+    model_rr.append({int(s): float(r) for s, r in zip(d["test_arrays_source"], d["test_arrays_rr"])})
+                                                      ~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 243, in __getitem__
+    raise KeyError(f"{key} is not a file in the archive") from None
+KeyError: 'test_arrays_source is not a file in the archive'
+=== 5. E7 citation control top-up (fifth final seed) ===
+[bundle] hepth seed=11 floor_test=0.6133 sources=249 candidates=3889
+[bundle] hepth seed=21 floor_test=0.6106 sources=249 candidates=3889
+[bundle] hepth seed=22 floor_test=0.6139 sources=249 candidates=3889
+[bundle] hepth seed=23 floor_test=0.6142 sources=249 candidates=3889
+[bundle] hepth seed=24 floor_test=0.6083 sources=249 candidates=3889
+[tune] 0 jobs on tuning seed 11 (workers=2)
+[select] hepth: mode=per_model chosen=c2_h64_d0.2 (mean cell val MRR over grid 0.5632)
+[select] hepth: mode=per_model chosen=c2_h64_d0.2 (mean cell val MRR over grid 0.5632)
+[final] 4 jobs, workers=2
+[final] hepth ragat_sym seed=25 cfg=c2_h64_d0.2 val=0.5682 test=0.6126 h10=0.7992 epoch=48 (132.4s)
+[final] hepth gat_dir seed=25 cfg=c2_h64_d0.2 val=0.5759 test=0.6188 h10=0.8112 epoch=50 (136.6s)
+[final] hepth ragat_time seed=25 cfg=c2_h64_d0.2 val=0.5587 test=0.6010 h10=0.7871 epoch=42 (122.4s)
+[final] hepth gat_time seed=25 cfg=c3_h64_d0.5 val=0.5758 test=0.6412 h10=0.7992 epoch=58 (144.8s)
+[bundle] hepph seed=11 floor_test=0.4899 sources=265 candidates=4341
+[bundle] hepph seed=21 floor_test=0.4862 sources=265 candidates=4341
+[bundle] hepph seed=22 floor_test=0.4889 sources=265 candidates=4341
+[bundle] hepph seed=23 floor_test=0.4906 sources=265 candidates=4341
+[bundle] hepph seed=24 floor_test=0.4898 sources=265 candidates=4341
+[tune] 0 jobs on tuning seed 11 (workers=2)
+[select] hepph: mode=per_model chosen=c2_h64_d0.2 (mean cell val MRR over grid 0.4974)
+[select] hepph: mode=per_model chosen=c2_h64_d0.2 (mean cell val MRR over grid 0.4974)
+[final] 4 jobs, workers=2
+[final] hepph ragat_sym seed=25 cfg=c2_h64_d0.2 val=0.4944 test=0.4886 h10=0.7057 epoch=2 (54.6s)
+[final] hepph gat_dir seed=25 cfg=c2_h64_d0.2 val=0.4938 test=0.4886 h10=0.7094 epoch=4 (56.3s)
+[final] hepph ragat_time seed=25 cfg=c1_h128_d0.2 val=0.4945 test=0.4920 h10=0.7094 epoch=2 (64.5s)
+[final] hepph gat_time seed=25 cfg=c1_h128_d0.2 val=0.5618 test=0.5855 h10=0.7887 epoch=70 (147.6s)
+=== 6. E7 report ===
+# E7 -- citation-network control rebuilt from the public sources
+
+SNAP directed citation lists (``cit-HepTh`` / ``cit-HepPh``) restricted to the
+arXiv submission years 2002-2003, node text and node dates from the arXiv Atom API
+(title + abstract + first submission date), four gated cells, five seeds per graph.
+
+| graph | nodes | edges | span | within 3 months of newest | within 12 months |
+|---|---|---|---|---|---|
+| hepth | 4183 | 19748 | 2002-01-01 .. 2003-04-30 (484 d) | 18.0% | 76.7% |
+| hepph | 4669 | 12397 | 2001-12-31 .. 2003-02-28 (424 d) | 20.2% | 87.8% |
+
+## hepth
+
+Content floor: **0.6119** over 5 seeds (the frozen table reports 0.4533 for the full graph under a different build, so the levels are not comparable)
+
+| model | test MRR | Δ vs floor | 95% CI | cfg |
+|---|---|---|---|---|
+| gat_dir | 0.6237±0.0072 | +0.0118 | [+0.0020,+0.0216] | c2_h64_d0.2 |
+| gat_time | 0.6387±0.0108 | +0.0267 | [+0.0157,+0.0378] | c3_h64_d0.5 |
+| ragat_sym | 0.6131±0.0069 | +0.0012 | [-0.0052,+0.0076] | c2_h64_d0.2 |
+| ragat_time | 0.6134±0.0116 | +0.0015 | [-0.0139,+0.0168] | c2_h64_d0.2 |
+
+| contrast | mean | 95% CI | signs + | p |
+|---|---|---|---|---|
+| gate | -0.0106 | [-0.0208,-0.0004] | 0/5 | 0.0444 |
+| time | +0.0149 | [+0.0026,+0.0273] | 5/5 | 0.0285 |
+| gate_under_time | -0.0253 | [-0.0431,-0.0075] | 0/5 | 0.0170 |
+| full_vs_gatdir | -0.0103 | [-0.0193,-0.0014] | 0/5 | 0.0329 |
+
+## hepph
+
+Content floor: **0.4889** over 5 seeds (the frozen table reports 0.4209 for the full graph under a different build, so the levels are not comparable)
+
+| model | test MRR | Δ vs floor | 95% CI | cfg |
+|---|---|---|---|---|
+| gat_dir | 0.4878±0.0022 | -0.0011 | [-0.0020,-0.0003] | c2_h64_d0.2 |
+| gat_time | 0.5093±0.0426 | +0.0204 | [-0.0323,+0.0731] | c1_h128_d0.2 |
+| ragat_sym | 0.4877±0.0015 | -0.0012 | [-0.0020,-0.0005] | c2_h64_d0.2 |
+| ragat_time | 0.5085±0.0417 | +0.0195 | [-0.0317,+0.0708] | c1_h128_d0.2 |
+
+| contrast | mean | 95% CI | signs + | p |
+|---|---|---|---|---|
+| gate | -0.0001 | [-0.0010,+0.0008] | 2/5 | 0.7806 |
+| time | +0.0215 | [-0.0308,+0.0739] | 5/5 | 0.3168 |
+| gate_under_time | -0.0009 | [-0.0824,+0.0806] | 2/5 | 0.9779 |
+| full_vs_gatdir | +0.0207 | [-0.0310,+0.0724] | 3/5 | 0.3292 |
+=== QUEUE2 DONE ===

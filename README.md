@@ -205,15 +205,38 @@ Maven: 1 484 − 104 − 1 = 1 379    （论文写 1 376；本包 1 079，因节
 | `tools/make_revision_figure_datasets.py` | 重画数据集图 `fig_datasets.pdf`（改稿后只画 npm/Maven：出/入度 CCDF + 节点到达曲线，含两图的节点日期口径差异） | `results/revision_figures/fig_datasets.pdf`；§8 |
 | `tools/fix_fig_mechanism_labels.py` | **（历史，已被下面的重绘取代；保留用于复现当时的产物）** 在**作者原图**（`assets/fig_mechanism.original.pdf`，即投稿树里的那一版）上局部改字：把门控框里的 `g_d = 1 + tanh(MLP(ρ(u)))` 与 `MLP zero-init` 改成单层线性写法（`w^T ρ(u) + b`，14 参数/gate），架构示意不动；以 Nimbus Roman 子集重排，字体全部内嵌 | `results/revision_figures/fig_mechanism.pdf`；§8 |
 | `tools/fix_fig_mechanism_arrows.py` | **（历史，已被下面的重绘取代）** 在**改字版机制图**上修两处绘制缺陷：(a) 把 `×g_out` 标签整体平移 (+1.10, −25.66) pt 到 out-view 节点正上方——原位置正好被门控箭头的箭头尖压住下标 `out`，平移规则与 `×g_in` 完全一致（左缘 = 节点 x0 − 0.63，底 = 节点顶 − 3.44）；(b) 三处连接箭头原来只剩一个箭头尖（间隙 5.56 / 6.90 / 3.93 pt 装不下 4.4 pt 长的头加杆），重新按「底边贴源框、尖点内切进目标框描边」摆放，并给 embedding→cosine 补 1.8 pt 可见杆。只用 4 个小矩形做 redaction（`REMOVE_IF_COVERED`，不碰相邻的 ⊗ 与框），输出整数坐标加固定 trailer `/ID`，两次运行字节一致 | `results/revision_figures/fig_mechanism.pdf`；§8 |
-| `tools/make_fig_mechanism.py` | 机制图**重绘**（取代上面改字 + 修箭头两步）：按最终印刷尺寸作图，PDF 页幅 415 × 232 pt（sn-jnl 单栏正文宽），所以脚本里写的 6.1–7.2 pt **就是**印刷字号——原图 762 pt 宽被缩到 0.545 倍，9.5 pt 实际只印出 ≈5.2 pt，这才是“挤、糊、压”的根因。Nimbus Sans（Helvetica 同族）三个子集全部内嵌；`freeze_pdf_id()` 冻结 PyMuPDF 的随机 trailer `/ID`，连续三次构建字节一致 | `results/revision_figures/fig_mechanism.pdf` + `.svg` + `.png`；§8 |
+| `tools/make_fig_mechanism.py` | 机制图**重绘**（取代上面改字 + 修箭头两步）：PDF 页幅 415 × 232 pt **设计画布**（不是印刷宽度）。作者原图 762.12 × 380.30 pt 在 `width=\textwidth` 下被缩到 0.4865 倍，9.5 pt 实际只印出 **≈4.6 pt**，这才是“挤、糊、压”的根因；新图实测按 **0.893 倍**印出（sn-jnl 单栏 `\textwidth` = 370.7 pt），图内正文 **5.0–6.6 pt**、上下标 3.7–4.1 pt。脚本内置 `FIG_FONT_SCALE`（默认 1.0；1.06 起审计即 FAIL，故 1.0 是本版式上限）。Nimbus Sans（Helvetica 同族）三个子集全部内嵌；`freeze_pdf_id()` 冻结 PyMuPDF 的随机 trailer `/ID`，连续三次构建字节一致 | `results/revision_figures/fig_mechanism.pdf` + `.svg` + `.png`；§8 |
 | `tools/check_fig_occlusion.py` | 机制图**遮挡审计**（可验证，不靠肉眼）：按基线取全部文字墨迹框与全部线段两两求交，报文字互压 / 线段穿字 / 文字越框三类问题与最小净距。实测 111 词 / 208 线段 / 14 容器：`text_text_overlaps 0`、`line_ink_hits 0`、`words_crossing_a_border 0`、最小净距 **1.05 pt**，`RESULT: PASS` | 终端报告；§8 |
 | `tools/scan_stale_numbers.py` | 扫描稿件树里**已被重跑退休**的数字与论断（旧门槛 0.1565/0.3377、旧门控增益 0.0297/0.0311、旧模型规模 4,962/1,484、旧测试规模 234/686、旧"引用网络作控制"表述…），逐条给出"原值 → 新值"和命中行；退出码非 0 便于当发布门 | 改稿前原稿命中 109 处 / 19 个文件；装完改稿包后 **0 处**；§8 |
-| `tools/check_revision_package.py` | 自检改稿包：把包 `apply.sh` 装进一份临时稿件副本，再检查 `\input` 是否解析、`\ref` 是否有 `\label`、`\label` 是否重复、`\begin/\end`、括号与 `$` 是否配平、是否仍引用已退休的 `tab:citation` | 本次实测 20 个 .tex / 52 个 label / 62 个引用，`all structural checks passed`、**0 warning**（早期文档里那条 `fig_mechanism.pdf` 未解析的 warning 已不复现：包自带全部 5 张图）；§8 |
+| `tools/check_revision_package.py` | 自检改稿包：把包 `apply.sh` 装进一份临时稿件副本，再检查 `\input` 是否解析、`\ref` 是否有 `\label`、`\label` 是否重复、`\begin/\end`、括号与 `$` 是否配平；v18 起还要求 `tables/table_citation_control.tex` **存在且被 `\input`**（v17 时规则相反——那时这张表被删了，所以要求该 key 不存在） | 本次实测 28 个 .tex / 73 个 label / 128 个引用，`all structural checks passed`、**0 warning**；带 `--expect build/manuscript` 时再逐字节比对，**35 个安装文件全部一致**（`.revised` 头部注释块除外）；§8 |
 
 `ranking.evaluate_ranking` 原来是逐节点 Python 循环（每个来源对 4 600 个候选做一次列表推导 + 字典
 建排名），npm 上一次评测 5.5 s，占单个训练任务 wall time 的约 75%（7.6 s/epoch，一次 tuning 配置
 530–607 s）。改成 numpy 掩码 + `argsort` 后：**1.8 s/epoch，一个 tuning 配置 78–261 s**，全套
 （56 个 tuning + 140 个 final 任务）从约 9 小时降到约 2 小时。等价性由上述脚本逐来源核对。
+
+### 4.1 扩展实验 `tools/ext/` 与 `EXT-EXPERIMENTS.md`（v18 新增）
+
+v17 那批"有界陈述 + 未来工作"在 v18 里全部跑成了真结果，脚本与产物如下（**说明书就是
+`EXT-EXPERIMENTS.md`**：每条命令、输出路径、头条数字、正文落点、以及"不能声称什么"）。
+
+| 脚本 | 作用 | 关键输出 |
+|---|---|---|
+| `tools/ext/e1_variance_decomposition.py` | 两因素方差分解（图 × 单元，切分嵌套在图内）：报平方和份额、每种子里的单元排序与 Spearman ρ | `results_ext/e1_variance/e1_variance.json`；`table_variance.tex` |
+| `tools/ext/e2_structural_baselines.py` + `e2_report.py` | 十种无训练结构启发式，**在两张图上各报一次**（归纳图 vs 含测试边的 `mp_edges_test` 图） | `results_ext/e2_structural*`；`table_structural_baselines.tex` |
+| `tools/ext/e3_text_floor.py` | 四种文本配方（word / char 3–5 gram / union / 大词表）只换特征重算地板，`baseline` 行须逐种子复现冻结地板（对照锚） | `results_ext/e3_text_floor/`；`table_text_floor.tex` 上半 |
+| `tools/ext/e3c_stratified.py` | 按描述长度四分位与命名空间分层报地板与增量（读 E3a/E4 的 per-source 数组） | `results_ext/e3c_stratified/`；`table_stratified.tex`（两张浮动表） |
+| `tools/ext/e4_instrument.py` + `e4_report.py` | 门控插桩：取值范围、移动比例、门控/编码器梯度范数、描述子相关、零 vs 非零初始化、**epoch-0 锚**、`--graph-free` 无图消融；同时落盘 `ps_*.npz` per-source 数组 | `results_ext/e4_instrument/`、`e4_instrument_report.{json,md}`；`table_gate_diagnostics.tex` |
+| `tools/ext/e5_per_source_inference.py` | 把复现单位从种子换成**来源**：bootstrap / 配对 t / 符号检验 / Wilcoxon / 1%·5% 截尾均值 / 效应集中度 | `results_ext/e5_persource/`；`table_persource.tex` |
+| `tools/ext/e6_maven_firstpublish.py` + `e6_report.py` | Maven 按"首次发布日期"重构图并重跑整条链（含去窗口过滤的变体），与冻结口径并排 | `results_ext/e6_maven_firstpub_report.{json,md}`；`table_maven_dates.tex` |
+| `tools/ext/e7_citation_control.py` + `e7_report.py` | 引用网络对照**从一手数据重建**：SNAP 边表 + arXiv Atom API（`--fetch` 抓元数据、`--build` 建图、`--sources` 跑链） | `data/graphs_ext/`、`results_ext/e7_*`；`table_citation_control.tex` |
+| `tools/ext/e8_pairwise_ncn.py` | NCN/BUDDY 式**学习式成对结构排序器**（3 个一阶特征 / 8 个全特征两档） | `results_ext/e8_pairwise/`；`table_pairwise.tex` |
+| `tools/ext/make_extension_tables.py` | 把上面九张表从 JSON 生成出来（`_stack()` 做"估计值/区间"上下排；模型名转义下划线） | `artifacts/rcgat-revision-package/tables/*.tex` |
+
+**共同前提**：`pip install torch torch-geometric`（CPU 版即可），并导出
+`OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1`
+——不钉住 BLAS 线程，同一份切分会给出不同的 SVD 结果，`baseline` 配方就不再逐种子复现地板。
+所有脚本**可续跑**：已存在的 JSON/NPZ 会被跳过；E7 的抓取有落盘缓存，不重复请求 arXiv。
 
 ## 5. 已知偏差与论文内部不一致（请在投稿前逐条处理）
 
@@ -421,7 +444,9 @@ figures/fig_{main_results,gate_contrast,gate_perseed,datasets}.pdf
 figures/fig_mechanism.pdf               # 机制图：重绘版（make_fig_mechanism.py 生成，真矢量 + 真文字，零遮挡）
 figures/fig_mechanism.svg               # 同一份坐标导出的可编辑 SVG（114 个真 <text>）
 original/                               # 改稿前的原始文件 + 未改字的 fig_mechanism.original.pdf
-CHANGELOG-numbers.md                    # 入口文档：逐句变更 + 需作者确认的 S-28、S-32..S-34
+CHANGELOG-numbers.md                    # 入口文档：逐句变更 + 需作者确认的 S-28、S-32..S-34（§25 是 v18 补记）
+tables/table_{variance,structural_baselines,text_floor,stratified,gate_diagnostics,\
+        persource,maven_dates,citation_control,pairwise}.tex   # v18 九张扩展表（8 → 17 张）
 apply.sh                                # 自动判定布局、自动 .bak、支持 --dry-run
 ```
 
@@ -433,13 +458,18 @@ python tools/make_revision_figures.py --out results                  # 三张结
 python tools/make_revision_figure_datasets.py                        # 数据集图
 python tools/make_fig_mechanism.py --out results/revision_figures --stem fig_mechanism
                                                                      # 机制图重绘（PDF + 可编辑 SVG + 预览 PNG）
+#   FIG_FONT_SCALE 旋钮（默认 1.0）用来复跑字号上限的反例：=1.06 时 out-neighbours 与 out 文字重叠、
+#   =1.12 时 out-view aggregation 压到卡片边框（两次 check_fig_occlusion.py 都 FAIL），故 1.0 是本版式上限。
 python tools/check_fig_occlusion.py results/revision_figures/fig_mechanism.pdf
                                                                      # 遮挡审计，期望 RESULT: PASS
 # 历史工具（改字版 + 修箭头版，已被重绘取代，仅用于复现当时产物）：
 #   python tools/fix_fig_mechanism_labels.py --src assets/fig_mechanism.original.pdf --out <新图>
 #   python tools/fix_fig_mechanism_arrows.py --src <改字版> --out <新图>
 python tools/gate_within_config.py                                   # 同配置门控复核（逐 cell 调参的混淆）
-python tools/check_revision_package.py                               # 改稿包结构自检（实测 20 文件 / 52 label / 62 ref，0 warning）
+python tools/check_revision_package.py                               # 改稿包结构自检（实测 28 文件 / 73 label / 128 ref，0 warning）
+#   v18 另可用 --expect <构建树> 逐字节比对（剥掉 .revised 头部注释块）：35 个安装文件全部一致
+python tools/ext/make_extension_tables.py --out ../artifacts/rcgat-revision-package/tables
+                                                                     # 九张扩展表重生成（E1–E8）
 python tools/scan_stale_numbers.py /path/to/manuscript               # 旧数字残留扫描（装包后应为 0）
 python src/audit.py                                                  # 414/414 PASS
 ```
@@ -460,18 +490,23 @@ python src/audit.py                                                  # 414/414 P
   `src/audit.py` 的 check D3 本来就是**重建后再复算**门槛（不读缓存），
   所以缺失不影响任何审计；`run_all.sh` 已强制单线程 BLAS 保证 SVD bitwise 稳定。
 
-排除这两个目录后，可发布子集体积约 **13.5 MB / 2,651 个文件**（`data/raw_maven/` 8 MB 建议保留：
+排除这两个目录后，可发布子集体积约 **37 MB / 18,311 个文件**（内容 ≈28,854 KB；v18 新增的
+`results_ext/` 6.0 MB、`data/raw_citation/` 14.6 MB 与 `data/graphs_ext/` 2.3 MB 是主要增量，
+`data/raw_citation/` 的再分发口径见 `PUBLISH.md` §2.5）（`data/raw_maven/` 8 MB 建议保留：
 论文对 Maven 快照有披露，发出快照才能让该披露被逐一核对）。
 
 一键打包（在本仓库的上一级目录执行）：
 
 ```bash
-tar czf rcgat-repro-publishable.tar.gz \
+tar --sort=name --mtime='2026-09-27 00:00:00Z' --owner=0 --group=0 --numeric-owner \
   --exclude='repro/data/raw_npm' --exclude='repro/data/bundles' \
-  --exclude='__pycache__' --exclude='*.pyc' repro
+  --exclude='__pycache__' --exclude='*.pyc' \
+  -czf rcgat-repro-publishable.tar.gz repro
 ```
 
-打包结果是**逐字节可复现的**（GNU tar + gzip 在本环境下两次运行 sha256 相同；换 tar/gzip 版本
-不保证一致）。发布的那一份文件名带日期（`rcgat-repro-publishable-2026-09-27.tar.gz`），
+打包结果是**逐字节可复现的**：四个 tar 参数把条目顺序（`--sort=name`）、mtime（`--mtime`）
+与 uid/gid（`--owner=0 --group=0 --numeric-owner`）全部钉死，而 `tar -z` 是管道模式，gzip 不写时间戳。
+同一命令连跑两次 sha256 相同（实测）；**去掉这四个参数，内容一样但字节不一样**，别指望两者哈希相等
+（换 tar/gzip 版本也不保证一致）。发布的那一份文件名带日期（`rcgat-repro-publishable-2026-09-27.tar.gz`），
 文件名、字节数与 sha256 记在 `AUTHOR-ACTIONS.md` §15 与 `CHANGELOG-numbers.md` §16，
 不与包内容互相引用，避免自指。

@@ -6,7 +6,7 @@ data in the reconstruction), so the revised figure covers npm and Maven only:
 
   top-left   complementary CDF of out-degree, log-log
   top-right  complementary CDF of in-degree, log-log
-  bottom     cumulative share of nodes against first-published date
+  bottom     cumulative share of nodes against the node-date convention
 
 Inputs : data/graphs/{npm,maven}_graph.json.gz  (nodes[i] = {name, date, ...},
          edges = [src_idx, dst_idx] pairs)
@@ -46,18 +46,21 @@ def load(name: str):
         out_deg[s] += 1
         in_deg[t] += 1
     n = len(nodes)
-    dates = []
+    dates, dates_latest = [], []
     for nd in nodes:
         raw = nd.get("date")
-        if not raw:
-            continue
-        dates.append(date.fromisoformat(str(raw)[:10]))
+        if raw:
+            dates.append(date.fromisoformat(str(raw)[:10]))
+        raw = nd.get("date_latest")
+        if raw:
+            dates_latest.append(date.fromisoformat(str(raw)[:10]))
     return {
         "nodes": n,
         "edges": len(edges),
         "out": [out_deg.get(i, 0) for i in range(n)],
         "in": [in_deg.get(i, 0) for i in range(n)],
         "dates": sorted(dates),
+        "dates_latest": sorted(dates_latest),
     }
 
 
@@ -94,16 +97,27 @@ def main() -> None:
         ax.grid(True, which="both", ls=":", lw=0.4, alpha=0.5)
         ax.legend(frameon=False, fontsize=9)
 
+    # The node date is not the same convention in the two graphs, and the shape of
+    # this panel is decided by that convention: npm's node date is the first
+    # publication, Maven's is the latest non-prerelease release, and the npm graph
+    # carries both fields, so the same artifact can be shown rather than described.
     for name, st in STYLE.items():
         ds = data[name]["dates"]
         n = len(ds)
         ax_time.plot(ds, [(i + 1) / n for i in range(n)], lw=1.4,
-                     color=st["color"], label=f"{st['label']} ($n={n:,}$)")
-    ax_time.set_title("Cumulative share of dated nodes", fontsize=10)
-    ax_time.set_xlabel("first-published date")
+                     color=st["color"], label=f"{st['label']}, node date ($n={n:,}$)")
+    ds = data["npm"]["dates_latest"]
+    n = len(ds)
+    ax_time.plot(ds, [(i + 1) / n for i in range(n)], lw=1.2, ls="--", color="#7f7f7f",
+                 label=f"npm, latest release ($n={n:,}$)")
+    ax_time.set_title("Cumulative share of dated nodes, by date convention", fontsize=10)
+    ax_time.set_xlabel("node date")
     ax_time.set_ylabel("cumulative share")
     ax_time.grid(True, ls=":", lw=0.4, alpha=0.5)
     ax_time.legend(frameon=False, fontsize=9)
+    ax_time.text(0.015, 0.94, "Maven carries only the latest-release convention, so its curve is "
+                 "the convention, not an arrival process",
+                 transform=ax_time.transAxes, va="top", ha="left", fontsize=8, color="#555555")
 
     fig.tight_layout()
     out = OUT / "fig_datasets.pdf"

@@ -8,10 +8,10 @@ replacements for ``tables/table_main_results.tex`` and ``tables/table_paired.tex
 Two conventions differ from the original tables on purpose:
 
 * $\\dagger$ marks the best mean test MRR on each graph, because the ordering
-  changed; boldface still marks the pre-registered gated cell (a label, not a
+  changed; boldface still marks the pre-specified gated cell (a label, not a
   claim about the best value);
-* the paired table keeps the six pre-registered contrasts first and puts the
-  baseline contrasts under a separate heading, flagged as not pre-registered.
+* the paired table keeps the six pre-specified contrasts first and puts the
+  baseline contrasts under a separate heading, flagged as not pre-specified.
 
 Usage::
 
@@ -28,9 +28,9 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 
 CELL_LABEL = {
-    "gcn_dir": r"gcn\_dir (external GCN)",
-    "sage_dir": r"sage\_dir (external GraphSAGE)",
-    "gatv2_dir": r"gatv2\_dir (external GATv2)",
+    "gcn_dir": r"gcn\_dir (GCN)",
+    "sage_dir": r"sage\_dir (GraphSAGE)",
+    "gatv2_dir": r"gatv2\_dir (GATv2)",
     "gat_dir": r"gat\_dir (directed GAT)",
     "ragat_sym": r"rcgat\_sym (gate)",
     "gat_time": r"gat\_time (time branch)",
@@ -42,17 +42,17 @@ CELLS = ("gat_dir", "ragat_sym", "gat_time", "ragat_time")
 GRAPH = {"npm": "npm", "maven": "Maven"}
 CFG = {"c1_h128_d0.2": "c1", "c2_h64_d0.2": "c2", "c3_h64_d0.5": "c3", "c4_h128_d0.5": "c4"}
 PAIRED_MAIN = [
-    (r"gate (rcgat\_sym $-$ gat\_dir)", "gate"),
-    (r"time (gat\_time $-$ gat\_dir)", "time"),
-    (r"gate under time (rcgat\_time $-$ gat\_time)", "gate_under_time"),
-    (r"full (rcgat\_time $-$ gat\_dir)", "full_vs_gatdir"),
-    (r"ungated vs content floor (gat\_dir $-$ floor)", "gat_vs_floor"),
-    (r"gate vs content floor (rcgat\_sym $-$ floor)", "rcgat_vs_floor"),
+    (r"gate: rcgat\_sym $-$ gat\_dir", "gate"),
+    (r"time: gat\_time $-$ gat\_dir", "time"),
+    (r"gate under time: rcgat\_time $-$ gat\_time", "gate_under_time"),
+    (r"full cell: rcgat\_time $-$ gat\_dir", "full_vs_gatdir"),
+    (r"ungated vs floor: gat\_dir $-$ floor", "gat_vs_floor"),
+    (r"gate vs floor: rcgat\_sym $-$ floor", "rcgat_vs_floor"),
 ]
 PAIRED_EXTRA = [
-    (r"GCN vs ungated (gcn\_dir $-$ gat\_dir)", "gcn_vs_gatdir"),
-    (r"GraphSAGE vs ungated (sage\_dir $-$ gat\_dir)", "sage_vs_gatdir"),
-    (r"GATv2 vs ungated (gatv2\_dir $-$ gat\_dir)", "gatv2_vs_gatdir"),
+    (r"GCN vs ungated: gcn\_dir $-$ gat\_dir", "gcn_vs_gatdir"),
+    (r"GraphSAGE vs ungated: sage\_dir $-$ gat\_dir", "sage_vs_gatdir"),
+    (r"GATv2 vs ungated: gatv2\_dir $-$ gat\_dir", "gatv2_vs_gatdir"),
 ]
 
 
@@ -61,12 +61,19 @@ def _by_model(summary: dict, dataset: str) -> dict:
 
 
 def _floor_row(dataset: str) -> dict:
-    """Mean content-floor metrics over the ten final seeds (test split)."""
+    """Mean and s.d. of the content-floor metrics over the ten final seeds.
+
+    The floor is a deterministic ranker, so its per-seed spread is the spread of
+    the splits it is scored on; reporting it lets the floor row be read against
+    the cell rows, which carry the same kind of spread.
+    """
     seeds = range(101, 111) if dataset == "npm" else range(121, 131)
     rows = [json.loads((ROOT / "results" / "floor" / f"floor_{dataset}_seed{s}.json")
                        .read_text(encoding="utf-8"))["floor"]["test"] for s in seeds]
     mean = lambda k: float(np.mean([r[k] for r in rows]))  # noqa: E731
-    return {"mrr": mean("mrr"), "h10": mean("hits@10"), "h100": mean("hits@100")}
+    sd = lambda k: float(np.std([r[k] for r in rows], ddof=1))  # noqa: E731
+    return {"mrr": mean("mrr"), "mrr_sd": sd("mrr"), "h10": mean("hits@10"),
+            "h100": mean("hits@100")}
 
 
 def _contrasts(summary: dict, dataset: str) -> dict:
@@ -75,24 +82,34 @@ def _contrasts(summary: dict, dataset: str) -> dict:
 
 def main_table(summary: dict) -> str:
     L = [r"\begin{table}[t]",
+         r"\footnotesize",
+         r"\setlength{\tabcolsep}{3pt}",
          r"\caption{Test MRR, hits@10, and hits@100 (mean over ten seeds $\pm$ sample standard "
          r"deviation) of the four model cells on the two dependency networks, together with the "
-         r"content floor and three external baselines (GCN, GraphSAGE, and GATv2) trained under the "
+         r"content floor and three additional baselines (GCN, GraphSAGE, and GATv2) trained under the "
          r"identical protocol. All cells share the identical task, loss, budget, candidate pools, and "
          r"per-seed splits; hyperparameters were selected per cell on validation MRR with a single "
          r"tuning seed and frozen for all ten final seeds. $\Delta$ floor is the mean test MRR minus "
-         r"the content floor. Boldface marks the pre-registered gated cell (a label, not a claim "
-         r"about the best value); $\dagger$ marks the best mean test MRR on that graph. The Maven "
-         r"graph is a later snapshot of the registry, so absolute values are not comparable with "
-         r"earlier rounds even though the protocol is identical.}",
+         r"the content floor. Boldface marks the pre-specified gated cell (a label, not a claim "
+         r"about the best value); $\dagger$ marks the best mean test MRR on that graph. The floor row "
+         r"carries the standard deviation of the ten per-seed floors, so it can be read against the "
+         r"cell rows. Maven node dates follow the latest non-prerelease release rather than the first "
+         r"publication, so that snapshot has a short test window and its levels are not comparable "
+         r"with npm's.}",
          r"\label{tab:main}",
-         r"\begin{tabular}{llcccccc}", r"\toprule",
-         r"Graph & Cell & MRR & Hits@10 & Hits@100 & $\Delta$ floor & Config & Params \\", r"\midrule"]
+         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}%",
+         r"  >{\raggedright\arraybackslash}p{108pt}%",
+         r"  r r r r r r@{}}",
+         r"\toprule",
+         r"Cell & MRR $\pm$ s.d. & Hits@10 & Hits@100 & $\Delta$ floor & Config & Params \\",
+         r"\midrule"]
     for dataset in ("npm", "maven"):
         rows = _by_model(summary, dataset)
         f = _floor_row(dataset)
-        L.append(f"{GRAPH[dataset]} & Content floor (TF-IDF cosine) & {f['mrr']:.4f} & {f['h10']:.4f} & "
-                 f"{f['h100']:.4f} & -- & -- & -- \\\\")
+        L.append(r"\multicolumn{7}{@{}l}{\emph{%s}}\\" % GRAPH[dataset])
+        L.append(r"\midrule")
+        L.append(f"Content floor (TF-IDF cosine) & {f['mrr']:.4f} $\\pm$ {f['mrr_sd']:.4f} & "
+                 f"{f['h10']:.4f} & {f['h100']:.4f} & -- & -- & -- \\\\")
         best = max((m for m in ORDER if m in rows), key=lambda m: rows[m]["test_mrr_mean"])
         for model in ORDER:
             rec = rows.get(model)
@@ -106,45 +123,72 @@ def main_table(summary: dict) -> str:
             mrr = f"{rec['test_mrr_mean']:.4f} $\\pm$ {rec['test_mrr_sd']:.4f}"
             if model == GATED:
                 mrr = r"\textbf{" + mrr + "}"
-            L.append(f"{GRAPH[dataset]} & {name} & {mrr} & {rec['hits@10']:.4f} & "
+            L.append(f"{name} & {mrr} & {rec['hits@10']:.4f} & "
                      f"{rec['hits@100']:.4f} & ${rec['delta_floor_mean']:+.4f}$ & "
                      f"{CFG.get(rec['cfg'], rec['cfg'])} & {rec['params']:,} \\\\".replace(",", "{,}"))
         if dataset == "npm":
             L.append(r"\midrule")
-    L += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
+    L += [r"\bottomrule", r"\end{tabular*}", r"\end{table}", ""]
     return "\n".join(L)
+
+
+def _mde(summary: dict, dataset: str) -> float:
+    """Minimum detectable effect of the design on one graph.
+
+    ``(t(9,0.975) + t(9,0.8)) * s_d / sqrt(10)``, evaluated on the pre-specified
+    gate contrast, i.e. with the variability of the design's primary comparison.
+    This is the yardstick the manuscript uses to bound the null result.
+    """
+    contrasts = _contrasts(summary, dataset)
+    sd = contrasts["gate"]["sd"]
+    return float((2.262 + 0.883) * sd / np.sqrt(10))
 
 
 def paired_table(summary: dict) -> str:
     L = [r"\begin{table}[t]",
+         r"\footnotesize",
+         r"\setlength{\tabcolsep}{3pt}",
          r"\caption{Paired contrasts on the two dependency networks. Each seed contributes one "
          r"within-seed difference; the interval is a Student $t$ 95\% confidence interval on the mean "
-         r"paired difference (df~$=9$). Sign$+$ is the number of seeds in which the difference is "
-         r"positive. The pre-registered judgment rule requires the interval to exclude zero and "
-         r"sign$+$ to be at least 9. The last three rows per graph are reported for completeness and "
-         r"are not pre-specified.}",
+         r"paired difference (df~$=9$), and ``mean diff.'' is that mean paired difference. Sign$+$ "
+         r"is the number of seeds in which the difference is positive. The MDE column is the mean "
+         r"difference divided by the minimum detectable effect of the design on that graph "
+         r"($(t_{9;0.975}+t_{9;0.8})\,s_d/\sqrt{10}$ evaluated on the gate contrast: $0.0055$ on npm "
+         r"and $0.0149$ on Maven), so a value at or above $1$ is at least as large as the smallest "
+         r"difference the ten-seed design could have detected. The pre-specified judgment rule "
+         r"requires the interval to exclude zero and sign$+$ to be at least 9. The last three rows "
+         r"per graph are reported for completeness and are not pre-specified.}",
          r"\label{tab:paired}",
-         r"\begin{tabular}{llccc}", r"\toprule",
-         r"Graph & Contrast & Mean paired difference & 95\% CI & Sign$+$ / 10 \\", r"\midrule"]
+         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}%",
+         r"  >{\raggedright\arraybackslash}p{174pt}%",
+         r"  c c c c@{}}",
+         r"\toprule",
+         r"Contrast & Mean diff. & 95\% CI & Sign$+$ & $|\Delta|/$MDE \\",]
     for dataset in ("npm", "maven"):
         contrasts = _contrasts(summary, dataset)
 
+        mde = _mde(summary, dataset)
+
         def row(label: str, key: str) -> str:
             c = contrasts[key]
-            return (f"{GRAPH[dataset]} & {label} & ${c['mean']:+.4f}$ & "
-                    f"$[{c['ci95_lo']:+.4f},{c['ci95_hi']:+.4f}]$ & {c['signs_positive']} \\\\")
+            ratio = abs(c["mean"]) / mde
+            return (f"{label} & ${c['mean']:+.4f}$ & "
+                    f"$[{c['ci95_lo']:+.4f},{c['ci95_hi']:+.4f}]$ & {c['signs_positive']} & "
+                    f"{ratio:.2f} \\\\")
 
+        L.append(r"\midrule")
+        L.append(r"\multicolumn{5}{@{}l}{\emph{%s, pre-specified}}\\" % GRAPH[dataset])
+        L.append(r"\midrule")
         for label, key in PAIRED_MAIN:
             if key in contrasts:
                 L.append(row(label, key))
         L.append(r"\midrule")
-        L.append(r"\multicolumn{5}{l}{\emph{not pre-specified}} \\")
+        L.append(r"\multicolumn{5}{@{}l}{\emph{%s, not pre-specified}}\\" % GRAPH[dataset])
+        L.append(r"\midrule")
         for label, key in PAIRED_EXTRA:
             if key in contrasts:
                 L.append(row(label, key))
-        if dataset == "npm":
-            L.append(r"\midrule")
-    L += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
+    L += [r"\bottomrule", r"\end{tabular*}", r"\end{table}", ""]
     return "\n".join(L)
 
 
@@ -159,20 +203,35 @@ def _pool_means(readings: list[dict], reading: str) -> tuple[dict, dict]:
 
 def sensitivity_table(np_readings: list[dict], mav_readings: list[dict]) -> str:
     L = [r"\begin{table}[t]",
+         r"\footnotesize",
+         r"\setlength{\tabcolsep}{3pt}",
          r"\caption{Protocol sensitivity of the content floor. The candidate pool is either the nodes "
-         r"outside the test window (reading~A, the reading implied by the published mean candidate "
-         r"count) or every node except the source (reading~B). When models and floor are read the "
+         r"outside the test window (reading~A, the stricter reading, under which a source on npm "
+         r"faces $4{,}611$ candidates) or every node except the source (reading~B). When models and floor are read the "
          r"same way, every cell stays above the floor; crediting the floor under reading~B while "
          r"scoring the models under reading~A reverses the sign. $\Delta$ is the mean test MRR of the "
-         r"cell minus the mean floor of the stated reading; the parenthetical value is the number of "
-         r"seeds of ten whose MRR falls below that mean floor. npm, ten seeds.}",
+         r"cell minus the mean floor of the stated reading, and ``seeds below'' is the number of "
+         r"seeds of ten whose MRR falls below that mean floor. npm and Maven, ten seeds each.}",
          r"\label{tab:protocol}",
-         r"\begin{tabular}{llcccc}", r"\toprule",
-         r"Graph & Accounting & gat\_dir & rcgat\_sym & gat\_time & rcgat\_time \\", r"\midrule"]
+         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}%",
+         r"  >{\raggedright\arraybackslash}p{94pt}%",
+         r"  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}%",
+         r"  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}%",
+         r"  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}%",
+         r"  >{\centering\arraybackslash}p{30pt} >{\centering\arraybackslash}p{26pt}@{}}",
+         r"\toprule",
+         r" & \multicolumn{2}{c}{gat\_dir} & \multicolumn{2}{c}{rcgat\_sym} & "
+         r"\multicolumn{2}{c}{gat\_time} & \multicolumn{2}{c}{rcgat\_time} \\",
+         r"\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}",
+         r"Accounting & $\Delta$ & seeds below & $\Delta$ & seeds below & "
+         r"$\Delta$ & seeds below & $\Delta$ & seeds below \\",
+         r"\midrule"]
     for name, readings in (("npm", np_readings), ("Maven", mav_readings)):
         floor_a, mean = _pool_means(readings, "A")
         floor_b, _ = _pool_means(readings, "B")
         fa, fb = float(np.mean(list(floor_a.values()))), float(np.mean(list(floor_b.values())))
+        L.append(r"\multicolumn{9}{@{}l}{\emph{%s}}\\" % name)
+        L.append(r"\midrule")
         for tag, floor in ((r"same reading (A/A)", fa), (r"mixed (models A, floor B)", fb)):
             parts = []
             for m in CELLS:
@@ -180,27 +239,31 @@ def sensitivity_table(np_readings: list[dict], mav_readings: list[dict]) -> str:
                     continue
                 d = mean[m] - floor
                 below = sum(1 for r in readings if r["model_A"][m] < floor)
-                parts.append(f"${d:+.4f}$ ({below}/{len(readings)})")
-            L.append(f"{name} & {tag} & " + " & ".join(parts) + r" \\")
-        L.append(f"{name} & floor (A / B) & \\multicolumn{{4}}{{c}}"
-                 f"{{{fa:.4f} / {fb:.4f}}} \\\\")
+                parts.append(f"${d:+.4f}$ & {below}/{len(readings)}")
+            L.append(f"{tag} & " + " & ".join(parts) + r" \\")
+        L.append(f"floor (A / B) & \\multicolumn{{8}}{{c}}{{{fa:.4f}\\ /\\ {fb:.4f}}} \\\\")
         if name == "npm":
             L.append(r"\midrule")
-    L += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
+    L += [r"\bottomrule", r"\end{tabular*}", r"\end{table}", ""]
     return "\n".join(L)
 
 
 def checkpoint_table(ckpt: dict) -> str:
     L = [r"\begin{table}[t]",
+         r"\small",
+         r"\setlength{\tabcolsep}{3pt}",
          r"\caption{Robustness of the reported cells to the checkpoint policy, which the protocol "
          r"description does not fix. \texttt{best\_val} keeps the weights that maximise validation "
          r"MRR, \texttt{last} keeps the weights at the end of the budget or of early stopping, and "
-         r"\texttt{init} would keep the untrained initialisation, which for the gated cell sits "
+         r"\texttt{init} would keep the untrained initialization, which for the gated cell sits "
          r"exactly at the floor by construction. ``Below'' counts the seeds of ten whose test MRR "
          r"falls below the content floor of the same seed. No cell's mean falls below the floor under "
          r"either policy, and the verdict on both contrasts is unchanged. npm, ten seeds.}",
          r"\label{tab:checkpoint}",
-         r"\begin{tabular}{lcccccc}", r"\toprule",
+         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}%",
+         r"  >{\raggedright\arraybackslash}p{110pt}%",
+         r"  r r r r r r@{}}",
+         r"\toprule",
          r" & \multicolumn{3}{c}{\texttt{best\_val}} & \multicolumn{3}{c}{\texttt{last}} \\",
          r"\cmidrule(lr){2-4}\cmidrule(lr){5-7}",
          r"Cell / contrast & MRR & $\Delta$ floor & Below & MRR & $\Delta$ floor & Below \\",
@@ -227,7 +290,7 @@ def checkpoint_table(ckpt: dict) -> str:
             cb = "$" + f"{np.mean(b):+.4f}" + "$"
             L.append(f"{tag} & \\multicolumn{{3}}{{c}}{{{ca}}} & "
                      f"\\multicolumn{{3}}{{c}}{{{cb}}} \\\\")
-    L += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
+    L += [r"\bottomrule", r"\end{tabular*}", r"\end{table}", ""]
     return "\n".join(L)
 
 

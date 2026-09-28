@@ -1,0 +1,24 @@
+{
+  "val": {
+    "mrr": 0.16187340543604634,
+    "hits@10": 0.35271317829457366,
+    "hits@100": 0.6589147286821705,
+    "sources": 258,
+    "positives": 909,
+    "candidates_mean": 4611.0
+  },
+  "test": {
+    "mrr": 0.1559055186397788,
+    "hits@10": 0.26519337016574585,
+    "hits@100": 0.6187845303867403,
+    "sources": 181,
+    "positives": 494,
+    "candidates_mean": 4611.0
+  },
+  "recipe": "baseline",
+  "dataset": "npm",
+  "seed": 101,
+  "dim": 300,
+  "seconds": 187.1,
+  "frozen_floor_test": 0.1559055186397788
+}

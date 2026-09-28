@@ -1,0 +1,36 @@
+[e7] hepth: 2719 ids, 2719 to fetch
+[e7] hepth: fetched 150/2719 (0 unresolvable)
+[e7] hepth: fetched 300/2719 (0 unresolvable)
+[e7] hepth: fetched 450/2719 (0 unresolvable)
+[e7] hepth: fetched 600/2719 (0 unresolvable)
+[e7] hepth: fetched 750/2719 (0 unresolvable)
+[e7] hepth: fetched 900/2719 (0 unresolvable)
+[e7] hepth: fetched 1050/2719 (0 unresolvable)
+[e7] hepth: fetched 1200/2719 (0 unresolvable)
+[e7] batch 1200 failed: TimeoutError: The read operation timed out
+[e7] hepth: fetched 1500/2719 (0 unresolvable)
+[e7] batch 1500 failed: TimeoutError: The read operation timed out
+[e7] hepth: fetched 1800/2719 (0 unresolvable)
+[e7] batch 1800 failed: URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>
+[e7] hepth: fetched 2100/2719 (0 unresolvable)
+[e7] hepth: fetched 2250/2719 (0 unresolvable)
+[e7] hepth: fetched 2400/2719 (0 unresolvable)
+[e7] hepth: fetched 2550/2719 (0 unresolvable)
+[e7] hepth: fetched 2700/2719 (0 unresolvable)
+[e7] hepth: fetched 2719/2719 (0 unresolvable)
+Traceback (most recent call last):
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e7_citation_control.py", line 255, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e7_citation_control.py", line 243, in main
+    fetch_metadata(source, ids)
+  File "/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/tools/ext/e7_citation_control.py", line 126, in fetch_metadata
+    return {i: json.loads(_meta_path(source, i).read_text(encoding="utf-8")) for i in ids}
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/wisdisk-prod/agents/788f25d3d16446c8a0ae5854eb9aa856/universal_run-788f25d3d16446c8a0ae5854eb9aa856/repro/data/raw_citation/meta/hepth/9906149.json'

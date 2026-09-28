@@ -1,27 +1,35 @@
 \begin{table}[t]
-\caption{Test MRR, hits@10, and hits@100 (mean over ten seeds $\pm$ sample standard deviation) of the four model cells on the two dependency networks, together with the content floor and three external baselines (GCN, GraphSAGE, and GATv2) trained under the identical protocol. All cells share the identical task, loss, budget, candidate pools, and per-seed splits; hyperparameters were selected per cell on validation MRR with a single tuning seed and frozen for all ten final seeds. $\Delta$ floor is the mean test MRR minus the content floor. Boldface marks the pre-registered gated cell (a label, not a claim about the best value); $\dagger$ marks the best mean test MRR on that graph. The Maven graph is a later snapshot of the registry, so absolute values are not comparable with earlier rounds even though the protocol is identical.}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Test MRR, hits@10, and hits@100 (mean over ten seeds $\pm$ sample standard deviation) of the four model cells on the two dependency networks, together with the content floor and three additional baselines (GCN, GraphSAGE, and GATv2) trained under the identical protocol. All cells share the identical task, loss, budget, candidate pools, and per-seed splits; hyperparameters were selected per cell on validation MRR with a single tuning seed and frozen for all ten final seeds. $\Delta$ floor is the mean test MRR minus the content floor. Boldface marks the pre-specified gated cell (a label, not a claim about the best value); $\dagger$ marks the best mean test MRR on that graph. The floor row carries the standard deviation of the ten per-seed floors, so it can be read against the cell rows. Maven node dates follow the latest non-prerelease release rather than the first publication, so that snapshot has a short test window and its levels are not comparable with npm's.}
 \label{tab:main}
-\begin{tabular}{llcccccc}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}%
+  >{\raggedright\arraybackslash}p{108pt}%
+  r r r r r r@{}}
 \toprule
-Graph & Cell & MRR & Hits@10 & Hits@100 & $\Delta$ floor & Config & Params \\
+Cell & MRR $\pm$ s.d. & Hits@10 & Hits@100 & $\Delta$ floor & Config & Params \\
 \midrule
-npm & Content floor (TF-IDF cosine) & 0.1566 & 0.2663 & 0.6116 & -- & -- & -- \\
-npm & $\dagger$ gcn\_dir (external GCN) & 0.2118 $\pm$ 0.0207 & 0.3448 & 0.7773 & $+0.0553$ & c1 & 208{,}897 \\
-npm & sage\_dir (external GraphSAGE) & 0.1696 $\pm$ 0.0029 & 0.2801 & 0.6552 & $+0.0130$ & c1 & 274{,}433 \\
-npm & gatv2\_dir (external GATv2) & 0.1634 $\pm$ 0.0047 & 0.2685 & 0.6061 & $+0.0068$ & c4 & 673{,}793 \\
-npm & gat\_dir (directed GAT) & 0.1644 $\pm$ 0.0050 & 0.2724 & 0.6149 & $+0.0078$ & c1 & 409{,}601 \\
-npm & \textbf{rcgat\_sym (gate)} & \textbf{0.1623 $\pm$ 0.0033} & 0.2696 & 0.6182 & $+0.0057$ & c1 & 409{,}657 \\
-npm & gat\_time (time branch) & 0.1811 $\pm$ 0.0158 & 0.3099 & 0.6425 & $+0.0245$ & c4 & 409{,}857 \\
-npm & rcgat\_time (gate $+$ time) & 0.1652 $\pm$ 0.0145 & 0.2950 & 0.6320 & $+0.0087$ & c4 & 409{,}913 \\
+\multicolumn{7}{@{}l}{\emph{npm}}\\
 \midrule
-Maven & Content floor (TF-IDF cosine) & 0.0922 & 0.1586 & 0.6103 & -- & -- & -- \\
-Maven & $\dagger$ gcn\_dir (external GCN) & 0.1625 $\pm$ 0.0541 & 0.2931 & 0.6724 & $+0.0703$ & c4 & 208{,}897 \\
-Maven & sage\_dir (external GraphSAGE) & 0.1463 $\pm$ 0.0444 & 0.3621 & 0.6517 & $+0.0541$ & c1 & 274{,}433 \\
-Maven & gatv2\_dir (external GATv2) & 0.1052 $\pm$ 0.0116 & 0.2138 & 0.6069 & $+0.0130$ & c3 & 189{,}441 \\
-Maven & gat\_dir (directed GAT) & 0.1038 $\pm$ 0.0120 & 0.1897 & 0.5931 & $+0.0116$ & c4 & 409{,}601 \\
-Maven & \textbf{rcgat\_sym (gate)} & \textbf{0.1024 $\pm$ 0.0074} & 0.1724 & 0.5931 & $+0.0102$ & c3 & 122{,}937 \\
-Maven & gat\_time (time branch) & 0.1038 $\pm$ 0.0069 & 0.2310 & 0.6276 & $+0.0115$ & c2 & 123{,}009 \\
-Maven & rcgat\_time (gate $+$ time) & 0.1030 $\pm$ 0.0060 & 0.2207 & 0.6138 & $+0.0108$ & c1 & 409{,}913 \\
+Content floor (TF-IDF cosine) & 0.1566 $\pm$ 0.0022 & 0.2663 & 0.6116 & -- & -- & -- \\
+$\dagger$ gcn\_dir (GCN) & 0.2118 $\pm$ 0.0207 & 0.3448 & 0.7773 & $+0.0553$ & c1 & 208{,}897 \\
+sage\_dir (GraphSAGE) & 0.1696 $\pm$ 0.0029 & 0.2801 & 0.6552 & $+0.0130$ & c1 & 274{,}433 \\
+gatv2\_dir (GATv2) & 0.1634 $\pm$ 0.0047 & 0.2685 & 0.6061 & $+0.0068$ & c4 & 673{,}793 \\
+gat\_dir (directed GAT) & 0.1644 $\pm$ 0.0050 & 0.2724 & 0.6149 & $+0.0078$ & c1 & 409{,}601 \\
+\textbf{rcgat\_sym (gate)} & \textbf{0.1623 $\pm$ 0.0033} & 0.2696 & 0.6182 & $+0.0057$ & c1 & 409{,}657 \\
+gat\_time (time branch) & 0.1811 $\pm$ 0.0158 & 0.3099 & 0.6425 & $+0.0245$ & c4 & 409{,}857 \\
+rcgat\_time (gate $+$ time) & 0.1652 $\pm$ 0.0145 & 0.2950 & 0.6320 & $+0.0087$ & c4 & 409{,}913 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Maven}}\\
+\midrule
+Content floor (TF-IDF cosine) & 0.0922 $\pm$ 0.0042 & 0.1586 & 0.6103 & -- & -- & -- \\
+$\dagger$ gcn\_dir (GCN) & 0.1625 $\pm$ 0.0541 & 0.2931 & 0.6724 & $+0.0703$ & c4 & 208{,}897 \\
+sage\_dir (GraphSAGE) & 0.1463 $\pm$ 0.0444 & 0.3621 & 0.6517 & $+0.0541$ & c1 & 274{,}433 \\
+gatv2\_dir (GATv2) & 0.1052 $\pm$ 0.0116 & 0.2138 & 0.6069 & $+0.0130$ & c3 & 189{,}441 \\
+gat\_dir (directed GAT) & 0.1038 $\pm$ 0.0120 & 0.1897 & 0.5931 & $+0.0116$ & c4 & 409{,}601 \\
+\textbf{rcgat\_sym (gate)} & \textbf{0.1024 $\pm$ 0.0074} & 0.1724 & 0.5931 & $+0.0102$ & c3 & 122{,}937 \\
+gat\_time (time branch) & 0.1038 $\pm$ 0.0069 & 0.2310 & 0.6276 & $+0.0115$ & c2 & 123{,}009 \\
+rcgat\_time (gate $+$ time) & 0.1030 $\pm$ 0.0060 & 0.2207 & 0.6138 & $+0.0108$ & c1 & 409{,}913 \\
 \bottomrule
-\end{tabular}
+\end{tabular*}
 \end{table}

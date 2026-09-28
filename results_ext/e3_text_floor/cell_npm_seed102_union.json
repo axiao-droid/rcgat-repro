@@ -1,0 +1,16 @@
+{
+  "test": {
+    "mrr": 0.14633708730888229,
+    "hits@10": 0.287292817679558,
+    "hits@100": 0.580110497237569,
+    "sources": 181,
+    "positives": 494,
+    "candidates_mean": 4611.0
+  },
+  "recipe": "union",
+  "dataset": "npm",
+  "seed": 102,
+  "dim": 300,
+  "seconds": 135.3,
+  "frozen_floor_test": 0.15223838077966545
+}

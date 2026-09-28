@@ -1,0 +1,3 @@
+[e4] 2 jobs, workers=2
+[e4] maven_gat_dir_seed123_zero test=0.1139 floor=0.0989 init=0.2851 (54.2s)
+[e4] maven_gat_dir_seed122_zero test=0.0983 floor=0.0929 init=0.2784 (55.2s)
