@@ -8,22 +8,18 @@ abstract: >-
   directed package-dependency graphs, calibrates an explicit TF-IDF content
   floor, trains a direction-aware gated GAT together with its ungated baseline
   and three structural baselines over ten seeds per graph, and reports paired
-  intervals under a pre-registered judgment rule.  The headline result is a null
-  result for the gate, plus a protocol diagnosis (candidate-pool definition,
-  content floor, checkpoint policy) of the apparent positive effect reported in
-  an earlier round.
+  intervals under a pre-specified judgment rule.  The headline result is a bounded
+  null result for the gate, plus a protocol diagnosis (candidate-pool definition,
+  content floor, checkpoint policy) and eight extension experiments.
 authors:
   - family-names: Jiang
     given-names: Runxiao
     affiliation: "School of Science, Jimei University, 185 Yinjiang Road, Xiamen 361021, Fujian, China"
-  - family-names: Xie
-    given-names: Jialiang
-    affiliation: "School of Science, Jimei University, 185 Yinjiang Road, Xiamen 361021, Fujian, China"
+    orcid: "https://orcid.org/0009-0000-8421-453X"
     corresponding: true
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: replace with the real ORCID.  Must be the full https://orcid.org/... URL: the CFF 1.2.0 schema rejects a bare digit string.
 license: MIT
-version: "1.0.0"
-date-released: "2026-09-27"
+version: "1.1.0"
+date-released: "2026-10-01"
 repository-code: "https://github.com/axiao-droid/rcgat-repro"
 url: "https://github.com/axiao-droid/rcgat-repro"
 keywords:
@@ -34,19 +30,17 @@ keywords:
   - reproducibility
   - npm
   - Maven
-doi: "10.5281/zenodo.22985669"
+doi: "10.5281/zenodo.23076264"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.22985668"
     description: "Concept DOI (resolves to the latest version of this software)"
 preferred-citation:
   type: article
-  title: "When Do Structural Mechanisms Help Dependency Link Prediction? A Content-Floor-Controlled Study on npm and Maven"
+  title: "Content Floors and Candidate Pools: What Controlled Evaluation Does to Structural Link Prediction on npm and Maven"
   authors:
     - family-names: Jiang
       given-names: Runxiao
-    - family-names: Xie
-      given-names: Jialiang
   journal: "Empirical Software Engineering"
   year: 2026
   # doi: "10.1007/s10664-0xx-xxxx-x"   # TODO: fill in the article DOI once the paper is accepted.
